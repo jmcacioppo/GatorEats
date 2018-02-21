@@ -1,0 +1,27 @@
+{
+  "name": "gatoreats",
+  "version": "1.0.0",
+  "description": "Web app to improve the Gator Dining menu interface.",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmcacioppo/GatorEats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmcacioppo/GatorEats/issues"
+  },
+  "homepage": "https://github.com/jmcacioppo/GatorEats#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-route": "^1.6.9",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "https": "^1.0.0",
+    "path": "^0.12.7"
+  }
+}
