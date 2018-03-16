@@ -1,0 +1,31 @@
+.extras{
+    position: relative;
+}
+
+.available-now{
+    position: relative;
+}
+
+.extras-text{
+    text-align: center;
+}
+
+.extras-restaurants{
+    align-content: center;
+    background-color: #1F618D;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-left: 2rem;
+    overflow-x: scroll;
+}
+
+.restaurant{
+    display: inline-block;
+    margin-left: 2rem;
+    color: white;
+    background-color: #A9CCE3;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
