@@ -1,1 +1,1 @@
-var uri = "";
+var uri = process.env.URI || "";
