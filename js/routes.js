@@ -17,15 +17,71 @@ router.get('/', function(req, res) {
     });   
 });
 
+// http://localhost:3000/users
+router.route('/api/users')
+	// GET all users
+    .get(function(req, res) {
+        User.find(function(err, users) {
+            if (err) res.send(err);
+            res.json(users);
+        });
+    })
 
-router.route('/api/get')
-	.get(function(req, res) {
-		var response = {
-			'hello': 'world'
-		};
+    // POST to create a user
+    .post(function(req, res) {
+        var user = new User();
 
-		res.json(response);
-	});
+        // Set text and user values from request
+        user.firstName = req.body.firstName;
+        user.lastName = req.body.lastName;
+        user.email = req.body.email;
+ 
+        // Save user and check for errors
+        user.save(function(err) {
+            if (err) res.send(err);
+            res.json({ message: 'User created successfully!' });
+        });
+    });
+
+
+// http://localhost:3000/users/:user_id
+router.route('/api/users/:user_id')
+    // GET user with id   
+    .get(function(req, res) {
+        User.findById(req.params.user_id, function(err, user) {
+            if (err) res.send(err);
+            res.json(user);
+        });
+    })
+
+    // PUT to update user with id
+    .put(function(req, res) {
+        User.findById(req.params.user_id, function(err, user) {
+            if (err) res.send(err);
+            
+            // Update the user text
+            user.firstName = req.body.firstName;
+            user.lastName = req.body.lastName;
+            user.email = req.body.email;
+            
+            user.save(function(err) {
+                if (err) res.send(err);
+                res.json({ message: 'User successfully updated!' });
+            });
+ 
+        });
+    })
+
+    // DELETE user with id
+    .delete(function(req, res) {
+        User.remove({
+            _id: req.params.user_id
+        }, function(err, user) {
+            if (err) res.send(err);
+            res.json({ message: 'Successfully deleted user!' });
+        });
+    });
+
 
 module.exports = router;
  

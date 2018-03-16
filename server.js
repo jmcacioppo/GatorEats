@@ -6,6 +6,7 @@ var User = require('./js/model/user');
 var mongoose = require('mongoose');
 var config = require('./js/config/config');
 
+// Start app and set path to get index.html
 var app = express();
 var rootPath = path.normalize(__dirname);
 app.use(express.static(rootPath));
@@ -14,6 +15,7 @@ app.use(express.static(rootPath));
 app.use(bodyParser.urlencoded({'extended':'true'}));
 app.use(bodyParser.json()); 
 
+// Connect to database
 mongoose.connect(config.uri);
 
 // Set port
