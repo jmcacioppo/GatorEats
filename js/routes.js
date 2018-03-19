@@ -187,6 +187,24 @@ router.route('/api/foodItem/:foodItem_id')
         });
     });
 
+// TRENDING LEADERBOARD ROUTE
+router.route('/api/leaderboard')
+    // GET leaderboard 
+    .get(function(req, res) {
+		FoodItem.find({}, function (err, foodItems) {
+			if (err) res.send(err);
+			else {
+				foodItems.sort(function(a, b) {
+					return b.review.rating - a.review.rating;
+				});
+
+			  	res.send({'trending': foodItems});
+			}
+		});
+    })
+
+
+
 module.exports = router;
  
 function dateDisplayed(timestamp) {
