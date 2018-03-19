@@ -6,16 +6,22 @@ var ReviewSchema = new Schema({
 	rating: Number
 });
 
+var FoodItemSchema = new Schema({
+	name: String,
+	classification: String,
+	review: [ReviewSchema]
+});
+
 var UserSchema = new Schema({
     username: String,
     password: String
 });
 
 var MenuSchema = new Schema({
-	name: String,
-	classification: String,
-	review: [ReviewSchema]
+	menuName: String,
+	foodItems: [FoodItemSchema]
 });
 
 mongoose.model('User', UserSchema);
 mongoose.model('Menu', MenuSchema);
+mongoose.model('FoodItem', FoodItemSchema);

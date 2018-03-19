@@ -1,8 +1,8 @@
 var express = require('express'),
-// var User = require('./model/user');
 	mongoose = require('mongoose'),
 	User = mongoose.model('User'),
-	Menu = mongoose.model('Menu');
+	Menu = mongoose.model('Menu'),
+	FoodItem = mongoose.model('FoodItem');
 
 // Get the router
 var router = express.Router();
@@ -13,14 +13,14 @@ router.use(function timeLog(req, res, next) {
   next();
 });
 
-// GET at http://localhost:3000
+// GET at root
 router.get('/', function(req, res) {
     res.json({ 
     	message: 'Welcome to the REST API' 
     });   
 });
 
-// http://localhost:3000/users
+// USER ROUTES
 router.route('/api/users')
 	// GET all users
     .get(function(req, res) {
@@ -32,22 +32,26 @@ router.route('/api/users')
 
     // POST to create a user
     .post(function(req, res) {
-        var user = new User();
+        User.find({ 'username' : req.body.username }, function(err, user) {
+            if(err) res.send(err);
 
-        // Set text and user values from request
-        user.firstName = req.body.firstName;
-        user.lastName = req.body.lastName;
-        user.email = req.body.email;
- 
-        // Save user and check for errors
-        user.save(function(err) {
-            if (err) res.send(err);
-            res.json({ message: 'User created successfully!' });
+            if(user.length > 0) res.json(user);
+            else {
+            	var newUser = new User();
+
+		        // Set text and user values from request
+		        newUser.username = req.body.username;
+		        newUser.password = req.body.password;
+		 
+		        // Save user and check for errors
+		        newUser.save(function(err) {
+		            if (err) res.send(err);
+		            res.json({ message: 'User created successfully!' });
+		        });
+            }
         });
     });
 
-
-// http://localhost:3000/users/:user_id
 router.route('/api/users/:user_id')
     // GET user with id   
     .get(function(req, res) {
@@ -63,9 +67,8 @@ router.route('/api/users/:user_id')
             if (err) res.send(err);
             
             // Update the user text
-            user.firstName = req.body.firstName;
-            user.lastName = req.body.lastName;
-            user.email = req.body.email;
+            user.username = req.body.username;
+        	user.password = req.body.password;
             
             user.save(function(err) {
                 if (err) res.send(err);
@@ -85,6 +88,104 @@ router.route('/api/users/:user_id')
         });
     });
 
+// MENU ROUTES
+router.route('/api/menus')
+	// GET all menus
+    .get(function(req, res) {
+        Menu.find(function(err, menus) {
+            if (err) res.send(err);
+            res.json(menus);
+        });
+    })
+
+    // POST to create a menu
+    .post(function(req, res) {
+        var menu = new Menu();
+
+        // Set text and menu values from request
+        menu.menuName = req.body.menuName;
+        menu.foodItems = req.body.foodItems;
+ 
+        // Save menu and check for errors
+        menu.save(function(err) {
+            if (err) res.send(err);
+            res.json({ message: 'Menu created successfully!' });
+        });
+    });
+
+router.route('/api/menus/:menu_id')
+    // GET menu with id   
+    .get(function(req, res) {
+        Menu.findById(req.params.menu_id, function(err, menu) {
+            if (err) res.send(err);
+            res.json(menu);
+        });
+    })
+
+    // PUT to update menu with id
+    .put(function(req, res) {
+        Menu.findById(req.params.menu_id, function(err, menu) {
+            if (err) res.send(err);
+            
+            // Update the menu text
+            menu.menuName = req.body.menuName;
+        	menu.foodItems = req.body.foodItems;
+            
+            menu.save(function(err) {
+                if (err) res.send(err);
+                res.json({ message: 'Menu successfully updated!' });
+            });
+ 
+        });
+    })
+
+    // DELETE menu with id
+    .delete(function(req, res) {
+        Menu.remove({
+            _id: req.params.menu_id
+        }, function(err, menu) {
+            if (err) res.send(err);
+            res.json({ message: 'Successfully deleted menu!' });
+        });
+    });
+
+// FOOD ITEM ROUTES
+router.route('/api/foodItem/:foodItem_id')
+    // GET foodItem with id   
+    .get(function(req, res) {
+        FoodItem.findById(req.params.foodItem_id, function(err, foodItem) {
+            if (err) res.send(err);
+            res.json(foodItem);
+        });
+    })
+
+    // PUT to update foodItem with id
+    .put(function(req, res) {
+        Menu.findById(req.params.foodItem_id, function(err, foodItem) {
+            if (err) res.send(err);
+            
+            // Update the foodItem text
+            foodItem.name = req.body.name;
+        	foodItem.classification = req.body.classification;
+        	foodItem.review = req.body.review;
+            
+            foodItem.save(function(err) {
+                if (err) res.send(err);
+                res.json({ message: 'Menu successfully updated!' });
+            });
+ 
+        });
+    })
+
+    // DELETE foodItem with id
+    .delete(function(req, res) {
+        Menu.remove({
+            _id: req.params.foodItem_id
+        }, function(err, foodItem) {
+            if (err) res.send(err);
+            res.json({ message: 'Successfully deleted foodItem!' });
+        });
+    });
 
 module.exports = router;
  
