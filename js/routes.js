@@ -203,8 +203,6 @@ router.route('/api/leaderboard')
 		});
     })
 
-
-
 module.exports = router;
  
 function dateDisplayed(timestamp) {
