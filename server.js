@@ -1,9 +1,9 @@
 var express = require('express');
 var bodyParser = require('body-parser');  
 var path = require('path');
-var routes = require('./js/routes');
-var User = require('./js/model/user');
 var mongoose = require('mongoose');
+var User = require('./js/model/user');
+var routes = require('./js/routes');
 var config = require('./js/config/config');
 
 // Start app and set path to get index.html
