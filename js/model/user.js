@@ -1,10 +1,21 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
  
-var userSchema = new Schema({
-    firstName: String,
-    lastName: String,
-    email: String
+var UserSchema = new Schema({
+    username: String,
+    password: String
 });
- 
-module.exports = mongoose.model('User', userSchema);
+
+var MenuSchema = new Schema({
+	name: String,
+	classification: String,
+	review: [ReviewSchema];
+});
+
+var ReviewSchema = new Schema({
+	comment: String,
+	rating: Number
+});
+
+mongoose.model('User', UserSchema);
+mongoose.model('Menu', MenuSchema);

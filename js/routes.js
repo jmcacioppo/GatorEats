@@ -1,6 +1,9 @@
-var express = require('express');
-var User = require('./model/user');
- 
+var express = require('express'),
+// var User = require('./model/user');
+	mongoose = require('mongoose'),
+	User = mongoose.model('User'),
+	Menu = mongoose.model('Menu');
+
 // Get the router
 var router = express.Router();
 
