@@ -1,0 +1,65 @@
+.extras{
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.available-now{
+    position: relative;
+}
+
+.extras-text{
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.extras-restaurants{
+    align-content: center;
+    
+    margin-left: 1rem;
+    margin-right: 2rem;
+    padding-left: 2rem;
+    height: 15rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.restaurant{
+    position: relative;
+    display: inline-block;
+    margin-left: 1rem;
+    color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    background-color: #1F618D;
+    max-height: 100%;
+    width: 30%;
+}
+
+
+.logo-pic{
+    max-height: 70%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.available-later{
+    position: relative;
+    margin-top: 3rem;
+}
+
+.food-to-eat{
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
