@@ -1,18 +1,5 @@
-<html>
-<head>
-    <script src="lib/angular/angular.js"></script>
-    <script src="js/controllers/TodayMenuController.js"></script>
-</head>
-
-<body ng-app="MyApp">
-    <div ng-controller="TodayMenuController">
-        <ul ng-repeat="ff in FFbreakfast">
-            <li>{{ff}}</li>
-        </ul>
-    </div>
-</body>
-</html>
-
 <div>
-    Today's Menu
+        <ul ng-repeat="ff in FFbreakfast">
+            <li>{{ff.stations}}</li>
+        </ul>
 </div>
