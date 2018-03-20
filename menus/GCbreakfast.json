@@ -1,0 +1,98 @@
+[{
+    "station": "Breakfast",
+    "day": "monday",
+    "items": ["Biscuits & Sausage Gravy Buttermilk", "Pancakes Grits", "Hash Brown Potatoes", "Old Fashioned Oatmeal", "Pork Sausage Patty", "Scrambled Eggs", "Turkey Bacon"]
+  },
+  {
+    "station": "Breakfast",
+    "day": "tuesday",
+    "items": ["Biscuits & Sausage Gravy", "Whole Wheat Banana Pancakes", "Grits", "Bacon", "Old Fashioned Oatmeal", "Home Fries", "Scrambled Eggs", "Turkey Sausage Link"]
+  },
+  {
+    "station": "Breakfast",
+    "day": "wednesday",
+    "items": ["Biscuits & Sausage Gravy", "French Toast", "Grits", "Turkey Bacon", "Old Fashioned Oatmeal", "Hash Brown Potatoes", "Scrambled Eggs", "Pork Sausage Links"]
+  },
+  {
+    "station": "Breakfast",
+    "day": "thursday",
+    "items": ["Biscuits & Sausage Gravy", "Blueberry Buttermilk Pancakes", "Grits", "Hash Browns", "Old Fashioned Oatmeal", "Turkey Sausage Patty", "Scrambled Eggs", "Bacon"]
+  },
+  {
+    "station": "Breakfast",
+    "day": "friday",
+    "items": ["Biscuits & Sausage Gravy", "Whole Wheat Pancakes", "Grits", "Home Fries", "Old Fashioned Oatmeal", "Pork Sausage Patty", "Scrambled Eggs", "Turkey Bacon"]
+  },
+  {
+    "station": "Breakfast",
+    "day": "saturday",
+    "items": ["Biscuit & Sausage Gravy", "French Toast", "Grits", "Crispy Tater Bites", "Old Fashioned Oatmeal", "Turkey Sausage Patty", "Scrambled Eggs", "Bacon"]
+  },
+  {
+    "station": "Breakfast",
+    "day": "sunday",
+    "items": ["Biscuit & Sausage Gravy", "Chocolate Chip Pancakes", "Grits", "O'brien Potatoes", "Old Fashioned Oatmeal", "Pork Sausage Link", "Scrambled Eggs", "Turkey Bacon"]
+  },
+
+  {
+    "station": "Rotisserie",
+    "day": "monday",
+    "items": "Bacon & Egg Pizza"
+  },
+  {
+    "station": "Rotisserie",
+    "day": "tuesday",
+    "items": "Egg & Cheese Biscuit Sandwich"
+  },
+  {
+    "station": "Rotisserie",
+    "day": "wednesday",
+    "items": "Three Cheese & Bacon Strata"
+  },
+  {
+    "station": "Rotisserie",
+    "day": "thursday",
+    "items": " Stromboli with Sausage"
+  },
+  {
+    "station": "Rotisserie",
+    "day": "friday",
+    "items": "Egg & Cheese Bagel"
+  },
+
+  {
+    "station": "Bakery",
+    "day": "monday",
+    "items": ["Apple Cinnamon Scone", "Bananaberry Mini Muffin", "Chocolate Donut Bites"]
+  },
+  {
+    "station": "Bakery",
+    "day": "tuesday",
+    "items": ["Peach Almond Crumb Cake", "Carrot Pineapple Mini Muffin", "Vanilla Iced Donut with Sprinkles"]
+  },
+  {
+    "station": "Bakery",
+    "day": "wednesday",
+    "items": ["Cranberry Orange Scone", "Bananas Foster Mini Muffin", "Iced Cinnamon Roll"]
+  },
+  {
+    "station": "Bakery",
+    "day": "thursday",
+    "items": ["Cherry Cobbler Bread", "Apple Cinnamon Mini Muffin", "Powdered Sugar Donut"]
+  },
+  {
+    "station": "Bakery",
+    "day": "friday",
+    "items": ["Chocolate Chip Scone", "Whole Grain Lemon Poppy Mini Muffin", "Cinnamon Donut Bites"]
+  },
+  {
+    "station": "Bakery",
+    "day": "saturday",
+    "items": ["Donut Bites", "Blueberry Scone"]
+  },
+  {
+    "station": "Bakery",
+    "day": "sunday",
+    "items": ["Banana Nut Mini Muffin", "Cherry Crumb Cupcake"]
+  }
+]

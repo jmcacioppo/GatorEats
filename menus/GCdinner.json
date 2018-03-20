@@ -1,0 +1,236 @@
+[{
+  "station": "Grill",
+  "day": "monday",
+  "items": ["Baby Carrots", "Cheesesteak Biscuit", "Garden Burger Available Upon Request", "Sweet Potato Fries"]
+},
+  {
+    "station": "Grill",
+    "day": "tuesday",
+    "items": ["Baby Carrots", "Crispy Chicken & Cheese Snacker", "Garden Burger Available Upon Request", "Crispy French Fries"]
+  },
+  {
+    "station": "Grill",
+    "day": "wednesday",
+    "items": ["Baby Carrots", "Teriyaki Pineapple Turkey Burger", "Garden Burger Available Upon Request", "Crispy Shoestring French Fries"]
+  },
+  {
+    "station": "Grill",
+    "day": "thursday",
+    "items": ["Baby Carrots", "Chicago Style Turkey Corn Dog", "Garden Burger Available Upon Request", "Twister Fries"]
+  },
+  {
+    "station": "Grill",
+    "day": "friday",
+    "items": ["Baby Carrots", "Grilled Fish Soft Taco", "Garden Burger Available Upon Request", "Sweet Potato Fries"]
+  },
+  {
+    "station": "Grill",
+    "day": "saturday",
+    "items": ["Baby Carrots", "BBQ Chicken & Cheddar Sandwich", "Garden Burger Available Upon Request", "Sweet Potato Fries"]
+  },
+  {
+    "station": "Grill",
+    "day": "sunday",
+    "items": ["Baby Carrots", "Chipotle Pineapple Turkey Burger", "Garden Burger Available Upon Request", "Crispy Shoestring French Fries"]
+  },
+  {
+    "station": "Rotesserie",
+    "day": "monday",
+    "items": ["Green Beans & Almonds", "Pretzel-Crusted Striped Pangasius", "Roasted Dijon Red Potatoes"]
+  },
+  {
+    "station": "Rotesserie",
+    "day": "tuesday",
+    "items": ["Crispy Okra", "Shrimp Etouffee", "Cajun Rice"]
+  },
+  {
+    "station": "Rotesserie",
+    "day": "wednesday",
+    "items": ["Italian Roasted Vegetables", "Mediterranean Baked Fish", "Scalloped Potatoes"]
+  },
+  {
+    "station": "Rotesserie",
+    "day": "thursday",
+    "items": ["Grilled Rosemary Flatbread", "Spaghetti with Meatsauce", "Steamed Broccoli Florets"]
+  },
+  {
+    "station": "Rotesserie",
+    "day": "friday",
+    "items": ["Green Peas", "Roast Pork Adobo", "Black Beans & Rice with Bacon"]
+  },
+  {
+    "station": "Rotesserie",
+    "day": "saturday",
+    "items": ["Cauliflower", "Overstuffed Potato", "Turkey Chili Con Carne"]
+  },
+  {
+    "station": "Rotesserie",
+    "day": "sunday",
+    "items": ["Calabacitas", "Carne Asada", "Mexican Rice"]
+  },
+  {
+    "station": "Pizza",
+    "day": "monday",
+    "items": ["Cuban Stromboli"]
+  },
+  {
+    "station": "Pizza",
+    "day": "tuesday",
+    "items": ["Spinach", "Feta & Ham Pizza"]
+  },
+  {
+    "station": "Pizza",
+    "day": "wednesday",
+    "items": ["Meat Lover's Pizza"]
+  },
+  {
+    "station": "Pizza",
+    "day": "thursday",
+    "items": ["BBQ Chicken Stromboli"]
+  },
+  {
+    "station": "Pizza",
+    "day": "friday",
+    "items": ["Meatball Pizza"]
+  },
+  {
+    "station": "Pizza",
+    "day": "saturday",
+    "items": ["Philly Cheesesteak Stromboli"]
+  },
+  {
+    "station": "Pizza",
+    "day": "sunday",
+    "items": ["Chicken Bacon Ranch Flatbread"]
+  },
+  {
+    "station": "International",
+    "day": "monday",
+    "items": ["Asian Seared Chicken", "Vegetable Fried Rice"]
+  },
+  {
+    "station": "International",
+    "day": "tuesday",
+    "items": ["Beef Harissa Rice Bowl"]
+  },
+  {
+    "station": "International",
+    "day": "wednesday",
+    "items": ["Ropa Vieja", "Confetti Brown Rice"]
+  },
+  {
+    "station": "International",
+    "day": "thursday",
+    "items": ["Sweet & Sour Meatballs", "Seasoned Rice"]
+  },
+  {
+    "station": "International",
+    "day": "friday",
+    "items": ["Tagine Chicken Drumstick", "Cous Cous"]
+  },
+  {
+    "station": "Vegan",
+    "day": "monday",
+    "items": ["Vegan Chicken Paella with Brown Rice", "Vegan Oatmeal Cookie"]
+  },
+  {
+    "station": "Vegan",
+    "day": "tuesday",
+    "items": ["Vegan Jambalaya", "Bananas Foster"]
+  },
+  {
+    "station": "Vegan",
+    "day": "wednesday",
+    "items": ["Vegan Beefy Mac Casserole", "Vegan Peanut Butter Cookie"]
+  },
+  {
+    "station": "Vegan",
+    "day": "thursday",
+    "items": ["Rice Noodle & Vegetable Stir Fry", "Vegan Cranberry Oatmeal Cookie"]
+  },
+  {
+    "station": "Vegan",
+    "day": "friday",
+    "items": ["Black Bean Stuffed Pepper", "Vegan Brownie"]
+  },
+  {
+    "station": "Vegan",
+    "day": "saturday",
+    "items": ["Vegan Sweet & Sour Chicken"]
+  },
+  {
+    "station": "Vegan",
+    "day": "sunday",
+    "items": ["Curried Chickpeas with White Rice"]
+  },
+  {
+    "station": "Soup",
+    "day": "monday",
+    "items": ["Chicken & Roasted Corn Chowder", "Three Bean Chili"]
+  },
+  {
+    "station": "Soup",
+    "day": "tuesday",
+    "items": ["Chipotle Chicken Tortilla Soup", "Barley Vegetable Soup"]
+  },
+  {
+    "station": "Soup",
+    "day": "wednesday",
+    "items": ["Hearty Beef & Vegetable Soup", "Cheddar Cauliflower Soup"]
+  },
+  {
+    "station": "Soup",
+    "day": "thursday",
+    "items": ["Hungarian Goulash Soup", "Moroccan Chickpea Soup"]
+  },
+  {
+    "station": "Soup",
+    "day": "friday",
+    "items": ["New England Clam Chowder", "Curried Tomato Lentil Soup"]
+  },
+  {
+    "station": "Soup",
+    "day": "saturday",
+    "items": ["Beef & Rice Soup", "Chile Cheddar Potato Soup"]
+  },
+  {
+    "station": "Soup",
+    "day": "sunday",
+    "items": ["Chicken & Rice Soup Florentine", "Split Pea Soup"]
+  },
+  {
+    "station": "Bakery",
+    "day": "monday",
+    "items": ["Cherry Cheesecake Tart", "Chocolate Chip Cookie", "Oreo® Cookie Blondie", "Sugar Cookie"]
+  },
+  {
+    "station": "Bakery",
+    "day": "tuesday",
+    "items": ["Chocolate Chip Cookie", "Caramel Apple Bread Pudding", "Oatmeal Raisin Cookie"]
+  },
+  {
+    "station": "Bakery",
+    "day": "wednesday",
+    "items": ["Pumpkin Spice Crumb Cake", "Peanut Butter Cookie", "Chocolate Chip Cookie"]
+  },
+  {
+    "station": "Bakery",
+    "day": "thursday",
+    "items": ["Vanilla Cupcake", "Fruity Marshmellow Treat", "Oatmeal Raisin Cookie", "Chocolate Chip Cookie"]
+  },
+  {
+    "station": "Bakery",
+    "day": "friday",
+    "items": ["Peanut Butter Devil's Food Parfait", "Carrot Cake Whoopie Pie", "Oatmeal Raisin Cookie", "Chocolate Chip Cookie"]
+  },
+  {
+    "station": "Bakery",
+    "day": "saturday",
+    "items": ["Mini Salted Caramel Cake", "Banana Pudding Parfait", "Sugar Cookie", "Chocolate Chip Cookie"]
+  },
+  {
+    "station": "Bakery",
+    "day": "sunday",
+    "items": ["Banana Chip Cupcake", "Red Velvet Thimble Cake", "Oatmeal Raisin Cookie", "Chocolate Chip Cookie"]
+  }
+]
