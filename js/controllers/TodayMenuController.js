@@ -1,8 +1,11 @@
-var app = angular.module("gatorEats", []);
-
-app.controller('TodayMenuController', function($scope, $http) {
+gatorEats.controller('TodayMenuController', ['$scope', '$http',
+    function($scope, $http){
         $http.get('menus/FFbreakfast.json')
-            .success(function(res){
-                $scope.menus = res;
+            .then(function(res){
+                $scope.menus = res.data;
+                console.log(res);
             });
-});
+
+        $scope.showThis = true;
+    }
+]);
