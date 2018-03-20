@@ -1,5 +1,7 @@
 <div>
-        <ul ng-repeat="ff in FFbreakfast">
-            <li>{{ff.stations}}</li>
+        <ul ng-show=showThis ng-repeat="ff in menus">
+            <li>{{ff.station}}</li>
         </ul>
+
+        <div ng-hide=showThis>HEllo</div>
 </div>
