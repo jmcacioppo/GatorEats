@@ -11,12 +11,62 @@
 
     <br> <br>
 
-    <div ng-show="freshFoodBreakfast">Fresh Food Company Breakfast</div>
-    <div ng-show="freshFoodLunch">Fresh Food Company Lunch </div>
-    <div ng-show="freshFoodDinner">Fresh Food Company Dinner</div>
-    <div ng-show="gatorCornerBreakfast">Gator Corner Breakfast</div>
-    <div ng-show="gatorCornerLunch">Gator Corner Lunch</div>
-    <div ng-show="gatorCornerDinner">Gator Corner Dinner</div>
+    <div ng-show="freshFoodBreakfast">
+        <b>Fresh Food Company Breakfast</b>
+        <br> <br>
+        <div class="row">
+            <div class="col-md-3" ng-repeat="food in FFBreakfast">
+                <div>{{food.day.toUpperCase()}}</div>
+                <div ng-repeat="item in food.items">
+                    {{item}}
+                </div>
+                <br> <br>
+            </div>
+        </div>
+    </div>
+
+    <div ng-show="freshFoodLunch">
+        Fresh Food Company Lunch
+        <div ng-repeat="food in FFLunch">
+            {{food.station}}
+            {{food.day}}
+            {{food.items}}
+        </div>
+    </div>
+    
+    <div ng-show="freshFoodDinner">
+        Fresh Food Company Dinner
+        <div ng-repeat="food in FFDinner.FFdinner">
+            {{food.station}}
+            {{food.day}}
+            {{food.items}}
+        </div>
+    </div>
+    
+    <div ng-show="gatorCornerBreakfast">
+        Gator Corner Breakfast
+        <div ng-repeat="food in GCBreakfast">
+            {{food.station}}
+            {{food.day}}
+            {{food.items}}
+        </div>
+    </div>
+    
+    <div ng-show="gatorCornerLunch">
+        Gator Corner Lunch
+        <div ng-repeat="food in GCLunch">
+            {{food.station}}
+            {{food.day}}
+            {{food.items}}
+        </div>
+    </div>
+    
+    <div ng-show="gatorCornerDinner">
+        Gator Corner Dinner
+        <div ng-repeat="food in GCDinner">
+            {{food.station}}
+            {{food.day}}
+            {{food.items}}
+        </div>
+    </div>
 </center>
-
-
