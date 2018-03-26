@@ -1,0 +1,16 @@
+[
+	{
+		"name" : "Papa John's",
+		"startTime" : "900",
+		"endTime" : "1500",
+		"availableDeal" : "1 slice of pizza and softdrink",
+		"img" : "./css/logos/papa-johns.png"
+	},
+	{
+		"name" : "Subway",
+		"startTime" : "900",
+		"endTime" : "1500",
+		"availableDeal" : "1 slice of pizza and softdrink",
+		"img" : "./css/logos/papa-johns.png"
+	}
+]
