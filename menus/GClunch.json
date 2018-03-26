@@ -1,226 +1,226 @@
 [{
   "station": "Grill",
-  "day": "monday",
+  "day": "Monday",
   "items": ["Baby Carrots", "Buffalo Blue Chicken Panini", "Crispy Shoestring French Fries", "Garden Burger Available Upon Request"]
 },
   {
     "station": "Grill",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Baby Carrots", "Hot Dog with Sauerkraut", "Twister Fries", "Garden Burger Available Upon Request"]
   },
   {
     "station": "Grill",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Baby Carrots", "BBQ & Cheddar Turkey Burger", "Sweet Potato Fries", "Garden Burger Available Upon Request"]
   },
   {
     "station": "Grill",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Baby Carrots", "Chicken Cheesesteak Wrap", "Crispy French Fries", "Garden Burger Available Upon Request"]
   },
   {
     "station": "Grill",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Baby Carrots", "Honey Mustard Grilled Chicken", "Crispy Shoestring French Fries", "Garden Burger Available Upon Request"]
   },
   {
     "station": "Rotisserie",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Chicken Bibimbap", "Steamed Mixed Vegetables"]
   },
   {
     "station": "Rotisserie",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Corn On The Cob", "Spiced-Rubbed Pork Loin", "Red Beans & Rice"]
   },
   {
     "station": "Rotisserie",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Collard Greens", "Fried Chicken", "Baked Macaroni & Cheese"]
   },
   {
     "station": "Rotisserie",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Sautéed Zucchini & Tomato", "Italian Sausage & Peppers Sandwich", "Roasted Potatoes"]
   },
   {
     "station": "Rotisserie",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Old Fashioned Cole Slaw", "Homestyle Fish Fillet with Tartar Sauce", "Crispy Tater Bites"]
   },
   {
     "station": "Rotisserie",
-    "day": "saturday",
+    "day": "Saturday",
     "items": ["Brussels Sprouts & Carrots", "Baked Pit Ham with Honey Mustard Dressing", "Potatoes Au Gratin"]
   },
   {
     "station": "Rotisserie",
-    "day": "sunday",
+    "day": "Sunday",
     "items": ["Steamed Fresh Broccoli", "Grilled Chicken Breast", "Mashed Yukon Gold Potatoes with Country Gravy"]
   },
   {
     "station": "Pizza",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Cuban Stromboli"]
   },
   {
     "station": "Pizza",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Spinach", "Feta & Ham Pizza"]
   },
   {
     "station": "Pizza",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Meat Lover's Pizza"]
   },
   {
     "station": "Pizza",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["BBQ Chicken Stromboli"]
   },
   {
     "station": "Pizza",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Meatball Pizza"]
   },
   {
     "station": "Pizza",
-    "day": "saturday",
+    "day": "Saturday",
     "items": ["Philly Cheesesteak Stromboli"]
   },
   {
     "station": "Pizza",
-    "day": "sunday",
+    "day": "Sunday",
     "items": ["Chicken Bacon Ranch Flatbread"]
   },
   {
     "station": "International",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Asian Seared Chicken", "Vegetable Fried Rice"]
   },
   {
     "station": "International",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Beef Harissa Rice Bowl"]
   },
   {
     "station": "International",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Ropa Vieja", "Confetti Brown Rice"]
   },
   {
     "station": "International",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Sweet & Sour Meatballs", "Seasoned Rice"]
   },
   {
     "station": "International",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Tagine Chicken Drumstick", "Cous Cous"]
   },
   {
     "station": "Vegan",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Mediterranean Stir-Fry & Basmati Rice with Peas", "Vegan Oatmeal Cookie"]
   },
   {
     "station": "Vegan",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Vegan Jambalaya", "Peanut Butter Pretzel Cereal Bar"]
   },
   {
     "station": "Vegan",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Italian Spinach & White Beans", "Vegan Peanut Butter Cookie"]
   },
   {
     "station": "Vegan",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Asian Teriyaki Noodles", "Vegan Cranberry Oatmeal Cookie"]
   },
   {
     "station": "Vegan",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Vegan Beef Chili Potato", "Vegan Brownie"]
   },
   {
     "station": "Vegan",
-    "day": "saturday",
+    "day": "Saturday",
     "items": ["Cilantro-Peanut Pesto Pasta with Garlic Roasted Broccoli", "Vegan Peach Banana Cake"]
   },
   {
     "station": "Vegan",
-    "day": "sunday",
+    "day": "Sunday",
     "items": ["General Tso's Tofu with White Rice", "Vegan Lemon Rice Pudding"]
   },
   {
     "station": "Soup",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Chicken & Roasted Corn Chowder", "Three Bean Chili"]
   },
   {
     "station": "Soup",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Chipotle Chicken Tortilla Soup", "Barley Vegetable Soup"]
   },
   {
     "station": "Soup",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Hearty Beef & Vegetable Soup", "Cheddar Cauliflower Soup"]
   },
   {
     "station": "Soup",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Hungarian Goulash Soup", "Moroccan Chickpea Soup"]
   },
   {
     "station": "Soup",
-    "day": "friday",
+    "day": "Friday",
     "items": ["New England Clam Chowder", "Curried Tomato Lentil Soup"]
   },
   {
     "station": "Soup",
-    "day": "saturday",
+    "day": "Saturday",
     "items": ["Beef & Rice Soup", "Chile Cheddar Potato Soup"]
   },
   {
     "station": "Soup",
-    "day": "sunday",
+    "day": "Sunday",
     "items": ["Chicken & Rice Soup Florentine", "Split Pea Soup"]
   },
   {
     "station": "Bakery",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Chocolate Chip Cookie", "Cream Cheese Marbled Brownie", "Oatmeal Raisin Cookie", "Strawberry Shortcake Parfait"]
   },
   {
     "station": "Bakery",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Chocolate Chip Cookie", "Crispy Cereal Bar", "Sugar Cookie", "Chocolate Crinkle Whoopie Pie"]
   },
   {
     "station": "Bakery",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Chocolate Chip Cookie", "Chocolate Chip Coconut Bar", "Peanut Butter Cookie", "Apple Crumb Cupcake"]
   },
   {
     "station": "Bakery",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Chocolate Chip Cookie", "Crunchy S'mores Bar", "Oatmeal Raisin Cookie", "Citurs Cake with Vanilla Icing"]
   },
   {
     "station": "Bakery",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Chocolate Chip Cookie", "Ultimate Fudge Brownie", "Peanut Butter Cookie", "Apple Betty"]
   },
   {
     "station": "Bakery",
-    "day": "saturday",
+    "day": "Saturday",
     "items": ["Chocolate Chip Cookie", "Sugar Cookie"]
   },
   {
     "station": "Bakery",
-    "day": "sunday",
+    "day": "Sunday",
     "items": ["Chocolate Chip Cookie", "Oatmeal Raisin Cookie"]
   }
 ]

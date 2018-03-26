@@ -1,36 +1,36 @@
 [{
   "station": "Breakfast",
-  "day": "monday",
+  "day": "Monday",
   "items": ["Grits & Oatmeal", "Hash Brown Potatoes", "Pancakes", "Sausage", "Scrambled Eggs"]
 },
   {
     "station": "Breakfast",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Belgian Waffles", "Grits & Oatmeal", "Home Fries", "French Toast", "Sausage", "Scrambled Eggs"]
   },
   {
     "station": "Breakfast",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Belgian Waffles", "Grits & Oatmeal", "O'brien Potatoes", "Pancakes", "Sausage", "Scrambled Eggs"]
   },
   {
     "station": "Breakfast",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Belgian Waffles", "Grits & Oatmeal", "Crispy Tater Puffs", "Pancakes", "Bacon", "Scrambled Eggs"]
   },
   {
     "station": "Breakfast",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Belgian Waffles", "Grits & Oatmeal", "Lyonnaise Potatoes", "Pancakes", "Sausage", "Scrambled Eggs"]
   },
   {
     "station": "Breakfast",
-    "day": "saturday",
+    "day": "Saturday",
     "items": ["Belgian Waffles", "Oatmeal", "Hash Brown Potatoes", "Bacon", "Sausage & Gravy Biscuit", "Scrambled Eggs"]
   },
   {
     "station": "Breakfast",
-    "day": "sunday",
+    "day": "Sunday",
     "items": ["Belgian Waffles", "Oatmeal", "Hash Brown Potatoes", "Pork Sausage Link", "Sausage & Gravy Biscuit", "Scrambled Eggs"]
   }
 ]

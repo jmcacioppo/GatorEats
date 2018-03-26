@@ -1,268 +1,268 @@
 [{
   "station": "Grill",
-  "day": "monday",
+  "day": "Monday",
   "items": ["Crispy French Fries", "Garlic Basil Turkey Burger"]
 },
   {
     "station": "Grill",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Old Bay® Potato Chips", "Mac & Cheese Grilled Cheese"]
   },
   {
     "station": "Grill",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Twister Fries", "Reuben Turkey Burger"]
   },
   {
     "station": "Grill",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Veggie Lo Mein", "Asian Seared Pork Loin"]
   },
   {
     "station": "Grill",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Maple-Glazed Acorn Squash", "Spanish Rice", "Southwestern"]
   },
 
   {
     "station": "Home Zone",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Chicken Tikka Masala Burrito", "Pita Chips", "Tangy Cucumber Salad"]
   },
   {
     "station": "Home Zone",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Crispy Asiago Crusted Chicken", "Buttery Penne", "Arrabbiata Sauce"]
   },
   {
     "station": "Home Zone",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["BBQ Pork Sandwich", "Sweet Potato Fries", "Capri Blend Vegetables"]
   },
   {
     "station": "Home Zone",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Honey Dijon Chicken Snacker", "Crispy French Fries", "Brussels Spouts & Carrots"]
   },
   {
     "station": "Home Zone",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Salmon BLT", "Signature Chips"]
   },
   {
     "station": "Home Zone",
-    "day": "saturday",
+    "day": "Saturday",
     "items": ["Beef Pot Pie", "Garlic Broccoli"]
   },
   {
     "station": "Home Zone",
-    "day": "sunday",
+    "day": "Sunday",
     "items": ["Turkey with Garlic Scallion Gravy", "Blue Cheese Mashed Potatoes", "Green Beans & Carrots"]
   },
 
   {
     "station": "World",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Italian Sausage Hoagie"]
   },
   {
     "station": "World",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Chicken & Portobello Stir Fry"]
   },
   {
     "station": "World",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Greek Salad Pita"]
   },
   {
     "station": "World",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Korean Beef Quinoa Bowl"]
   },
   {
     "station": "World",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Chicken Bibimbap"]
   },
   {
     "station": "World",
-    "day": "saturday",
+    "day": "Saturday",
     "items": ["Chicken French Toast"]
   },
   {
     "station": "World",
-    "day": "sunday",
+    "day": "Sunday",
     "items": ["Pancakes"]
   },
 
   {
     "station": "Mediterranean",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Chicken Parmesan Pizza", "MTO Omelets"]
   },
   {
     "station": "Mediterranean",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["BBQ Pineapple Ham Flatbread", "MTO Omelets"]
   },
   {
     "station": "Mediterranean",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Loaded Potato Pizza", "MTO Omelets"]
   },
   {
     "station": "Mediterranean",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Grilled Vegetable Pizza", "MTO Omelets"]
   },
   {
     "station": "Mediterranean",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Meat Lover's Pizza", "MTO Omelets"]
   },
   {
     "station": "Mediterranean",
-    "day": "saturday",
+    "day": "Saturday",
     "items": ["Pepperoni & Cheese Pizza", "MTO Omelets"]
   },
   {
     "station": "Mediterranean",
-    "day": "sunday",
+    "day": "Sunday",
     "items": ["Pepperoni & Cheese Pizza", "MTO Omelets"]
   },
 
   {
     "station": "Mediterranean Saute",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Spicy Jerk Chicken & Cavatappi"]
   },
   {
     "station": "Mediterranean Saute",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Creamy Parmesan Penne"]
   },
   {
     "station": "Mediterranean Saute",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Kung Pao Pork"]
   },
   {
     "station": "Mediterranean Saute",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Mediterranean Cheese Totiellini"]
   },
   {
     "station": "Mediterranean Saute",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Spaghetti with Hearty Turkey Meat Sauce"]
   },
 
   {
     "station": "Vegan",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Sriracha-Slaw Black Bean Burger"]
   },
   {
     "station": "Vegan",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Grilled Portobello Sandwich"]
   },
   {
     "station": "Vegan",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Mediterranean Potato Wedges"]
   },
   {
     "station": "Vegan",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Curried Chickpeas"]
   },
   {
     "station": "Vegan",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Vegan Kung Pao Chicken & Kale"]
   },
   {
     "station": "Vegan",
-    "day": "saturday",
+    "day": "Saturday",
     "items": ["Mushroom Tofu Ramen"]
   },
   {
     "station": "Vegan",
-    "day": "sunday",
+    "day": "Sunday",
     "items": ["Mushroom Tofu Ramen"]
   },
 
   {
     "station": "Soup",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Chunky Potato Chowder", "Moroccan Chickpea Soup", "Turkey Chili"]
   },
   {
     "station": "Soup",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Chunky Potato Chowder", "Cream Of Spinach Soup", "Turkey Chili"]
   },
   {
     "station": "Soup",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Chunky Potato Chowder", "Cream Of Spinach Soup", "Turkey Chili"]
   },
   {
     "station": "Soup",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Chunky Potato Chowder", "Curried Tomato Lentil Soup", "Turkey Chili"]
   },
   {
     "station": "Soup",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Pasta Fagioli", "New England Clam Chowder", "Turkey Chili"]
   },
   {
     "station": "Soup",
-    "day": "saturday",
+    "day": "Saturday",
     "items": ["Soup de Jour", "Turkey Chili"]
   },
   {
     "station": "Soup",
-    "day": "sunday",
+    "day": "Sunday",
     "items": ["Soup de Jour", "Turkey Chili"]
   },
 
   {
     "station": "Bakery",
-    "day": "monday",
+    "day": "Monday",
     "items": ["Strawberry Oatmeal Bar", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
   },
   {
     "station": "Bakery",
-    "day": "tuesday",
+    "day": "Tuesday",
     "items": ["Citrus Caked with Vanilla Frosting", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
   },
   {
     "station": "Bakery",
-    "day": "wednesday",
+    "day": "Wednesday",
     "items": ["Mini Salted Caramel Cake", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
   },
   {
     "station": "Bakery",
-    "day": "thursday",
+    "day": "Thursday",
     "items": ["Applesauce Cake", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
   },
   {
     "station": "Bakery",
-    "day": "friday",
+    "day": "Friday",
     "items": ["Carrot Cake Whoopie Pie", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
   },
   {
     "station": "Bakery",
-    "day": "saturday",
+    "day": "Saturday",
     "items": ["Cinnamon Roll", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
   },
   {
     "station": "Bakery",
-    "day": "sunday",
+    "day": "Sunday",
     "items": ["Apple Crumb Cake", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
   }
 ]

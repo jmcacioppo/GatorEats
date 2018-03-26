@@ -8,7 +8,6 @@ gatorEats.controller('TodayMenuController', ['$scope', '$http',
             		if(menu.day == day) $scope.menus = menu;
             		console.log(menu);
             	});
-                
             });
 
         $scope.showThis = true;
