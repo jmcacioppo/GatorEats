@@ -1,16 +1,59 @@
 [
 	{
-		"name" : "Papa John's",
+		"name" : "Chomp It",
+		"startTime" : "1030",
+		"endTime" : "1830",
+		"availableDeal" : "$6 Limit",
+		"img" : "./css/logos/chomp-it.png"
+	},
+	{
+		"name" : "Jamba Juice",
 		"startTime" : "900",
+		"endTime" : "1700",
+		"availableDeal" : "Choice of Medium Classic Smoother",
+		"img" : "./css/logos/jamba-juice.jpg"
+	},
+	{
+		"name" : "Pollo Tropical",
+		"startTime" : "1030",
+		"endTime" : "1559",
+		"availableDeal" : "$6 Limit",
+		"img" : "./css/logos/Pollo-Tropical.jpg"
+	},
+	{
+		"name" : "Camellia Court Cafe",
+		"startTime" : "1100",
+		"endTime" : "1400",
+		"availableDeal" : "Chicken Cesar Salad, Small Cesar Salad with Fries, Burger with Fries, or Veggie Wrap with Fries",
+		"img" : "./css/logos/camellia.png"
+	},
+	{
+		"name" : "Papa John's",
+		"startTime" : "1030",
 		"endTime" : "1500",
-		"availableDeal" : "1 slice of pizza and softdrink",
+		"availableDeal" : "1 slice of pizza, 2 breadsticks, and medium softdrink",
 		"img" : "./css/logos/papa-johns.png"
 	},
 	{
 		"name" : "Subway",
-		"startTime" : "900",
-		"endTime" : "1500",
-		"availableDeal" : "1 slice of pizza and softdrink",
-		"img" : "./css/logos/papa-johns.png"
+		"startTime" : "1030",
+		"endTime" : "2359",
+		"availableDeal" : "6 inch combo meal",
+		"img" : "./css/logos/subway.png"
+	},
+	{
+		"name" : "Wendy's",
+		"startTime" : "1600",
+		"endTime" : "2000",
+		"availableDeal" : "Hot and Juicy, Spicy Chicken Sandwich, Son of Baconator, Ultimate Chicken Grill",
+		"img" : "./css/logos/wendys.png"
+	},
+	{
+		"name" : "Moe's",
+		"startTime" : "1600",
+		"endTime" : "2100",
+		"availableDeal" : "$6 Limit",
+		"img" : "./css/logos/Moes.png"
 	}
+
 ]
