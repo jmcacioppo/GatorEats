@@ -92,7 +92,7 @@ gatorEats.controller('WeekMenuController', ['$scope', '$http',
 
 	    	$http.get('menus/FFdinner.json')
 	    		.then( (res) => {
-	    			$scope.FFDinner = res.data;
+	    			$scope.FFDinner = res.data.FFdinner;
 	    		})
 	    		.catch( (err) =>{
 	    			console.log(err);
