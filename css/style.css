@@ -175,3 +175,12 @@
     margin-top: 1rem;
     margin-left: 1rem;
 }
+
+/*Week Menu*/
+.foodItem {
+    background-color: #00FFFF;
+    padding: 5px;
+    height: 75%;
+    width: 75%;
+}
+

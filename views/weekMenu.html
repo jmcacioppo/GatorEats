@@ -15,10 +15,10 @@
         <b>Fresh Food Company Breakfast</b>
         <br> <br>
         <div class="row">
-            <div class="col-md-3" ng-repeat="food in FFBreakfast">
-                <div>{{food.day.toUpperCase()}}</div>
-                <div ng-repeat="item in food.items">
-                    {{item}}
+            <div class="col-md-3 foodItem" ng-repeat="FFBreakfastFood in FFBreakfast">
+                <div>{{FFBreakfastFood.day.toUpperCase()}}</div>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.items">
+                    {{FFBreakfastItem}}
                 </div>
                 <br> <br>
             </div>
@@ -26,47 +26,72 @@
     </div>
 
     <div ng-show="freshFoodLunch">
-        Fresh Food Company Lunch
-        <div ng-repeat="food in FFLunch">
-            {{food.station}}
-            {{food.day}}
-            {{food.items}}
+        <b>Fresh Food Company Lunch</b>
+        <br> <br>
+        <div class="row">
+            <div class="col-md-3 foodItem" ng-repeat="FFLunchFood in FFLunch">
+                <div>{{FFLunchFood.day.toUpperCase()}}</div>
+                <div ng-repeat="FFLunchItem in FFLunchFood.items">
+                    {{FFLunchItem}}
+                </div>
+                <br> <br>
+            </div>
         </div>
     </div>
     
     <div ng-show="freshFoodDinner">
-        Fresh Food Company Dinner
-        <div ng-repeat="food in FFDinner.FFdinner">
-            {{food.station}}
-            {{food.day}}
-            {{food.items}}
+        <b>Fresh Food Company Dinner</b>
+        <br> <br>
+        <div class="row">
+            <div class="col-md-3 foodItem" ng-repeat="FFDinnerFood in FFDinner">
+                <div>{{FFDinnerFood.day.toUpperCase()}}</div>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.items">
+                    {{FFDinnerItem}}
+                </div>
+                <br> <br>
+            </div>
         </div>
     </div>
     
     <div ng-show="gatorCornerBreakfast">
-        Gator Corner Breakfast
-        <div ng-repeat="food in GCBreakfast">
-            {{food.station}}
-            {{food.day}}
-            {{food.items}}
+        <b>Gator Corner Breakfast</b>
+        <br> <br>
+        <div class="row">
+            <div class="col-md-3 foodItem" ng-repeat="GCBreakfastFood in GCBreakfast">
+                <div>{{GCBreakfastFood.day.toUpperCase()}}</div>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.items">
+                    {{GCBreakfastItem}}
+                </div>
+                <br> <br>
+            </div>
         </div>
     </div>
     
     <div ng-show="gatorCornerLunch">
-        Gator Corner Lunch
-        <div ng-repeat="food in GCLunch">
-            {{food.station}}
-            {{food.day}}
-            {{food.items}}
+        <b>Gator Corner Lunch</b>
+        <br> <br>
+        <div class="row">
+            <div class="col-md-3 foodItem" ng-repeat="GCLunchFood in GCLunch">
+                <div>{{GCLunchFood.day.toUpperCase()}}</div>
+                <div ng-repeat="GCLunchItem in GCLunchFood.items">
+                    {{GCLunchItem}}
+                </div>
+                <br> <br>
+            </div>
         </div>
     </div>
     
     <div ng-show="gatorCornerDinner">
-        Gator Corner Dinner
-        <div ng-repeat="food in GCDinner">
-            {{food.station}}
-            {{food.day}}
-            {{food.items}}
+        <b>Gator Corner Dinner</b>
+        <br> <br>
+        <div class="row">
+            <div class="col-md-3 foodItem" ng-repeat="GCDinnerFood in GCDinner">
+                <div>{{GCDinnerFood.day.toUpperCase()}}</div>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.items">
+                    {{GCDinnerItem}}
+                </div>
+                <br> <br>
+            </div>
         </div>
     </div>
 </center>
