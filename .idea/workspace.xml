@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9167c847-162e-493e-ac9d-6102abf4192b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menus/FFbreakfast.json" afterPath="$PROJECT_DIR$/menus/FFbreakfast.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menus/FFdinner.json" afterPath="$PROJECT_DIR$/menus/FFdinner.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menus/FFlunch.json" afterPath="$PROJECT_DIR$/menus/FFlunch.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menus/GCbreakfast.json" afterPath="$PROJECT_DIR$/menus/GCbreakfast.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menus/GCdinner.json" afterPath="$PROJECT_DIR$/menus/GCdinner.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,17 +46,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GClunch.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GClunch.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/menus/GClunch.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="225" column="1" lean-forward="false" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
+            <state relative-caret-position="311">
+              <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GCdinner.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GCdinner.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menus/GCdinner.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -105,12 +100,12 @@
         <option value="$PROJECT_DIR$/views/weekMenu.html" />
         <option value="$PROJECT_DIR$/js/controllers/TodayMenuController.js" />
         <option value="$PROJECT_DIR$/views/todayMenu.html" />
-        <option value="$PROJECT_DIR$/menus/GClunch.json" />
         <option value="$PROJECT_DIR$/menus/FFbreakfast.json" />
         <option value="$PROJECT_DIR$/menus/FFdinner.json" />
         <option value="$PROJECT_DIR$/menus/FFlunch.json" />
         <option value="$PROJECT_DIR$/menus/GCbreakfast.json" />
         <option value="$PROJECT_DIR$/menus/GCdinner.json" />
+        <option value="$PROJECT_DIR$/menus/GClunch.json" />
       </list>
     </option>
   </component>
@@ -131,6 +126,9 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="683" />
@@ -253,16 +251,15 @@
       <workItem from="1522077974820" duration="143000" />
       <workItem from="1522078144003" duration="194000" />
       <workItem from="1522085283791" duration="18000" />
-      <workItem from="1522097940828" duration="136000" />
+      <workItem from="1522097940828" duration="380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22432000" />
+    <option name="totallyTimeSpent" value="22676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13543192" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -271,7 +268,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33755943" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33755943" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -618,14 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/menus/GClunch.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="225" column="1" lean-forward="false" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/menus/FFbreakfast.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -662,6 +651,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menus/GClunch.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
           <folding />
         </state>
       </provider>
