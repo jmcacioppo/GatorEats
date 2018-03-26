@@ -3,8 +3,14 @@
 </head>
 <body>
 <div class="extras">
+
+
 	<div class="available-now">
 		<h1 class="extras-text"> Available Now </h1>
+		<div ng-repeat="menu in menus">
+			{{menu.name}}
+			<img ng-src="{{menu.img}}">
+		</div>
 		<div class="extras-restaurants">
 				<div class="restaurant">
 					<img class="logo-pic" src="../css/logos/papa-johns.png"/>
