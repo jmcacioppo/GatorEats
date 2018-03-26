@@ -1,36 +1,11 @@
 [{
   "station": "Breakfast",
-  "day": "Monday",
-  "items": ["Grits & Oatmeal", "Hash Brown Potatoes", "Pancakes", "Sausage", "Scrambled Eggs"]
-},
-  {
-    "station": "Breakfast",
-    "day": "Tuesday",
-    "items": ["Belgian Waffles", "Grits & Oatmeal", "Home Fries", "French Toast", "Sausage", "Scrambled Eggs"]
-  },
-  {
-    "station": "Breakfast",
-    "day": "Wednesday",
-    "items": ["Belgian Waffles", "Grits & Oatmeal", "O'brien Potatoes", "Pancakes", "Sausage", "Scrambled Eggs"]
-  },
-  {
-    "station": "Breakfast",
-    "day": "Thursday",
-    "items": ["Belgian Waffles", "Grits & Oatmeal", "Crispy Tater Puffs", "Pancakes", "Bacon", "Scrambled Eggs"]
-  },
-  {
-    "station": "Breakfast",
-    "day": "Friday",
-    "items": ["Belgian Waffles", "Grits & Oatmeal", "Lyonnaise Potatoes", "Pancakes", "Sausage", "Scrambled Eggs"]
-  },
-  {
-    "station": "Breakfast",
-    "day": "Saturday",
-    "items": ["Belgian Waffles", "Oatmeal", "Hash Brown Potatoes", "Bacon", "Sausage & Gravy Biscuit", "Scrambled Eggs"]
-  },
-  {
-    "station": "Breakfast",
-    "day": "Sunday",
-    "items": ["Belgian Waffles", "Oatmeal", "Hash Brown Potatoes", "Pork Sausage Link", "Sausage & Gravy Biscuit", "Scrambled Eggs"]
-  }
+  "MondayItems": ["Grits & Oatmeal", "Hash Brown Potatoes", "Pancakes", "Sausage", "Scrambled Eggs"],
+  "TuesdayItems": ["Belgian Waffles", "Grits & Oatmeal", "Home Fries", "French Toast", "Sausage", "Scrambled Eggs"],
+  "WednesdayItems": ["Belgian Waffles", "Grits & Oatmeal", "O'brien Potatoes", "Pancakes", "Sausage", "Scrambled Eggs"],
+  "ThursdayItems": ["Belgian Waffles", "Grits & Oatmeal", "Crispy Tater Puffs", "Pancakes", "Bacon", "Scrambled Eggs"],
+  "FridayItems": ["Belgian Waffles", "Grits & Oatmeal", "Lyonnaise Potatoes", "Pancakes", "Sausage", "Scrambled Eggs"],
+  "SaturdayItems": ["Belgian Waffles", "Oatmeal", "Hash Brown Potatoes", "Bacon", "Sausage & Gravy Biscuit", "Scrambled Eggs"],
+  "SundayItems": ["Belgian Waffles", "Oatmeal", "Hash Brown Potatoes", "Pork Sausage Link", "Sausage & Gravy Biscuit", "Scrambled Eggs"]
+}
 ]
