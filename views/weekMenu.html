@@ -1,96 +1,311 @@
 <center>
-    Week Menu
-    <br> <br>
+    <h2>This Week's Menu</h2>
 
-    <button class="btn" ng-click="showMenu('FF Breakfast')">Fresh Food Company Breakfast</button>
-    <button class="btn" ng-click="showMenu('FF Lunch')">Fresh Food Company Lunch</button>
-    <button class="btn" ng-click="showMenu('FF Dinner')">Fresh Food Company Dinner</button>
-    <button class="btn" ng-click="showMenu('GC Breakfast')">Gator Corner Breakfast</button>
-    <button class="btn" ng-click="showMenu('GC Lunch')">Gator Corner Lunch</button>
-    <button class="btn" ng-click="showMenu('GC Dinner')">Gator Corner Dinner</button>
+    <button class="btn" ng-class="{'btn-dark': freshFoodBreakfast, 'btn-light': !freshFoodBreakfast}" ng-click="showMenu('FF Breakfast')">Fresh Food Company Breakfast</button>
+    <button class="btn" ng-class="{'btn-dark': freshFoodLunch, 'btn-light': !freshFoodLunch}" ng-click="showMenu('FF Lunch')">Fresh Food Company Lunch</button>
+    <button class="btn" ng-class="{'btn-dark': freshFoodDinner, 'btn-light': !freshFoodDinner}" ng-click="showMenu('FF Dinner')">Fresh Food Company Dinner</button>
+    <button class="btn" ng-class="{'btn-dark': gatorCornerBreakfast, 'btn-light': !gatorCornerBreakfast}" ng-click="showMenu('GC Breakfast')">Gator Corner Breakfast</button>
+    <button class="btn" ng-class="{'btn-dark': gatorCornerLunch, 'btn-light': !gatorCornerLunch}" ng-click="showMenu('GC Lunch')">Gator Corner Lunch</button>
+    <button class="btn" ng-class="{'btn-dark': gatorCornerDinner, 'btn-light': !gatorCornerDinner}" ng-click="showMenu('GC Dinner')">Gator Corner Dinner</button>
 
     <br> <br>
 
     <div ng-show="freshFoodBreakfast">
-        <b>Fresh Food Company Breakfast</b>
-        <br> <br>
-        <div class="row">
-            <div class="col-md-3 foodItem" ng-repeat="FFBreakfastFood in FFBreakfast">
-                <div>{{FFBreakfastFood.day.toUpperCase()}}</div>
-                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.items">
+        <div class="weekMenu-days" ng-repeat="FFBreakfastFood in FFBreakfast">
+            <div>
+                <h1 class="weekMenu-text">{{FFBreakfastFood.station}}</h1>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Monday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.MondayItems">
                     {{FFBreakfastItem}}
                 </div>
-                <br> <br>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Tuesday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.TuesdayItems">
+                    {{FFBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Wednesday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.WednesdayItems">
+                    {{FFBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Thursday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.ThursdayItems">
+                    {{FFBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Friday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.FridayItems">
+                    {{FFBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Saturday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.SaturdayItems">
+                    {{FFBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Sunday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.SundayItems">
+                    {{FFBreakfastItem}}
+                </div>
             </div>
         </div>
     </div>
 
     <div ng-show="freshFoodLunch">
-        <b>Fresh Food Company Lunch</b>
-        <br> <br>
-        <div class="row">
-            <div class="col-md-3 foodItem" ng-repeat="FFLunchFood in FFLunch">
-                <div>{{FFLunchFood.day.toUpperCase()}}</div>
-                <div ng-repeat="FFLunchItem in FFLunchFood.items">
+        <div class="weekMenu-days" ng-repeat="FFLunchFood in FFLunch">
+            <div>
+                <h1 class="weekMenu-text">{{FFLunchFood.station}}</h1>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Monday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.MondayItems">
                     {{FFLunchItem}}
                 </div>
-                <br> <br>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Tuesday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.TuesdayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Wednesday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.WednesdayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Thursday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.ThursdayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Friday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.FridayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Saturday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.SaturdayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Sunday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.SundayItems">
+                    {{FFLunchItem}}
+                </div>
             </div>
         </div>
     </div>
-    
+
     <div ng-show="freshFoodDinner">
-        <b>Fresh Food Company Dinner</b>
-        <br> <br>
-        <div class="row">
-            <div class="col-md-3 foodItem" ng-repeat="FFDinnerFood in FFDinner">
-                <div>{{FFDinnerFood.day.toUpperCase()}}</div>
-                <div ng-repeat="FFDinnerItem in FFDinnerFood.items">
+        <div class="weekMenu-days" ng-repeat="FFDinnerFood in FFDinner">
+            <div>
+                <h1 class="weekMenu-text">{{FFDinnerFood.station}}</h1>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Monday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.MondayItems">
                     {{FFDinnerItem}}
                 </div>
-                <br> <br>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Tuesday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.TuesdayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Wednesday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.WednesdayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Thursday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.ThursdayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Friday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.FridayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Saturday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.SaturdayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Sunday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.SundayItems">
+                    {{FFDinnerItem}}
+                </div>
             </div>
         </div>
     </div>
     
     <div ng-show="gatorCornerBreakfast">
-        <b>Gator Corner Breakfast</b>
-        <br> <br>
-        <div class="row">
-            <div class="col-md-3 foodItem" ng-repeat="GCBreakfastFood in GCBreakfast">
-                <div>{{GCBreakfastFood.day.toUpperCase()}}</div>
-                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.items">
+        <div class="weekMenu-days" ng-repeat="GCBreakfastFood in GCBreakfast">
+            <div>
+                <h1 class="weekMenu-text">{{GCBreakfastFood.station}}</h1>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Monday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.MondayItems">
                     {{GCBreakfastItem}}
                 </div>
-                <br> <br>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Tuesday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.TuesdayItems">
+                    {{GCBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Wednesday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.WednesdayItems">
+                    {{GCBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Thursday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.ThursdayItems">
+                    {{GCBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Friday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.FridayItems">
+                    {{GCBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Saturday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.SaturdayItems">
+                    {{GCBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Sunday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.SundayItems">
+                    {{GCBreakfastItem}}
+                </div>
             </div>
         </div>
     </div>
     
     <div ng-show="gatorCornerLunch">
-        <b>Gator Corner Lunch</b>
-        <br> <br>
-        <div class="row">
-            <div class="col-md-3 foodItem" ng-repeat="GCLunchFood in GCLunch">
-                <div>{{GCLunchFood.day.toUpperCase()}}</div>
-                <div ng-repeat="GCLunchItem in GCLunchFood.items">
+        <div class="weekMenu-days" ng-repeat="GCLunchFood in GCLunch">
+            <div>
+                <h1 class="weekMenu-text">{{GCLunchFood.station}}</h1>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Monday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.MondayItems">
                     {{GCLunchItem}}
                 </div>
-                <br> <br>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Tuesday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.TuesdayItems">
+                    {{GCLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Wednesday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.WednesdayItems">
+                    {{GCLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Thursday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.ThursdayItems">
+                    {{GCLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Friday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.FridayItems">
+                    {{GCLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Saturday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.SaturdayItems">
+                    {{GCLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Sunday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.SundayItems">
+                    {{GCLunchItem}}
+                </div>
             </div>
         </div>
     </div>
     
     <div ng-show="gatorCornerDinner">
-        <b>Gator Corner Dinner</b>
-        <br> <br>
-        <div class="row">
-            <div class="col-md-3 foodItem" ng-repeat="GCDinnerFood in GCDinner">
-                <div>{{GCDinnerFood.day.toUpperCase()}}</div>
-                <div ng-repeat="GCDinnerItem in GCDinnerFood.items">
+        <div class="weekMenu-days" ng-repeat="GCDinnerFood in GCDinner">
+            <div>
+                <h1 class="weekMenu-text">{{GCDinnerFood.station}}</h1>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Monday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.MondayItems">
                     {{GCDinnerItem}}
                 </div>
-                <br> <br>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Tuesday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.TuesdayItems">
+                    {{GCDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Wednesday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.WednesdayItems">
+                    {{GCDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Thursday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.ThursdayItems">
+                    {{GCDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Friday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.FridayItems">
+                    {{GCDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Saturday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.SaturdayItems">
+                    {{GCDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Sunday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.SundayItems">
+                    {{GCDinnerItem}}
+                </div>
             </div>
         </div>
     </div>
