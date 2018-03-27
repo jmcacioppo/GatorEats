@@ -1,0 +1,186 @@
+/* for extras.html */
+.extras{
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.available-now{
+    position: relative;
+}
+
+.extras-text{
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.extras-restaurants{
+    align-content: center;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    padding-left: 2rem;
+    height: 15rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.restaurant{
+    position: relative;
+    display: inline-block;
+    margin-left: 1rem;
+    color:#000000;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    background-color: #1F618D;
+    max-height: 100%;
+    width: 30%;
+}
+
+
+.logo-pic{
+    max-height: 70%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.available-later{
+    position: relative;
+    margin-top: 3rem;
+}
+
+.food-to-eat{
+    color:#ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+/*for trending.html*/
+.trending{
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.trending-item{
+    position: relative;
+}
+
+.trending-dining-hall{
+    position: relative;
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.trending-breadcrumbs{
+    text-align: center;
+}
+
+.crumb{
+    display: inline;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hold-reviews{
+    position: relative;
+    background-color: #1F618D;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 100%;
+    overflow-y: auto;
+}
+.not-comments{
+    text-align: center;
+}
+
+.food-item{
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: #ffffff;
+    padding-top: 1rem;
+}
+
+.stars{
+    width:2rem;
+    height: 2rem;
+}
+
+.checked{
+    color: #ffcc00;
+}
+.comment{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #6699cc;
+    height: 8rem;
+    margin-bottom: 2rem;
+}
+
+.avatar-area{
+    position: absolute;
+    width: 15rem;
+    height: 7.8rem;
+    border-right: 2px solid #ffffff;
+}
+.avatar{
+    margin-left: 1rem;
+    height: 5.5rem;
+    width: 5.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.username{
+    display: inline;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    /* 
+    margin-top: 0rem;
+    margin-bottom: 1rem; */
+}
+
+.the-stars-comment{
+    position: absolute;
+    margin-left:7rem;
+    margin-top:-3rem;
+}
+
+.split{
+    padding-left: 15rem;
+    margin-left: 2rem;
+    display:inline-block;
+    
+}
+
+.user-comment{
+    position: absolute;
+    color:#ffffff;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+/*Week Menu*/
+.foodItem {
+    background-color: #00FFFF;
+    padding: 5px;
+    height: 75%;
+    width: 75%;
+}
+

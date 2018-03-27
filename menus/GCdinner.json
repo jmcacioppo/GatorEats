@@ -1,0 +1,69 @@
+[{
+  "station": "Grill",
+  "MondayItems": ["Baby Carrots", "Cheesesteak Biscuit", "Garden Burger Available Upon Request", "Sweet Potato Fries"],
+  "TuesdayItems": ["Baby Carrots", "Crispy Chicken & Cheese Snacker", "Garden Burger Available Upon Request", "Crispy French Fries"],
+  "WednesdayItems":["Baby Carrots", "Teriyaki Pineapple Turkey Burger", "Garden Burger Available Upon Request", "Crispy Shoestring French Fries"],
+  "ThursdayItems": ["Baby Carrots", "Chicago Style Turkey Corn Dog", "Garden Burger Available Upon Request", "Twister Fries"],
+  "FridayItems":["Baby Carrots", "Grilled Fish Soft Taco", "Garden Burger Available Upon Request", "Sweet Potato Fries"],
+  "SaturdayItems":["Baby Carrots", "BBQ Chicken & Cheddar Sandwich", "Garden Burger Available Upon Request", "Sweet Potato Fries"],
+  "SundayItems":["Baby Carrots", "Chipotle Pineapple Turkey Burger", "Garden Burger Available Upon Request", "Crispy Shoestring French Fries"]
+},
+  {
+    "station": "Rotesserie",
+    "MondayItems":["Green Beans & Almonds", "Pretzel-Crusted Striped Pangasius", "Roasted Dijon Red Potatoes"],
+    "TuesdayItems":["Crispy Okra", "Shrimp Etouffee", "Cajun Rice"],
+    "WednesdayItems": ["Italian Roasted Vegetables", "Mediterranean Baked Fish", "Scalloped Potatoes"],
+    "ThursdayItems": ["Grilled Rosemary Flatbread", "Spaghetti with Meatsauce", "Steamed Broccoli Florets"],
+    "FridayItems": ["Green Peas", "Roast Pork Adobo", "Black Beans & Rice with Bacon"],
+    "SaturdayItems": ["Cauliflower", "Overstuffed Potato", "Turkey Chili Con Carne"],
+    "SundayItems":["Calabacitas", "Carne Asada", "Mexican Rice"]
+  },
+  {
+    "station": "Pizza",
+    MondayItems":["Cuban Stromboli"],
+    "TuesdayItems": ["Spinach", "Feta & Ham Pizza"],
+    "WednesdayItems": ["Meat Lover's Pizza"],
+    "ThursdayItems": ["BBQ Chicken Stromboli"],
+    "FridayItems": ["Meatball Pizza"],
+    "SaturdayItems": ["Philly Cheesesteak Stromboli"],
+    "SundayItems" ["Chicken Bacon Ranch Flatbread"]
+  },
+  {
+    "station": "International",
+    "MondayItems":["Asian Seared Chicken", "Vegetable Fried Rice"],
+    "TuesdayItems": ["Beef Harissa Rice Bowl"],
+    "WednesdayItems": ["Ropa Vieja", "Confetti Brown Rice"],
+    "ThursdayItems": ["Sweet & Sour Meatballs", "Seasoned Rice"],
+    "FridayItems": ["Tagine Chicken Drumstick", "Cous Cous"]
+  },
+  {
+    "station": "Vegan",
+    MondayItems":["Vegan Chicken Paella with Brown Rice", "Vegan Oatmeal Cookie"],
+    "TuesdayItems": ["Vegan Jambalaya", "Bananas Foster"],
+    "WednesdayItems": ["Vegan Beefy Mac Casserole", "Vegan Peanut Butter Cookie"],
+    "ThursdayItems": ["Rice Noodle & Vegetable Stir Fry", "Vegan Cranberry Oatmeal Cookie"],
+    "FridayItems": ["Black Bean Stuffed Pepper", "Vegan Brownie"],
+    "SaturdayItems": ["Vegan Sweet & Sour Chicken"],
+    "SundayItems": ["Curried Chickpeas with White Rice"]
+  },
+  {
+    "station": "Soup",
+    "MondayItems": ["Chicken & Roasted Corn Chowder", "Three Bean Chili"],
+    "TuesdayItems": ["Chipotle Chicken Tortilla Soup", "Barley Vegetable Soup"],
+    "WednesdayItems": ["Hearty Beef & Vegetable Soup", "Cheddar Cauliflower Soup"],
+    "ThursdayItems":["Hungarian Goulash Soup", "Moroccan Chickpea Soup"],
+    "FridayItems":["New England Clam Chowder", "Curried Tomato Lentil Soup"],
+    "SaturdayItems": ["Beef & Rice Soup", "Chile Cheddar Potato Soup"],
+    "SundayItems": ["Chicken & Rice Soup Florentine", "Split Pea Soup"]
+  },
+  {
+    "station": "Bakery",
+    "MondayItems": ["Cherry Cheesecake Tart", "Chocolate Chip Cookie", "Oreo® Cookie Blondie", "Sugar Cookie"],
+    "TuesdayItems": ["Chocolate Chip Cookie", "Caramel Apple Bread Pudding", "Oatmeal Raisin Cookie"],
+    "WednesdayItems":["Pumpkin Spice Crumb Cake", "Peanut Butter Cookie", "Chocolate Chip Cookie"],
+    "ThursdayItems": ["Vanilla Cupcake", "Fruity Marshmellow Treat", "Oatmeal Raisin Cookie", "Chocolate Chip Cookie"],
+    "FridayItems": ["Peanut Butter Devil's Food Parfait", "Carrot Cake Whoopie Pie", "Oatmeal Raisin Cookie", "Chocolate Chip Cookie"],
+    "SaturdayItems": ["Mini Salted Caramel Cake", "Banana Pudding Parfait", "Sugar Cookie", "Chocolate Chip Cookie"],
+    "SundayItems":["Banana Chip Cupcake", "Red Velvet Thimble Cake", "Oatmeal Raisin Cookie", "Chocolate Chip Cookie"]
+  }
+]

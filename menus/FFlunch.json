@@ -1,0 +1,84 @@
+[{
+  "station": "Grill",
+  "MondayItems": ["Crispy French Fries", "Garlic Basil Turkey Burger"],
+  "TuesdayItems": ["Old Bay® Potato Chips", "Mac & Cheese Grilled Cheese"],
+  "WednesdayItems": ["Twister Fries", "Reuben Turkey Burger"],
+  "ThursdayItems": ["Veggie Lo Mein", "Asian Seared Pork Loin"],
+  "FridayItems": ["Maple-Glazed Acorn Squash", "Spanish Rice", "Southwestern"]
+},
+
+  {
+    "station": "Home Zone",
+    "MondayItems": ["Chicken Tikka Masala Burrito", "Pita Chips", "Tangy Cucumber Salad"],
+    "TuesdayItems": ["Crispy Asiago Crusted Chicken", "Buttery Penne", "Arrabbiata Sauce"],
+    "WednesdayItems": ["BBQ Pork Sandwich", "Sweet Potato Fries", "Capri Blend Vegetables"],
+    "ThursdayItems": ["Honey Dijon Chicken Snacker", "Crispy French Fries", "Brussels Spouts & Carrots"],
+    "FridayItems": ["Salmon BLT", "Signature Chips"],
+    "SaturdayItems": ["Beef Pot Pie", "Garlic Broccoli"],
+    "SundayItems": ["Turkey with Garlic Scallion Gravy", "Blue Cheese Mashed Potatoes", "Green Beans & Carrots"]
+  },
+
+  {
+    "station": "World",
+    "MondayItems": ["Italian Sausage Hoagie"],
+    "TuesdayItems": ["Chicken & Portobello Stir Fry"],
+    "WednesdayItems": ["Greek Salad Pita"],
+    "ThursdayItems": ["Korean Beef Quinoa Bowl"],
+    "FridayItems": ["Chicken Bibimbap"],
+    "SaturdayItems": ["Chicken French Toast"],
+    "SundayItems": ["Pancakes"]
+  },
+
+  {
+    "station": "Mediterranean",
+    "MondayItems": ["Chicken Parmesan Pizza", "MTO Omelets"],
+    "TuesdayItems": ["BBQ Pineapple Ham Flatbread", "MTO Omelets"],
+    "WednesdayItems": ["Loaded Potato Pizza", "MTO Omelets"],
+    "ThursdayItems": ["Grilled Vegetable Pizza", "MTO Omelets"],
+    "FridayItems": ["Meat Lover's Pizza", "MTO Omelets"],
+    "SaturdayItems": ["Pepperoni & Cheese Pizza", "MTO Omelets"],
+    "SundayItems": ["Pepperoni & Cheese Pizza", "MTO Omelets"]
+  },
+
+  {
+    "station": "Mediterranean Saute",
+    "MondayItems": ["Spicy Jerk Chicken & Cavatappi"],
+    "TuesdayItems": ["Creamy Parmesan Penne"],
+    "WednesdayItems": ["Kung Pao Pork"],
+    "ThursdayItems": ["Mediterranean Cheese Totiellini"],
+    "FridayItems": ["Spaghetti with Hearty Turkey Meat Sauce"]
+  },
+
+  {
+    "station": "Vegan",
+    "MondayItems": ["Sriracha-Slaw Black Bean Burger"],
+    "TuesdayItems": ["Grilled Portobello Sandwich"],
+    "WednesdayItems": ["Mediterranean Potato Wedges"],
+    "ThursdayItems": ["Curried Chickpeas"],
+    "FridayItems": ["Vegan Kung Pao Chicken & Kale"],
+    "SaturdayItems": ["Mushroom Tofu Ramen"],
+    "SundayItems": ["Mushroom Tofu Ramen"]
+  },
+
+  {
+    "station": "Soup",
+    "MondayItems": ["Chunky Potato Chowder", "Moroccan Chickpea Soup", "Turkey Chili"],
+    "TuesdayItems": ["Chunky Potato Chowder", "Cream Of Spinach Soup", "Turkey Chili"],
+    "WednesdayItems": ["Chunky Potato Chowder", "Cream Of Spinach Soup", "Turkey Chili"],
+    "ThursdayItems": ["Chunky Potato Chowder", "Curried Tomato Lentil Soup", "Turkey Chili"],
+    "FridayItems": ["Pasta Fagioli", "New England Clam Chowder", "Turkey Chili"],
+    "SaturdayItems": ["Soup de Jour", "Turkey Chili"],
+    "SundayItems": ["Soup de Jour", "Turkey Chili"]
+  },
+
+  {
+    "station": "Bakery",
+    "MondayItems": ["Strawberry Oatmeal Bar", "Edy's Grand Ice Cream", "Fresh Baked Cookies"],
+    "TuesdayItems": ["Citrus Caked with Vanilla Frosting", "Edy's Grand Ice Cream", "Fresh Baked Cookies"],
+    "WednesdayItems": ["Mini Salted Caramel Cake", "Edy's Grand Ice Cream", "Fresh Baked Cookies"],
+    "ThursdayItems": ["Applesauce Cake", "Edy's Grand Ice Cream", "Fresh Baked Cookies"],
+    "FridayItems": ["Carrot Cake Whoopie Pie", "Edy's Grand Ice Cream", "Fresh Baked Cookies"],
+    "SaturdayItems": ["Cinnamon Roll", "Edy's Grand Ice Cream", "Fresh Baked Cookies"],
+    "SundayItems": ["Apple Crumb Cake", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
+  }
+]

@@ -1,0 +1,73 @@
+[{
+  "station": "Grill",
+  "MondayItems": ["Baby Carrots", "Buffalo Blue Chicken Panini", "Crispy Shoestring French Fries", "Garden Burger Available Upon Request"],
+  "TuesdayItems": ["Baby Carrots", "Hot Dog with Sauerkraut", "Twister Fries", "Garden Burger Available Upon Request"],
+  "WednesdayItems": ["Baby Carrots", "BBQ & Cheddar Turkey Burger", "Sweet Potato Fries", "Garden Burger Available Upon Request"],
+  "ThursdayItems": ["Baby Carrots", "Chicken Cheesesteak Wrap", "Crispy French Fries", "Garden Burger Available Upon Request"],
+  "FridayItems": ["Baby Carrots", "Honey Mustard Grilled Chicken", "Crispy Shoestring French Fries", "Garden Burger Available Upon Request"]
+},
+
+  {
+    "station": "Rotisserie",
+    "MondayItems": ["Chicken Bibimbap", "Steamed Mixed Vegetables"],
+    "TuesdayItems": ["Corn On The Cob", "Spiced-Rubbed Pork Loin", "Red Beans & Rice"],
+    "WednesdayItems": ["Collard Greens", "Fried Chicken", "Baked Macaroni & Cheese"],
+    "ThursdayItems": ["Sautéed Zucchini & Tomato", "Italian Sausage & Peppers Sandwich", "Roasted Potatoes"],
+    "FridayItems": ["Old Fashioned Cole Slaw", "Homestyle Fish Fillet with Tartar Sauce", "Crispy Tater Bites"],
+    "SaturdayItems": ["Brussels Sprouts & Carrots", "Baked Pit Ham with Honey Mustard Dressing", "Potatoes Au Gratin"],
+    "SundayItems": ["Steamed Fresh Broccoli", "Grilled Chicken Breast", "Mashed Yukon Gold Potatoes with Country Gravy"]
+  },
+
+  {
+    "station": "Pizza",
+    "MondayItems": ["Cuban Stromboli"],
+    "TuesdayItems": ["Spinach", "Feta & Ham Pizza"],
+    "WednesdayItems": ["Meat Lover's Pizza"],
+    "ThursdayItems": ["BBQ Chicken Stromboli"],
+    "FridayItems": ["Meatball Pizza"],
+    "SaturdayItems": ["Philly Cheesesteak Stromboli"],
+    "SundayItems": ["Chicken Bacon Ranch Flatbread"]
+  },
+
+  {
+    "station": "International",
+    "MondayItems": ["Asian Seared Chicken", "Vegetable Fried Rice"],
+    "TuesdayItems": ["Beef Harissa Rice Bowl"],
+    "WednesdayItems": ["Ropa Vieja", "Confetti Brown Rice"],
+    "ThursdayItems": ["Sweet & Sour Meatballs", "Seasoned Rice"],
+    "FridayItems": ["Tagine Chicken Drumstick", "Cous Cous"]
+  },
+
+  {
+    "station": "Vegan",
+    "MondayItems": ["Mediterranean Stir-Fry & Basmati Rice with Peas", "Vegan Oatmeal Cookie"],
+    "TuesdayItems": ["Vegan Jambalaya", "Peanut Butter Pretzel Cereal Bar"],
+    "WednesdayItems": ["Italian Spinach & White Beans", "Vegan Peanut Butter Cookie"],
+    "ThursdayItems": ["Asian Teriyaki Noodles", "Vegan Cranberry Oatmeal Cookie"],
+    "FridayItems": ["Vegan Beef Chili Potato", "Vegan Brownie"],
+    "SaturdayItems": ["Cilantro-Peanut Pesto Pasta with Garlic Roasted Broccoli", "Vegan Peach Banana Cake"],
+    "SundayItems": ["General Tso's Tofu with White Rice", "Vegan Lemon Rice Pudding"]
+  },
+
+  {
+    "station": "Soup",
+    "MondayItems": ["Chicken & Roasted Corn Chowder", "Three Bean Chili"],
+    "TuesdayItems": ["Chipotle Chicken Tortilla Soup", "Barley Vegetable Soup"],
+    "WednesdayItems": ["Hearty Beef & Vegetable Soup", "Cheddar Cauliflower Soup"],
+    "ThursdayItems": ["Hungarian Goulash Soup", "Moroccan Chickpea Soup"],
+    "FridayItems": ["New England Clam Chowder", "Curried Tomato Lentil Soup"],
+    "SaturdayItems": ["Beef & Rice Soup", "Chile Cheddar Potato Soup"],
+    "SundayItems": ["Chicken & Rice Soup Florentine", "Split Pea Soup"]
+  },
+
+  {
+    "station": "Bakery",
+    "MondayItems": ["Chocolate Chip Cookie", "Cream Cheese Marbled Brownie", "Oatmeal Raisin Cookie", "Strawberry Shortcake Parfait"],
+    "TuesdayItems": ["Chocolate Chip Cookie", "Crispy Cereal Bar", "Sugar Cookie", "Chocolate Crinkle Whoopie Pie"],
+    "WednesdayItems": ["Chocolate Chip Cookie", "Chocolate Chip Coconut Bar", "Peanut Butter Cookie", "Apple Crumb Cupcake"],
+    "ThursdayItems": ["Chocolate Chip Cookie", "Crunchy S'mores Bar", "Oatmeal Raisin Cookie", "Citurs Cake with Vanilla Icing"],
+    "FridayItems": ["Chocolate Chip Cookie", "Ultimate Fudge Brownie", "Peanut Butter Cookie", "Apple Betty"],
+    "SaturdayItems": ["Chocolate Chip Cookie", "Sugar Cookie"],
+    "SundayItems": ["Chocolate Chip Cookie", "Oatmeal Raisin Cookie"]
+  }
+]

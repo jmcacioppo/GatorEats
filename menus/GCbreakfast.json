@@ -1,0 +1,31 @@
+[{
+  "station": "Breakfast",
+  "MondayItems": ["Biscuits & Sausage Gravy Buttermilk", "Pancakes Grits", "Hash Brown Potatoes", "Old Fashioned Oatmeal", "Pork Sausage Patty", "Scrambled Eggs", "Turkey Bacon"],
+  "TuesdayItems":["Biscuits & Sausage Gravy", "Whole Wheat Banana Pancakes", "Grits", "Bacon", "Old Fashioned Oatmeal", "Home Fries", "Scrambled Eggs", "Turkey Sausage Link"],
+  "WednesdayItems":["Biscuits & Sausage Gravy", "French Toast", "Grits", "Turkey Bacon", "Old Fashioned Oatmeal", "Hash Brown Potatoes", "Scrambled Eggs", "Pork Sausage Links"],
+  "ThursdayItems":["Biscuits & Sausage Gravy", "Blueberry Buttermilk Pancakes", "Grits", "Hash Browns", "Old Fashioned Oatmeal", "Turkey Sausage Patty", "Scrambled Eggs", "Bacon"],
+  "FridayItems":["Biscuits & Sausage Gravy", "Whole Wheat Pancakes", "Grits", "Home Fries", "Old Fashioned Oatmeal", "Pork Sausage Patty", "Scrambled Eggs", "Turkey Bacon"],
+  "SaturdayItems": ["Biscuit & Sausage Gravy", "French Toast", "Grits", "Crispy Tater Bites", "Old Fashioned Oatmeal", "Turkey Sausage Patty", "Scrambled Eggs", "Bacon"],
+  "SundayItems":["Biscuit & Sausage Gravy", "Chocolate Chip Pancakes", "Grits", "O'brien Potatoes", "Old Fashioned Oatmeal", "Pork Sausage Link", "Scrambled Eggs", "Turkey Bacon"],
+},
+
+  {
+    "station": "Rotisserie",
+    "MondayItems":"Bacon & Egg Pizza",
+    "TuesdayItems":"Egg & Cheese Biscuit Sandwich",
+    "WednesdayItems":"Three Cheese & Bacon Strata",
+    "ThursdayItems": "Stromboli with Sausage",
+    "FridayItems": "Egg & Cheese Bagel"
+  },
+
+  {
+    "station": "Bakery",
+    "MondayItems":["Apple Cinnamon Scone", "Bananaberry Mini Muffin", "Chocolate Donut Bites"],
+    "TuesdayItems":["Peach Almond Crumb Cake", "Carrot Pineapple Mini Muffin", "Vanilla Iced Donut with Sprinkles"],
+    "WednesdayItems": ["Cranberry Orange Scone", "Bananas Foster Mini Muffin", "Iced Cinnamon Roll"],
+    "ThursdayItems": ["Cherry Cobbler Bread", "Apple Cinnamon Mini Muffin", "Powdered Sugar Donut"],
+    "FridayItems":["Chocolate Chip Scone", "Whole Grain Lemon Poppy Mini Muffin", "Cinnamon Donut Bites"],
+    "SaturdayItems": ["Donut Bites", "Blueberry Scone"],
+    "SundayItems":["Banana Nut Mini Muffin", "Cherry Crumb Cupcake"]
+  }
+]
