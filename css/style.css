@@ -177,10 +177,37 @@
 }
 
 /*Week Menu*/
-.foodItem {
-    background-color: #00FFFF;
-    padding: 5px;
-    height: 75%;
-    width: 75%;
+.weekMenu-text{
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
+
+.weekMenu-days{
+    align-content: center;
+    margin-right: 2rem;
+    padding-left: 2rem;
+    height: 25rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.weekMenuItems{
+    position: relative;
+    display: inline-block;
+    margin-left: 1rem;
+    color:#000000;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    background-color: #1F618D;
+    max-height: 100%;
+    width: 20%;
+}
+
 
