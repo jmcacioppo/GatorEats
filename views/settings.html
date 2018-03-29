@@ -1,3 +1,106 @@
-<div>
-	Settings
+<div class="settings">
+	<div class="avatar-pic">
+			<!-- Button trigger modal popup -->
+
+<button type="button" class="btn btn-default" style="padding-right: 1.7rem; 
+margin-top: -14rem;"  data-toggle="modal" data-target="#Modal">
+		<img ng-attr-id="defaultPIC" class="avatar" src="../css/avatars/cool-guy.png" alt=""/>
+	  </button>
+	  <div class="chng-avt-header">
+		  Click image to change avatar
+	  </div>
+	  
+	  <!-- Modal popup -->
+	  <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="ModalLabel">Change Avatar</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<div class="hold-avatar">
+					<div class="img-av">
+						<a ng-href="#">
+							<img src="../css/avatars/mean-nanny.png" ng-attr-id="nanny">
+						</a>
+					</div>
+					<div class="img-av">
+						<a ng-href="#">
+							<img src="../css/avatars/el-professor.png" ng-attr-id="prof">
+						</a>						
+					</div>
+					<div class="img-av">
+						<a ng-href="#">
+							<img src="../css/avatars/messy-hair.png" ng-attr-id="hair">
+						</a>
+					</div>
+					<div class="img-av">
+						<a ng-href="#">
+							<img src="../css/avatars/mustache-dude.png" ng-attr-id="stache">
+						</a>
+					</div>
+					<div class="img-av">
+						<a ng-href="#">
+							<img src="../css/avatars/plane-jane.png" ng-attr-id="jane">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="profile-creds">
+		<div class="cred-change">
+			<div class="form-group">
+					<label for="Username" class="col-md-3 control-label"> 
+					Username
+					</label>
+					<div class="col-md-9">
+						<input type="text" class="form-control" name="Username" value="" ng-model="Username.chng" ng-change="changed-u">
+					</div>
+			</div>
+			<div class="form-group">
+					<label for="Password" class="col-md-3 control-label"> 
+					Password
+					</label>
+					<div class="col-md-9">
+						<input type="text" class="form-control" name="Password" value="" ng-model="Password.chng" ng-change="changed-p">
+					</div>
+			</div>
+		</div>
+		
+
+
+			<html>
+					<body>
+			<div class="diet-choices">
+				<div class="diet-label"> 
+					<label for="Dietary Restrictions">
+						Dietary Restrictions
+					</label>
+				</div>
+					<form action="/settings" method="get">
+					  <input type="checkbox" name="diet-req" value="Vegetarian">Vegetarian<br>
+					  <input type="checkbox" name="diet-req" value="Vegan" >Vegan<br>
+					  <input type="checkbox" name="diet-req" value="Nut-free">Nut-free<br>
+					  <input type="checkbox" name="diet-req" value="Dairy-free" >Dairy-free<br>
+					  <input type="checkbox" name="diet-req" value="Gluten-free">Gluten-free<br>
+					  <input type="checkbox" name="diet-req" value="Paleo">Paleo<br>
+					  <input type="submit" value="Submit">
+					</form>
+				</div>
+					</body>
+					</html>
+	</div>
+	<div class="save-changes">
+		 
+	</div>
 </div>
