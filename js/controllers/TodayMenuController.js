@@ -1,15 +1,136 @@
 gatorEats.controller('TodayMenuController', ['$scope', '$http',
-    function($scope, $http){
-        $http.get('menus/FFbreakfast.json')
-            .then(function(res) {
-            	let day = "wednesday";
+        // $http.get('menus/FFbreakfast.json')
+        //     .then(function(res) {
+        //     	let day = "wednesday";
+        //
+        //     	res.data.forEach( function(menu, i) {
+        //     		if(menu.day == day) $scope.menus = menu;
+        //     		console.log(menu);
+        //     	});
+        //     });
+    function($scope, $http) {
+        $scope.freshFoodBreakfast = true;
+        $scope.freshFoodLunch = false;
+        $scope.freshFoodDinner = false;
+        $scope.gatorCornerBreakfast = false;
+        $scope.gatorCornerLunch = false;
+        $scope.gatorCornerDinner = false;
 
-            	res.data.forEach( function(menu, i) {
-            		if(menu.day == day) $scope.menus = menu;
-            		console.log(menu);
-            	});
-            });
+         getMenus();
 
-        $scope.showThis = true;
+        $scope.showMenu = function(menu) {
+            if(menu == 'FF Breakfast') showFFBreakfast();
+            else if(menu == 'FF Lunch') showFFLunch();
+            else if(menu == 'FF Dinner') showFFDinner();
+            else if(menu == 'GC Breakfast') showGCBreakfast();
+            else if(menu == 'GC Lunch') showGCLunch();
+            else if(menu == 'GC Dinner') showGCDinner();
+        }
+
+        function showFFBreakfast() {
+            $scope.freshFoodBreakfast = true;
+            $scope.freshFoodLunch = false;
+            $scope.freshFoodDinner = false;
+            $scope.gatorCornerBreakfast = false;
+            $scope.gatorCornerLunch = false;
+            $scope.gatorCornerDinner = false;
+        }
+
+        function showFFLunch() {
+            $scope.freshFoodBreakfast = false;
+            $scope.freshFoodLunch = true;
+            $scope.freshFoodDinner = false;
+            $scope.gatorCornerBreakfast = false;
+            $scope.gatorCornerLunch = false;
+            $scope.gatorCornerDinner = false;
+        }
+
+        function showFFDinner() {
+            $scope.freshFoodBreakfast = false;
+            $scope.freshFoodLunch = false;
+            $scope.freshFoodDinner = true;
+            $scope.gatorCornerBreakfast = false;
+            $scope.gatorCornerLunch = false;
+            $scope.gatorCornerDinner = false;
+        }
+
+        function showGCBreakfast() {
+            $scope.freshFoodBreakfast = false;
+            $scope.freshFoodLunch = false;
+            $scope.freshFoodDinner = false;
+            $scope.gatorCornerBreakfast = true;
+            $scope.gatorCornerLunch = false;
+            $scope.gatorCornerDinner = false;
+        }
+
+        function showGCLunch() {
+            $scope.freshFoodBreakfast = false;
+            $scope.freshFoodLunch = false;
+            $scope.freshFoodDinner = false;
+            $scope.gatorCornerBreakfast = false;
+            $scope.gatorCornerLunch = true;
+            $scope.gatorCornerDinner = false;
+        }
+
+        function showGCDinner() {
+            $scope.freshFoodBreakfast = false;
+            $scope.freshFoodLunch = false;
+            $scope.freshFoodDinner = false;
+            $scope.gatorCornerBreakfast = false;
+            $scope.gatorCornerLunch = false;
+            $scope.gatorCornerDinner = true;
+        }
+
+        function getMenus() {
+            //Fresh Food Menus
+            $http.get('menus/FFbreakfast.json')
+                .then( (res) => {
+                    $scope.FFBreakfast = res.data;
+                })
+                .catch( (err) =>{
+                    console.log(err);
+                });
+
+            $http.get('menus/FFlunch.json')
+                .then( (res) => {
+                    $scope.FFLunch = res.data;
+                })
+                .catch( (err) =>{
+                    console.log(err);
+                });
+
+            $http.get('menus/FFdinner.json')
+                .then( (res) => {
+                    $scope.FFDinner = res.data;
+                })
+                .catch( (err) =>{
+                    console.log(err);
+                });
+
+            // Gator Corner Menus
+            $http.get('menus/GCbreakfast.json')
+                .then( (res) => {
+                    $scope.GCBreakfast = res.data;
+                })
+                .catch( (err) =>{
+                    console.log(err);
+                });
+
+            $http.get('menus/GClunch.json')
+                .then( (res) => {
+                    $scope.GCLunch = res.data;
+                })
+                .catch( (err) =>{
+                    console.log(err);
+                });
+
+            $http.get('menus/GCdinner.json')
+                .then( (res) => {
+                    $scope.GCDinner = res.data;
+                })
+                .catch( (err) =>{
+                    console.log(err);
+                });
+        }
     }
 ]);

@@ -1,7 +1,115 @@
-<div>
-        <ul ng-show=showThis ng-repeat="ff in menus">
-            <li>{{ff.items}}</li>
-        </ul>
+<center>
+    <h2>Today's Menu</h2>
 
-        <div ng-hide=showThis>HEllo</div>
-</div>
+    <div ng-show="freshFoodBreakfast">
+        <h1>Fresh Food Company</h1>
+        <br><br>
+        <button class="btn" ng-class="{'btn-dark': freshFoodBreakfast, 'btn-light': !freshFoodBreakfast}" ng-click="showMenu('FF Breakfast')">Breakfast</button>
+        <button class="btn" ng-class="{'btn-dark': freshFoodLunch, 'btn-light': !freshFoodLunch}" ng-click="showMenu('FF Lunch')">Lunch</button>
+        <button class="btn" ng-class="{'btn-dark': freshFoodDinner, 'btn-light': !freshFoodDinner}" ng-click="showMenu('FF Dinner')">Dinner</button>
+        <button class="btn" ng-class="{'btn-dark': gatorCornerBreakfast, 'btn-light': !gatorCornerBreakfast}" ng-click="showMenu('GC Breakfast')">Gator Corner</button>
+        <br><br>
+        <div class="FreshFoodCompany" ng-repeat="FFBreakfastFood in FFBreakfast">
+                <div class="weekMenu-days">
+                    <h2 class="FreshFoodCompany-text">{{FFBreakfastFood.station}}</h2>
+                </div>
+                <div class="weekMenuItems">
+                    <div class="weekMenu-text" ng-repeat="FFBreakfastItem in FFBreakfastFood.MondayItems">
+                        {{FFBreakfastItem}}
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div ng-show="freshFoodLunch">
+        <h1>Fresh Food Company</h1>
+        <br><br>
+        <button class="btn" ng-class="{'btn-dark': freshFoodBreakfast, 'btn-light': !freshFoodBreakfast}" ng-click="showMenu('FF Breakfast')">Breakfast</button>
+        <button class="btn" ng-class="{'btn-dark': freshFoodLunch, 'btn-light': !freshFoodLunch}" ng-click="showMenu('FF Lunch')">Lunch</button>
+        <button class="btn" ng-class="{'btn-dark': freshFoodDinner, 'btn-light': !freshFoodDinner}" ng-click="showMenu('FF Dinner')">Dinner</button>
+        <button class="btn" ng-class="{'btn-dark': gatorCornerBreakfast, 'btn-light': !gatorCornerBreakfast}" ng-click="showMenu('GC Breakfast')">Gator Corner</button>
+        <br><br>
+        <div class="FreshFoodCompany" ng-repeat="FFLunchFood in FFLunch">
+            <div class="weekMenu-days">
+                <h2 class="FreshFoodCompany-text">{{FFLunchFood.station}}</h2>
+            </div>
+            <div class="weekMenuItems">
+                <div class="weekMenu-text" ng-repeat="FFLunchItem in FFLunchFood.MondayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-show="freshFoodDinner">
+        <h1>Fresh Food Company</h1>
+        <br><br>
+        <button class="btn" ng-class="{'btn-dark': freshFoodBreakfast, 'btn-light': !freshFoodBreakfast}" ng-click="showMenu('FF Breakfast')">Breakfast</button>
+        <button class="btn" ng-class="{'btn-dark': freshFoodLunch, 'btn-light': !freshFoodLunch}" ng-click="showMenu('FF Lunch')">Lunch</button>
+        <button class="btn" ng-class="{'btn-dark': freshFoodDinner, 'btn-light': !freshFoodDinner}" ng-click="showMenu('FF Dinner')">Dinner</button>
+        <button class="btn" ng-class="{'btn-dark': gatorCornerBreakfast, 'btn-light': !gatorCornerBreakfast}" ng-click="showMenu('GC Breakfast')">Gator Corner</button>
+        <br><br>
+        <div class="FreshFoodCompany" ng-repeat="FFDinnerFood in FFDinner">
+            <div class="weekMenu-days">
+                <h2 class="FreshFoodCompany-text">{{FFDinnerFood.station}}</h2>
+            </div>
+            <div class="weekMenuItems">
+                <div class="weekMenu-text" ng-repeat="FFDinnerItem in FFDinnerFood.MondayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-show="gatorCornerBreakfast">
+        <h1>Gator Corner</h1>
+        <br><br>
+        <button class="btn" ng-class="{'btn-dark': gatorCornerBreakfast, 'btn-light': !gatorCornerBreakfast}" ng-click="showMenu('GC Breakfast')">Breakfast</button>
+        <button class="btn" ng-class="{'btn-dark': gatorCornerLunch, 'btn-light': !gatorCornerLunch}" ng-click="showMenu('GC Lunch')">Lunch</button>
+        <button class="btn" ng-class="{'btn-dark': gatorCornerDinner, 'btn-light': !gatorCornerDinner}" ng-click="showMenu('GC Dinner')">Dinner</button>
+        <button class="btn" ng-class="{'btn-dark': freshFoodBreakfast, 'btn-light': !freshFoodBreakfast}" ng-click="showMenu('FF Breakfast')">Fresh Food Company</button>
+        <br><br>
+        <div class="GatorCornerCompany" ng-repeat="GCBreakfastFood in GCBreakfast">
+
+            <h2 class="GatorCornerCompany-text">{{GCBreakfastFood.station}}</h2>
+
+            <div ng-repeat="GCBreakfastItem in GCBreakfastFood.MondayItems">
+                {{GCBreakfastItem}}
+        </div>
+    </div>
+        <div ng-show="gatorCornerLunch">
+            <h1>Gator Corner</h1>
+            <br><br>
+            <button class="btn" ng-class="{'btn-dark': gatorCornerBreakfast, 'btn-light': !gatorCornerBreakfast}" ng-click="showMenu('GC Breakfast')">Breakfast</button>
+            <button class="btn" ng-class="{'btn-dark': gatorCornerLunch, 'btn-light': !gatorCornerLunch}" ng-click="showMenu('GC Lunch')">Lunch</button>
+            <button class="btn" ng-class="{'btn-dark': gatorCornerDinner, 'btn-light': !gatorCornerDinner}" ng-click="showMenu('GC Dinner')">Dinner</button>
+            <button class="btn" ng-class="{'btn-dark': freshFoodBreakfast, 'btn-light': !freshFoodBreakfast}" ng-click="showMenu('FF Breakfast')">Fresh Food Company</button>
+            <br><br>
+            <div class="weekMenu-days" ng-repeat="GCLunchFood in GCLunch">
+                <div>
+                    <h1 class="weekMenu-text">{{GCLunchFood.station}}</h1>
+                </div>
+                <div class="weekMenuItems">
+                    <div ng-repeat="GCLunchItem in GCLunchFood.MondayItems">
+                        {{GCLunchItem}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="gatorCornerDinner">
+            <h1>Gator Corner</h1>
+            <br><br>
+            <button class="btn" ng-class="{'btn-dark': gatorCornerBreakfast, 'btn-light': !gatorCornerBreakfast}" ng-click="showMenu('GC Breakfast')">Breakfast</button>
+            <button class="btn" ng-class="{'btn-dark': gatorCornerLunch, 'btn-light': !gatorCornerLunch}" ng-click="showMenu('GC Lunch')">Lunch</button>
+            <button class="btn" ng-class="{'btn-dark': gatorCornerDinner, 'btn-light': !gatorCornerDinner}" ng-click="showMenu('GC Dinner')">Dinner</button>
+            <button class="btn" ng-class="{'btn-dark': freshFoodBreakfast, 'btn-light': !freshFoodBreakfast}" ng-click="showMenu('FF Breakfast')">Fresh Food Company</button>
+            <br><br>
+            <div class="gatorCorner" ng-repeat="GCDinnerFood in GCDinner">
+                <div class="weekMenu-days">
+                    <h2 class="gatorCorner-text">{{GCDinnerFood.station}}</h2>
+                </div>
+                <div class="weekMenuItems">
+                    <div class="weekMenu-text" ng-repeat="GCDinnerItem in GCDinnerFood.MondayItems">
+                        {{GCDinnerItem}}
+                    </div>
+                </div>
+            </div>
+        </div>
+</center>
