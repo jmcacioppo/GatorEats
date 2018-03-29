@@ -184,3 +184,49 @@
     width: 75%;
 }
 
+.avatar-pic{
+    vertical-align: 10rem;
+    display: inline-block;
+    padding-left: 2rem;
+}
+
+.profile-creds{
+    padding-left: 7rem;    
+    display: inline-block;
+}
+
+.img-av{
+    padding-left: 3rem;
+}
+
+
+
+#prof{
+    width: 5rem;
+    
+}
+
+#nanny{
+    width: 5rem;
+
+}
+
+#hair{
+    width: 5rem;
+
+}
+
+#stache{
+    width: 5rem;
+
+}
+
+#jane{
+    width: 5rem;
+
+}
+
+
+
+
+
