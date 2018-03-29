@@ -76,29 +76,25 @@ margin-top: -14rem;"  data-toggle="modal" data-target="#Modal">
 					</div>
 			</div>
 		</div>
-		
-
-
-			<html>
-					<body>
-			<div class="diet-choices">
-				<div class="diet-label"> 
-					<label for="Dietary Restrictions">
-						Dietary Restrictions
-					</label>
-				</div>
-					<form action="/settings" method="get">
-					  <input type="checkbox" name="diet-req" value="Vegetarian">Vegetarian<br>
-					  <input type="checkbox" name="diet-req" value="Vegan" >Vegan<br>
-					  <input type="checkbox" name="diet-req" value="Nut-free">Nut-free<br>
-					  <input type="checkbox" name="diet-req" value="Dairy-free" >Dairy-free<br>
-					  <input type="checkbox" name="diet-req" value="Gluten-free">Gluten-free<br>
-					  <input type="checkbox" name="diet-req" value="Paleo">Paleo<br>
-					  <input type="submit" value="Submit">
-					</form>
-				</div>
-					</body>
-					</html>
+		<div class="diet-choices">
+			<div class="diet-label"> 
+				<label for="Dietary Restrictions">
+					Dietary Restrictions
+				</label>
+			</div>
+				<form action="/settings" method="get">
+				  <input type="checkbox" name="diet-req" value="Vegetarian">Vegetarian<br>
+				  <input type="checkbox" name="diet-req" value="Vegan" >Vegan<br>
+				  <input type="checkbox" name="diet-req" value="Nut-free">Nut-free<br>
+				  <input type="checkbox" name="diet-req" value="Dairy-free" >Dairy-free<br>
+				  <input type="checkbox" name="diet-req" value="Gluten-free">Gluten-free<br>
+				  <input type="checkbox" name="diet-req" value="Paleo">Paleo<br>
+				  <button class="btn btn-primary" type="submit">Save Changes</button>
+				</form>
+			<button class="btn btn-secondary">
+				<a style="color: white" ng-href="/">Logout</a>
+			</button>
+		</div>
 	</div>
 	<div class="save-changes">
 		 
