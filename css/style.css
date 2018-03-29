@@ -231,9 +231,12 @@
 }
 
 .img-av{
-    padding-left: 3rem;
+    margin-top: 1rem;
 }
 
+.hold-avatar{
+    text-align: center;
+}
 
 
 #prof{
@@ -262,8 +265,19 @@
 }
 
 
+.chng-avt-header{
+    margin-left: -1rem;
+    margin-top: -3rem;
+}
 
+<<<<<<< HEAD
 
+=======
+.hold-avatar img:hover{
+    background-color: #ddd;
+    width: 100%;
+}
+>>>>>>> 5bcce6d74bd6082a9cfec3daa9a134bf5aa0f2aa
 
 .header {
     overflow: hidden;
