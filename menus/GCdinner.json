@@ -20,13 +20,13 @@
   },
   {
     "station": "Pizza",
-    MondayItems":["Cuban Stromboli"],
+    "MondayItems":["Cuban Stromboli"],
     "TuesdayItems": ["Spinach", "Feta & Ham Pizza"],
     "WednesdayItems": ["Meat Lover's Pizza"],
     "ThursdayItems": ["BBQ Chicken Stromboli"],
     "FridayItems": ["Meatball Pizza"],
     "SaturdayItems": ["Philly Cheesesteak Stromboli"],
-    "SundayItems" ["Chicken Bacon Ranch Flatbread"]
+    "SundayItems": ["Chicken Bacon Ranch Flatbread"]
   },
   {
     "station": "International",
@@ -38,7 +38,7 @@
   },
   {
     "station": "Vegan",
-    MondayItems":["Vegan Chicken Paella with Brown Rice", "Vegan Oatmeal Cookie"],
+    "MondayItems":["Vegan Chicken Paella with Brown Rice", "Vegan Oatmeal Cookie"],
     "TuesdayItems": ["Vegan Jambalaya", "Bananas Foster"],
     "WednesdayItems": ["Vegan Beefy Mac Casserole", "Vegan Peanut Butter Cookie"],
     "ThursdayItems": ["Rice Noodle & Vegetable Stir Fry", "Vegan Cranberry Oatmeal Cookie"],
@@ -58,7 +58,7 @@
   },
   {
     "station": "Bakery",
-    MondayItems": ["Cherry Cheesecake Tart", "Chocolate Chip Cookie", "Oreo® Cookie Blondie", "Sugar Cookie"],
+    "MondayItems": ["Cherry Cheesecake Tart", "Chocolate Chip Cookie", "Oreo® Cookie Blondie", "Sugar Cookie"],
     "TuesdayItems": ["Chocolate Chip Cookie", "Caramel Apple Bread Pudding", "Oatmeal Raisin Cookie"],
     "WednesdayItems":["Pumpkin Spice Crumb Cake", "Peanut Butter Cookie", "Chocolate Chip Cookie"],
     "ThursdayItems": ["Vanilla Cupcake", "Fruity Marshmellow Treat", "Oatmeal Raisin Cookie", "Chocolate Chip Cookie"],

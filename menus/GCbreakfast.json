@@ -6,16 +6,16 @@
   "ThursdayItems":["Biscuits & Sausage Gravy", "Blueberry Buttermilk Pancakes", "Grits", "Hash Browns", "Old Fashioned Oatmeal", "Turkey Sausage Patty", "Scrambled Eggs", "Bacon"],
   "FridayItems":["Biscuits & Sausage Gravy", "Whole Wheat Pancakes", "Grits", "Home Fries", "Old Fashioned Oatmeal", "Pork Sausage Patty", "Scrambled Eggs", "Turkey Bacon"],
   "SaturdayItems": ["Biscuit & Sausage Gravy", "French Toast", "Grits", "Crispy Tater Bites", "Old Fashioned Oatmeal", "Turkey Sausage Patty", "Scrambled Eggs", "Bacon"],
-  "SundayItems":["Biscuit & Sausage Gravy", "Chocolate Chip Pancakes", "Grits", "O'brien Potatoes", "Old Fashioned Oatmeal", "Pork Sausage Link", "Scrambled Eggs", "Turkey Bacon"],
+  "SundayItems":["Biscuit & Sausage Gravy", "Chocolate Chip Pancakes", "Grits", "O'brien Potatoes", "Old Fashioned Oatmeal", "Pork Sausage Link", "Scrambled Eggs", "Turkey Bacon"]
 },
 
   {
     "station": "Rotisserie",
-    "MondayItems":"Bacon & Egg Pizza",
-    "TuesdayItems":"Egg & Cheese Biscuit Sandwich",
-    "WednesdayItems":"Three Cheese & Bacon Strata",
-    "ThursdayItems": "Stromboli with Sausage",
-    "FridayItems": "Egg & Cheese Bagel"
+    "MondayItems":["Bacon & Egg Pizza"],
+    "TuesdayItems":["Egg & Cheese Biscuit Sandwich"],
+    "WednesdayItems":["Three Cheese & Bacon Strata"],
+    "ThursdayItems": ["Stromboli with Sausage"],
+    "FridayItems": ["Egg & Cheese Bagel"]
   },
 
   {

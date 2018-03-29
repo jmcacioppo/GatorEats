@@ -1,1435 +1,312 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<style>
-		table, th, td
-		{
-			margin:10px 0;
-			border:solid 1px #333;
-			padding:2px 4px;
-			font:15px Verdana;
-		}
-		th {
-			font-weight:bold;
-		}
-	</style>
-</head>
-<body>
-<input type="button" onclick="FFbreakfast()" value="Fresh Food Company Breakfast" />
-<input type="button" onclick="FFlunch()" value="Fresh Food Company Lunch" />
-<input type="button" onclick="FFdinner()" value="Gator Corner Dinner" />
-<input type="button" onclick="GCbreakfast()" value="Gator Corner Breakfast" />
-<input type="button" onclick="GClunch()" value="Gator Corner Lunch" />
-<input type="button" onclick="GCdinner()" value="Gator Corner Dinner" />
-<div id="showData"></div>
-<div id="showData2"></div>
-<div id="showData3"></div>
-<div id="showData4"></div>
-<div id="showData5"></div>
-<div id="showData6"></div>
-
-<!--<script>-->
-    <!--var btn = document.querySelector('input');-->
-    <!--//var txt = document.querySelector('div');-->
-
-    <!--btn.addEventListener('click', updateBtn);-->
-
-    <!--function updateBtn() {-->
-        <!--if (btn.value === 'Fresh Food Company Breakfast') {-->
-            <!--btn.value = 'close Fresh Food Company Breakfast';-->
-            <!--//txt.textContent = 'The machine has started!';-->
-        <!--} else {-->
-            <!--btn.value = 'Fresh Food Company Breakfast';-->
-            <!--//txt.textContent = 'The machine is stopped.';-->
-        <!--}-->
-    <!--}-->
-<!--</script>-->
-
-
-</body>
-<script>
-    function FFbreakfast() {
-        var ffBreakfast = [{
-            "station": "Breakfast",
-            "day": "monday",
-            "items": ["Grits & Oatmeal", "Hash Brown Potatoes", "Pancakes", "Sausage", "Scrambled Eggs"]
-        },
-            {
-                "station": "Breakfast",
-                "day": "tuesday",
-                "items": ["Belgian Waffles", "Grits & Oatmeal", "Home Fries", "French Toast", "Sausage", "Scrambled Eggs"]
-            },
-            {
-                "station": "Breakfast",
-                "day": "wednesday",
-                "items": ["Belgian Waffles", "Grits & Oatmeal", "O'brien Potatoes", "Pancakes", "Sausage", "Scrambled Eggs"]
-            },
-            {
-                "station": "Breakfast",
-                "day": "thursday",
-                "items": ["Belgian Waffles", "Grits & Oatmeal", "Crispy Tater Puffs", "Pancakes", "Bacon", "Scrambled Eggs"]
-            },
-            {
-                "station": "Breakfast",
-                "day": "friday",
-                "items": ["Belgian Waffles", "Grits & Oatmeal", "Lyonnaise Potatoes", "Pancakes", "Sausage", "Scrambled Eggs"]
-            },
-            {
-                "station": "Breakfast",
-                "day": "saturday",
-                "items": ["Belgian Waffles", "Oatmeal", "Hash Brown Potatoes", "Bacon", "Sausage & Gravy Biscuit", "Scrambled Eggs"]
-            },
-            {
-                "station": "Breakfast",
-                "day": "sunday",
-                "items": ["Belgian Waffles", "Oatmeal", "Hash Brown Potatoes", "Pork Sausage Link", "Sausage & Gravy Biscuit", "Scrambled Eggs"]
-            }
-        ]
-
-        // EXTRACT VALUE FOR HTML HEADER.
-        var col = [];
-        for (var i = 0; i < ffBreakfast.length; i++) {
-            for (var key in ffBreakfast[i]) {
-                if (col.indexOf(key) === -1) {
-                    col.push(key);
-                }
-            }
-        }
-
-        // CREATE DYNAMIC TABLE.
-        var table = document.createElement("table");
-
-        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
-
-        var tr = table.insertRow(-1);                   // TABLE ROW.
-
-        for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
-            th.innerHTML = col[i];
-            tr.appendChild(th);
-        }
-
-        // ADD JSON DATA TO THE TABLE AS ROWS.
-        for (var i = 0; i < ffBreakfast.length; i++) {
-
-            tr = table.insertRow(-1);
-
-            for (var j = 0; j < col.length; j++) {
-                var tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = ffBreakfast[i][col[j]];
-            }
-        }
-
-        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
-        var divContainer = document.getElementById("showData");
-        divContainer.innerHTML = "";
-        divContainer.appendChild(table);
-    }
-</script>
-<script>
-    function FFlunch() {
-        var ffLunch = [{
-            "station": "Grill",
-            "day": "monday",
-            "items": ["Crispy French Fries", "Garlic Basil Turkey Burger"]
-        },
-            {
-                "station": "Grill",
-                "day": "tuesday",
-                "items": ["Old Bay® Potato Chips", "Mac & Cheese Grilled Cheese"]
-            },
-            {
-                "station": "Grill",
-                "day": "wednesday",
-                "items": ["Twister Fries", "Reuben Turkey Burger"]
-            },
-            {
-                "station": "Grill",
-                "day": "thursday",
-                "items": ["Veggie Lo Mein", "Asian Seared Pork Loin"]
-            },
-            {
-                "station": "Grill",
-                "day": "friday",
-                "items": ["Maple-Glazed Acorn Squash", "Spanish Rice", "Southwestern"]
-            },
-
-            {
-                "station": "Home Zone",
-                "day": "monday",
-                "items": ["Chicken Tikka Masala Burrito", "Pita Chips", "Tangy Cucumber Salad"]
-            },
-            {
-                "station": "Home Zone",
-                "day": "tuesday",
-                "items": ["Crispy Asiago Crusted Chicken", "Buttery Penne", "Arrabbiata Sauce"]
-            },
-            {
-                "station": "Home Zone",
-                "day": "wednesday",
-                "items": ["BBQ Pork Sandwich", "Sweet Potato Fries", "Capri Blend Vegetables"]
-            },
-            {
-                "station": "Home Zone",
-                "day": "thursday",
-                "items": ["Honey Dijon Chicken Snacker", "Crispy French Fries", "Brussels Spouts & Carrots"]
-            },
-            {
-                "station": "Home Zone",
-                "day": "friday",
-                "items": ["Salmon BLT", "Signature Chips"]
-            },
-            {
-                "station": "Home Zone",
-                "day": "saturday",
-                "items": ["Beef Pot Pie", "Garlic Broccoli"]
-            },
-            {
-                "station": "Home Zone",
-                "day": "sunday",
-                "items": ["Turkey with Garlic Scallion Gravy", "Blue Cheese Mashed Potatoes", "Green Beans & Carrots"]
-            },
-
-            {
-                "station": "World",
-                "day": "monday",
-                "items": ["Italian Sausage Hoagie"]
-            },
-            {
-                "station": "World",
-                "day": "tuesday",
-                "items": ["Chicken & Portobello Stir Fry"]
-            },
-            {
-                "station": "World",
-                "day": "wednesday",
-                "items": ["Greek Salad Pita"]
-            },
-            {
-                "station": "World",
-                "day": "thursday",
-                "items": ["Korean Beef Quinoa Bowl"]
-            },
-            {
-                "station": "World",
-                "day": "friday",
-                "items": ["Chicken Bibimbap"]
-            },
-            {
-                "station": "World",
-                "day": "saturday",
-                "items": ["Chicken French Toast"]
-            },
-            {
-                "station": "World",
-                "day": "sunday",
-                "items": ["Pancakes"]
-            },
-
-            {
-                "station": "Mediterranean",
-                "day": "monday",
-                "items": ["Chicken Parmesan Pizza", "MTO Omelets"]
-            },
-            {
-                "station": "Mediterranean",
-                "day": "tuesday",
-                "items": ["BBQ Pineapple Ham Flatbread", "MTO Omelets"]
-            },
-            {
-                "station": "Mediterranean",
-                "day": "wednesday",
-                "items": ["Loaded Potato Pizza", "MTO Omelets"]
-            },
-            {
-                "station": "Mediterranean",
-                "day": "thursday",
-                "items": ["Grilled Vegetable Pizza", "MTO Omelets"]
-            },
-            {
-                "station": "Mediterranean",
-                "day": "friday",
-                "items": ["Meat Lover's Pizza", "MTO Omelets"]
-            },
-            {
-                "station": "Mediterranean",
-                "day": "saturday",
-                "items": ["Pepperoni & Cheese Pizza", "MTO Omelets"]
-            },
-            {
-                "station": "Mediterranean",
-                "day": "sunday",
-                "items": ["Pepperoni & Cheese Pizza", "MTO Omelets"]
-            },
-
-            {
-                "station": "Mediterranean Saute",
-                "day": "monday",
-                "items": ["Spicy Jerk Chicken & Cavatappi"]
-            },
-            {
-                "station": "Mediterranean Saute",
-                "day": "tuesday",
-                "items": ["Creamy Parmesan Penne"]
-            },
-            {
-                "station": "Mediterranean Saute",
-                "day": "wednesday",
-                "items": ["Kung Pao Pork"]
-            },
-            {
-                "station": "Mediterranean Saute",
-                "day": "thursday",
-                "items": ["Mediterranean Cheese Totiellini"]
-            },
-            {
-                "station": "Mediterranean Saute",
-                "day": "friday",
-                "items": ["Spaghetti with Hearty Turkey Meat Sauce"]
-            },
-
-            {
-                "station": "Vegan",
-                "day": "monday",
-                "items": ["Sriracha-Slaw Black Bean Burger"]
-            },
-            {
-                "station": "Vegan",
-                "day": "tuesday",
-                "items": ["Grilled Portobello Sandwich"]
-            },
-            {
-                "station": "Vegan",
-                "day": "wednesday",
-                "items": ["Mediterranean Potato Wedges"]
-            },
-            {
-                "station": "Vegan",
-                "day": "thursday",
-                "items": ["Curried Chickpeas"]
-            },
-            {
-                "station": "Vegan",
-                "day": "friday",
-                "items": ["Vegan Kung Pao Chicken & Kale"]
-            },
-            {
-                "station": "Vegan",
-                "day": "saturday",
-                "items": ["Mushroom Tofu Ramen"]
-            },
-            {
-                "station": "Vegan",
-                "day": "sunday",
-                "items": ["Mushroom Tofu Ramen"]
-            },
-
-            {
-                "station": "Soup",
-                "day": "monday",
-                "items": ["Chunky Potato Chowder", "Moroccan Chickpea Soup", "Turkey Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "tuesday",
-                "items": ["Chunky Potato Chowder", "Cream Of Spinach Soup", "Turkey Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "wednesday",
-                "items": ["Chunky Potato Chowder", "Cream Of Spinach Soup", "Turkey Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "thursday",
-                "items": ["Chunky Potato Chowder", "Curried Tomato Lentil Soup", "Turkey Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "friday",
-                "items": ["Pasta Fagioli", "New England Clam Chowder", "Turkey Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "saturday",
-                "items": ["Soup de Jour", "Turkey Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "sunday",
-                "items": ["Soup de Jour", "Turkey Chili"]
-            },
-
-            {
-                "station": "Bakery",
-                "day": "monday",
-                "items": ["Strawberry Oatmeal Bar", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            },
-            {
-                "station": "Bakery",
-                "day": "tuesday",
-                "items": ["Citrus Caked with Vanilla Frosting", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            },
-            {
-                "station": "Bakery",
-                "day": "wednesday",
-                "items": ["Mini Salted Caramel Cake", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            },
-            {
-                "station": "Bakery",
-                "day": "thursday",
-                "items": ["Applesauce Cake", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            },
-            {
-                "station": "Bakery",
-                "day": "friday",
-                "items": ["Carrot Cake Whoopie Pie", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            },
-            {
-                "station": "Bakery",
-                "day": "saturday",
-                "items": ["Cinnamon Roll", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            },
-            {
-                "station": "Bakery",
-                "day": "sunday",
-                "items": ["Apple Crumb Cake", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            }
-        ]
-
-        // EXTRACT VALUE FOR HTML HEADER.
-        // ('Book ID', 'Book Name', 'Category' and 'Price')
-        var col = [];
-        for (var i = 0; i < ffLunch.length; i++) {
-            for (var key in ffLunch[i]) {
-                if (col.indexOf(key) === -1) {
-                    col.push(key);
-                }
-            }
-        }
-
-        // CREATE DYNAMIC TABLE.
-        var table = document.createElement("table");
-
-        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
-
-        var tr = table.insertRow(-1);                   // TABLE ROW.
-
-        for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
-            th.innerHTML = col[i];
-            tr.appendChild(th);
-        }
-
-        // ADD JSON DATA TO THE TABLE AS ROWS.
-        for (var i = 0; i < ffLunch.length; i++) {
-
-            tr = table.insertRow(-1);
-
-            for (var j = 0; j < col.length; j++) {
-                var tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = ffLunch[i][col[j]];
-            }
-        }
-
-        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
-        var divContainer = document.getElementById("showData2");
-        divContainer.innerHTML = "";
-        divContainer.appendChild(table);
-    }
-</script>
-<script>
-    function FFdinner() {
-        var ffDinner = [{
-            "station": "Grill",
-            "day": "monday",
-            "items": ["Crispy French Fries", "Southwest Chicken Sandwich"]
-        },
-            {
-                "station": "Grill",
-                "day": "tuesday",
-                "items": ["Crispy Tater Bites", "Sunrise Tex-Mex Taco"]
-            },
-            {
-                "station": "Grill",
-                "day": "wednesday",
-                "items": ["Crispy French Fries", "Hot Dog with Sauerkraut"]
-            },
-            {
-                "station": "Grill",
-                "day": "thursday",
-                "items": ["Ranch Potato Chips", "Buffalo Blue Chicken Panini"]
-            },
-            {
-                "station": "Grill",
-                "day": "friday",
-                "items": ["Crispy French Fries", "All American Burger"]
-            },
-            {
-                "station": "Grill",
-                "day": "friday",
-                "items": ["Ranch Potato Chips", "Italian Burger"]
-            },
-            {
-                "station": "Grill",
-                "day": "friday",
-                "items": ["Crispy French Fries", "Chicken & Cheddar Sandwich"]
-            },
-
-            {
-                "station": "Home Zone",
-                "day": "monday",
-                "items": ["Baked Striped Pangasius", "Broccoli & Kale Stir Fry", "Herb Roasted Red Potatoes"]
-            },
-            {
-                "station": "Home Zone",
-                "day": "tuesday",
-                "items": ["BBQ Grilled Turkey", "Roasted Corn", "Cornbread Stuffing"]
-            },
-            {
-                "station": "Home Zone",
-                "day": "wednesday",
-                "items": ["Brazilian Black Bean Roasted Pork", "Glazed Carrots", "Creamy Garlic Mashed Potatoes"]
-            },
-            {
-                "station": "Home Zone",
-                "day": "thursday",
-                "items": ["Turkey with Chipotle Lime Gravy", "Roasted Corn", "Cilantro Lime Rice"]
-            },
-            {
-                "station": "Home Zone",
-                "day": "friday",
-                "items": ["Breaded Turkey Cutlet", "Capri Blend Vegetables", "Baked Macaroni & Cheese"]
-            },
-            {
-                "station": "Home Zone",
-                "day": "saturday",
-                "items": ["Grilled Carne Asada Pork Loin", "Fresh Collard Greens", "Black Beans & Rice with Bacon"]
-            },
-            {
-                "station": "Home Zone",
-                "day": "sunday",
-                "items": ["Homestyle Spaghetti & Meatballs", "Italian Roasted Vegetables"]
-            },
-
-            {
-                "station": "World",
-                "day": "monday",
-                "items": ["Italian Sausage Hoagie"]
-            },
-            {
-                "station": "World",
-                "day": "tuesday",
-                "items": ["Mixed Grill"]
-            },
-            {
-                "station": "World",
-                "day": "wednesday",
-                "items": ["Buffalo Chicken Taco"]
-            },
-            {
-                "station": "World",
-                "day": "thursday",
-                "items": ["Turkey & Bean Quesadilla"]
-            },
-            {
-                "station": "World",
-                "day": "friday",
-                "items": ["Red Curry Chicken Bowl"]
-            },
-
-            {
-                "station": "Mediterranean",
-                "day": "monday",
-                "items": ["Chicken Parmesan Pizza", "MTO Omelets"]
-            },
-            {
-                "station": "Mediterranean",
-                "day": "tuesday",
-                "items": ["BBQ Pineapple Ham Flatbread", "MTO Omelets"]
-            },
-            {
-                "station": "Mediterranean",
-                "day": "wednesday",
-                "items": ["Loaded Potato Pizza", "MTO Omelets"]
-            },
-            {
-                "station": "Mediterranean",
-                "day": "thursday",
-                "items": ["Grilled Vegetable Pizza", "MTO Omelets"]
-            },
-            {
-                "station": "Mediterranean",
-                "day": "friday",
-                "items": ["Meat Lover's Pizza", "MTO Omelets"]
-            },
-            {
-                "station": "Mediterranean",
-                "day": "saturday",
-                "items": ["Pepperoni & Cheese Pizza", "MTO Omelets"]
-            },
-            {
-                "station": "Mediterranean",
-                "day": "sunday",
-                "items": ["Pepperoni & Cheese Pizza", "MTO Omelets"]
-            },
-
-            {
-                "station": "Mediterranean Saute",
-                "day": "monday",
-                "items": ["Cheesy Bacon Cavatappi"]
-            },
-            {
-                "station": "Mediterranean Saute",
-                "day": "tuesday",
-                "items": ["Bow Tie Pasta with Sun Dried Tomatoes"]
-            },
-            {
-                "station": "Mediterranean Saute",
-                "day": "wednesday",
-                "items": ["Cheese Tortellini Marinara"]
-            },
-            {
-                "station": "Mediterranean Saute",
-                "day": "thursday",
-                "items": ["Szechuan Shrimp"]
-            },
-            {
-                "station": "Mediterranean Saute",
-                "day": "friday",
-                "items": ["Beef Harissa Rice Bowl"]
-            },
-
-            {
-                "station": "Vegan",
-                "day": "monday",
-                "items": ["Mushroom Tofu Ramen"]
-            },
-            {
-                "station": "Vegan",
-                "day": "tuesday",
-                "items": ["Mushroom Tofu Ramen"]
-            },
-            {
-                "station": "Vegan",
-                "day": "wednesday",
-                "items": ["Mushroom Tofu Ramen"]
-            },
-            {
-                "station": "Vegan",
-                "day": "thursday",
-                "items": ["Mushroom Tofu Ramen"]
-            },
-            {
-                "station": "Vegan",
-                "day": "friday",
-                "items": ["Mushroom Tofu Ramen"]
-            },
-
-            {
-                "station": "Soup",
-                "day": "monday",
-                "items": ["Chunky Potato Chowder", "Moroccan Chickpea Soup", "Turkey Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "tuesday",
-                "items": ["Chunky Potato Chowder", "Cream Of Spinach Soup", "Turkey Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "wednesday",
-                "items": ["Chunky Potato Chowder", "Cream Of Spinach Soup", "Turkey Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "thursday",
-                "items": ["Chunky Potato Chowder", "Curried Tomato Lentil Soup", "Turkey Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "friday",
-                "items": ["Pasta Fagioli", "New England Clam Chowder", "Turkey Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "saturday",
-                "items": ["Soup de Jour", "Turkey Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "sunday",
-                "items": ["Soup de Jour", "Turkey Chili"]
-            },
-
-            {
-                "station": "Bakery",
-                "day": "monday",
-                "items": ["Chocolate Crinkle Whoopie Pie", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            },
-            {
-                "station": "Bakery",
-                "day": "tuesday",
-                "items": ["Spiced Peach Cobbler", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            },
-            {
-                "station": "Bakery",
-                "day": "wednesday",
-                "items": ["Red Velvet Thimble Cake", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            },
-            {
-                "station": "Bakery",
-                "day": "thursday",
-                "items": ["Mini Chocolate Sriracha Cake", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            },
-            {
-                "station": "Bakery",
-                "day": "friday",
-                "items": ["Chocolate Pudding Parfait", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            },
-            {
-                "station": "Bakery",
-                "day": "saturday",
-                "items": ["Chocolate Brownie", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            },
-            {
-                "station": "Bakery",
-                "day": "sunday",
-                "items": ["Pumpkin Whoopie Pie", "Edy's Grand Ice Cream", "Fresh Baked Cookies"]
-            }
-        ]
-
-        // EXTRACT VALUE FOR HTML HEADER.
-        // ('Book ID', 'Book Name', 'Category' and 'Price')
-        var col = [];
-        for (var i = 0; i < ffDinner.length; i++) {
-            for (var key in ffDinner[i]) {
-                if (col.indexOf(key) === -1) {
-                    col.push(key);
-                }
-            }
-        }
-
-        // CREATE DYNAMIC TABLE.
-        var table = document.createElement("table");
-
-        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
-
-        var tr = table.insertRow(-1);                   // TABLE ROW.
-
-        for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
-            th.innerHTML = col[i];
-            tr.appendChild(th);
-        }
-
-        // ADD JSON DATA TO THE TABLE AS ROWS.
-        for (var i = 0; i < ffDinner.length; i++) {
-
-            tr = table.insertRow(-1);
-
-            for (var j = 0; j < col.length; j++) {
-                var tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = ffDinner[i][col[j]];
-            }
-        }
-
-        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
-        var divContainer = document.getElementById("showData3");
-        divContainer.innerHTML = "";
-        divContainer.appendChild(table);
-    }
-</script>
-<script>
-    function GCbreakfast() {
-        var gcBreakfast = [{
-            "station": "Breakfast",
-            "day": "monday",
-            "items": ["Biscuits & Sausage Gravy Buttermilk", "Pancakes Grits", "Hash Brown Potatoes", "Old Fashioned Oatmeal", "Pork Sausage Patty", "Scrambled Eggs", "Turkey Bacon"]
-        },
-            {
-                "station": "Breakfast",
-                "day": "tuesday",
-                "items": ["Biscuits & Sausage Gravy", "Whole Wheat Banana Pancakes", "Grits", "Bacon", "Old Fashioned Oatmeal", "Home Fries", "Scrambled Eggs", "Turkey Sausage Link"]
-            },
-            {
-                "station": "Breakfast",
-                "day": "wednesday",
-                "items": ["Biscuits & Sausage Gravy", "French Toast", "Grits", "Turkey Bacon", "Old Fashioned Oatmeal", "Hash Brown Potatoes", "Scrambled Eggs", "Pork Sausage Links"]
-            },
-            {
-                "station": "Breakfast",
-                "day": "thursday",
-                "items": ["Biscuits & Sausage Gravy", "Blueberry Buttermilk Pancakes", "Grits", "Hash Browns", "Old Fashioned Oatmeal", "Turkey Sausage Patty", "Scrambled Eggs", "Bacon"]
-            },
-            {
-                "station": "Breakfast",
-                "day": "friday",
-                "items": ["Biscuits & Sausage Gravy", "Whole Wheat Pancakes", "Grits", "Home Fries", "Old Fashioned Oatmeal", "Pork Sausage Patty", "Scrambled Eggs", "Turkey Bacon"]
-            },
-            {
-                "station": "Breakfast",
-                "day": "saturday",
-                "items": ["Biscuit & Sausage Gravy", "French Toast", "Grits", "Crispy Tater Bites", "Old Fashioned Oatmeal", "Turkey Sausage Patty", "Scrambled Eggs", "Bacon"]
-            },
-            {
-                "station": "Breakfast",
-                "day": "sunday",
-                "items": ["Biscuit & Sausage Gravy", "Chocolate Chip Pancakes", "Grits", "O'brien Potatoes", "Old Fashioned Oatmeal", "Pork Sausage Link", "Scrambled Eggs", "Turkey Bacon"]
-            },
-
-            {
-                "station": "Rotisserie",
-                "day": "monday",
-                "items": "Bacon & Egg Pizza"
-            },
-            {
-                "station": "Rotisserie",
-                "day": "tuesday",
-                "items": "Egg & Cheese Biscuit Sandwich"
-            },
-            {
-                "station": "Rotisserie",
-                "day": "wednesday",
-                "items": "Three Cheese & Bacon Strata"
-            },
-            {
-                "station": "Rotisserie",
-                "day": "thursday",
-                "items": " Stromboli with Sausage"
-            },
-            {
-                "station": "Rotisserie",
-                "day": "friday",
-                "items": "Egg & Cheese Bagel"
-            },
-
-            {
-                "station": "Bakery",
-                "day": "monday",
-                "items": ["Apple Cinnamon Scone", "Bananaberry Mini Muffin", "Chocolate Donut Bites"]
-            },
-            {
-                "station": "Bakery",
-                "day": "tuesday",
-                "items": ["Peach Almond Crumb Cake", "Carrot Pineapple Mini Muffin", "Vanilla Iced Donut with Sprinkles"]
-            },
-            {
-                "station": "Bakery",
-                "day": "wednesday",
-                "items": ["Cranberry Orange Scone", "Bananas Foster Mini Muffin", "Iced Cinnamon Roll"]
-            },
-            {
-                "station": "Bakery",
-                "day": "thursday",
-                "items": ["Cherry Cobbler Bread", "Apple Cinnamon Mini Muffin", "Powdered Sugar Donut"]
-            },
-            {
-                "station": "Bakery",
-                "day": "friday",
-                "items": ["Chocolate Chip Scone", "Whole Grain Lemon Poppy Mini Muffin", "Cinnamon Donut Bites"]
-            },
-            {
-                "station": "Bakery",
-                "day": "saturday",
-                "items": ["Donut Bites", "Blueberry Scone"]
-            },
-            {
-                "station": "Bakery",
-                "day": "sunday",
-                "items": ["Banana Nut Mini Muffin", "Cherry Crumb Cupcake"]
-            }
-        ]
-
-        // EXTRACT VALUE FOR HTML HEADER.
-        // ('Book ID', 'Book Name', 'Category' and 'Price')
-        var col = [];
-        for (var i = 0; i < gcBreakfast.length; i++) {
-            for (var key in gcBreakfast[i]) {
-                if (col.indexOf(key) === -1) {
-                    col.push(key);
-                }
-            }
-        }
-
-        // CREATE DYNAMIC TABLE.
-        var table = document.createElement("table");
-
-        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
-
-        var tr = table.insertRow(-1);                   // TABLE ROW.
-
-        for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
-            th.innerHTML = col[i];
-            tr.appendChild(th);
-        }
-
-        // ADD JSON DATA TO THE TABLE AS ROWS.
-        for (var i = 0; i < gcBreakfast.length; i++) {
-
-            tr = table.insertRow(-1);
-
-            for (var j = 0; j < col.length; j++) {
-                var tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = gcBreakfast[i][col[j]];
-            }
-        }
-
-        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
-        var divContainer = document.getElementById("showData4");
-        divContainer.innerHTML = "";
-        divContainer.appendChild(table);
-    }
-</script>
-<script>
-    function GClunch() {
-        var gcLunch = [{
-            "station": "Grill",
-            "day": "monday",
-            "items": ["Baby Carrots", "Buffalo Blue Chicken Panini", "Crispy Shoestring French Fries", "Garden Burger Available Upon Request"]
-        },
-            {
-                "station": "Grill",
-                "day": "tuesday",
-                "items": ["Baby Carrots", "Hot Dog with Sauerkraut", "Twister Fries", "Garden Burger Available Upon Request"]
-            },
-            {
-                "station": "Grill",
-                "day": "wednesday",
-                "items": ["Baby Carrots", "BBQ & Cheddar Turkey Burger", "Sweet Potato Fries", "Garden Burger Available Upon Request"]
-            },
-            {
-                "station": "Grill",
-                "day": "thursday",
-                "items": ["Baby Carrots", "Chicken Cheesesteak Wrap", "Crispy French Fries", "Garden Burger Available Upon Request"]
-            },
-            {
-                "station": "Grill",
-                "day": "friday",
-                "items": ["Baby Carrots", "Honey Mustard Grilled Chicken", "Crispy Shoestring French Fries", "Garden Burger Available Upon Request"]
-            },
-            {
-                "station": "Rotisserie",
-                "day": "monday",
-                "items": ["Chicken Bibimbap", "Steamed Mixed Vegetables"]
-            },
-            {
-                "station": "Rotisserie",
-                "day": "tuesday",
-                "items": ["Corn On The Cob", "Spiced-Rubbed Pork Loin", "Red Beans & Rice"]
-            },
-            {
-                "station": "Rotisserie",
-                "day": "wednesday",
-                "items": ["Collard Greens", "Fried Chicken", "Baked Macaroni & Cheese"]
-            },
-            {
-                "station": "Rotisserie",
-                "day": "thursday",
-                "items": ["Sautéed Zucchini & Tomato", "Italian Sausage & Peppers Sandwich", "Roasted Potatoes"]
-            },
-            {
-                "station": "Rotisserie",
-                "day": "friday",
-                "items": ["Old Fashioned Cole Slaw", "Homestyle Fish Fillet with Tartar Sauce", "Crispy Tater Bites"]
-            },
-            {
-                "station": "Rotisserie",
-                "day": "saturday",
-                "items": ["Brussels Sprouts & Carrots", "Baked Pit Ham with Honey Mustard Dressing", "Potatoes Au Gratin"]
-            },
-            {
-                "station": "Rotisserie",
-                "day": "sunday",
-                "items": ["Steamed Fresh Broccoli", "Grilled Chicken Breast", "Mashed Yukon Gold Potatoes with Country Gravy"]
-            },
-            {
-                "station": "Pizza",
-                "day": "monday",
-                "items": ["Cuban Stromboli"]
-            },
-            {
-                "station": "Pizza",
-                "day": "tuesday",
-                "items": ["Spinach", "Feta & Ham Pizza"]
-            },
-            {
-                "station": "Pizza",
-                "day": "wednesday",
-                "items": ["Meat Lover's Pizza"]
-            },
-            {
-                "station": "Pizza",
-                "day": "thursday",
-                "items": ["BBQ Chicken Stromboli"]
-            },
-            {
-                "station": "Pizza",
-                "day": "friday",
-                "items": ["Meatball Pizza"]
-            },
-            {
-                "station": "Pizza",
-                "day": "saturday",
-                "items": ["Philly Cheesesteak Stromboli"]
-            },
-            {
-                "station": "Pizza",
-                "day": "sunday",
-                "items": ["Chicken Bacon Ranch Flatbread"]
-            },
-            {
-                "station": "International",
-                "day": "monday",
-                "items": ["Asian Seared Chicken", "Vegetable Fried Rice"]
-            },
-            {
-                "station": "International",
-                "day": "tuesday",
-                "items": ["Beef Harissa Rice Bowl"]
-            },
-            {
-                "station": "International",
-                "day": "wednesday",
-                "items": ["Ropa Vieja", "Confetti Brown Rice"]
-            },
-            {
-                "station": "International",
-                "day": "thursday",
-                "items": ["Sweet & Sour Meatballs", "Seasoned Rice"]
-            },
-            {
-                "station": "International",
-                "day": "friday",
-                "items": ["Tagine Chicken Drumstick", "Cous Cous"]
-            },
-            {
-                "station": "Vegan",
-                "day": "monday",
-                "items": ["Mediterranean Stir-Fry & Basmati Rice with Peas", "Vegan Oatmeal Cookie"]
-            },
-            {
-                "station": "Vegan",
-                "day": "tuesday",
-                "items": ["Vegan Jambalaya", "Peanut Butter Pretzel Cereal Bar"]
-            },
-            {
-                "station": "Vegan",
-                "day": "wednesday",
-                "items": ["Italian Spinach & White Beans", "Vegan Peanut Butter Cookie"]
-            },
-            {
-                "station": "Vegan",
-                "day": "thursday",
-                "items": ["Asian Teriyaki Noodles", "Vegan Cranberry Oatmeal Cookie"]
-            },
-            {
-                "station": "Vegan",
-                "day": "friday",
-                "items": ["Vegan Beef Chili Potato", "Vegan Brownie"]
-            },
-            {
-                "station": "Vegan",
-                "day": "saturday",
-                "items": ["Cilantro-Peanut Pesto Pasta with Garlic Roasted Broccoli", "Vegan Peach Banana Cake"]
-            },
-            {
-                "station": "Vegan",
-                "day": "sunday",
-                "items": ["General Tso's Tofu with White Rice", "Vegan Lemon Rice Pudding"]
-            },
-            {
-                "station": "Soup",
-                "day": "monday",
-                "items": ["Chicken & Roasted Corn Chowder", "Three Bean Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "tuesday",
-                "items": ["Chipotle Chicken Tortilla Soup", "Barley Vegetable Soup"]
-            },
-            {
-                "station": "Soup",
-                "day": "wednesday",
-                "items": ["Hearty Beef & Vegetable Soup", "Cheddar Cauliflower Soup"]
-            },
-            {
-                "station": "Soup",
-                "day": "thursday",
-                "items": ["Hungarian Goulash Soup", "Moroccan Chickpea Soup"]
-            },
-            {
-                "station": "Soup",
-                "day": "friday",
-                "items": ["New England Clam Chowder", "Curried Tomato Lentil Soup"]
-            },
-            {
-                "station": "Soup",
-                "day": "saturday",
-                "items": ["Beef & Rice Soup", "Chile Cheddar Potato Soup"]
-            },
-            {
-                "station": "Soup",
-                "day": "sunday",
-                "items": ["Chicken & Rice Soup Florentine", "Split Pea Soup"]
-            },
-            {
-                "station": "Bakery",
-                "day": "monday",
-                "items": ["Chocolate Chip Cookie", "Cream Cheese Marbled Brownie", "Oatmeal Raisin Cookie", "Strawberry Shortcake Parfait"]
-            },
-            {
-                "station": "Bakery",
-                "day": "tuesday",
-                "items": ["Chocolate Chip Cookie", "Crispy Cereal Bar", "Sugar Cookie", "Chocolate Crinkle Whoopie Pie"]
-            },
-            {
-                "station": "Bakery",
-                "day": "wednesday",
-                "items": ["Chocolate Chip Cookie", "Chocolate Chip Coconut Bar", "Peanut Butter Cookie", "Apple Crumb Cupcake"]
-            },
-            {
-                "station": "Bakery",
-                "day": "thursday",
-                "items": ["Chocolate Chip Cookie", "Crunchy S'mores Bar", "Oatmeal Raisin Cookie", "Citurs Cake with Vanilla Icing"]
-            },
-            {
-                "station": "Bakery",
-                "day": "friday",
-                "items": ["Chocolate Chip Cookie", "Ultimate Fudge Brownie", "Peanut Butter Cookie", "Apple Betty"]
-            },
-            {
-                "station": "Bakery",
-                "day": "saturday",
-                "items": ["Chocolate Chip Cookie", "Sugar Cookie"]
-            },
-            {
-                "station": "Bakery",
-                "day": "sunday",
-                "items": ["Chocolate Chip Cookie", "Oatmeal Raisin Cookie"]
-            }
-        ]
-
-        // EXTRACT VALUE FOR HTML HEADER.
-        // ('Book ID', 'Book Name', 'Category' and 'Price')
-        var col = [];
-        for (var i = 0; i < gcLunch.length; i++) {
-            for (var key in gcLunch[i]) {
-                if (col.indexOf(key) === -1) {
-                    col.push(key);
-                }
-            }
-        }
-
-        // CREATE DYNAMIC TABLE.
-        var table = document.createElement("table");
-
-        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
-
-        var tr = table.insertRow(-1);                   // TABLE ROW.
-
-        for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
-            th.innerHTML = col[i];
-            tr.appendChild(th);
-        }
-
-        // ADD JSON DATA TO THE TABLE AS ROWS.
-        for (var i = 0; i < gcLunch.length; i++) {
-
-            tr = table.insertRow(-1);
-
-            for (var j = 0; j < col.length; j++) {
-                var tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = gcLunch[i][col[j]];
-            }
-        }
-
-        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
-        var divContainer = document.getElementById("showData5");
-        divContainer.innerHTML = "";
-        divContainer.appendChild(table);
-    }
-</script>
-<script>
-    function GCdinner() {
-        var gcDinner = [{
-            "station": "Grill",
-            "day": "monday",
-            "items": ["Baby Carrots", "Cheesesteak Biscuit", "Garden Burger Available Upon Request", "Sweet Potato Fries"]
-        },
-            {
-                "station": "Grill",
-                "day": "tuesday",
-                "items": ["Baby Carrots", "Crispy Chicken & Cheese Snacker", "Garden Burger Available Upon Request", "Crispy French Fries"]
-            },
-            {
-                "station": "Grill",
-                "day": "wednesday",
-                "items": ["Baby Carrots", "Teriyaki Pineapple Turkey Burger", "Garden Burger Available Upon Request", "Crispy Shoestring French Fries"]
-            },
-            {
-                "station": "Grill",
-                "day": "thursday",
-                "items": ["Baby Carrots", "Chicago Style Turkey Corn Dog", "Garden Burger Available Upon Request", "Twister Fries"]
-            },
-            {
-                "station": "Grill",
-                "day": "friday",
-                "items": ["Baby Carrots", "Grilled Fish Soft Taco", "Garden Burger Available Upon Request", "Sweet Potato Fries"]
-            },
-            {
-                "station": "Grill",
-                "day": "saturday",
-                "items": ["Baby Carrots", "BBQ Chicken & Cheddar Sandwich", "Garden Burger Available Upon Request", "Sweet Potato Fries"]
-            },
-            {
-                "station": "Grill",
-                "day": "sunday",
-                "items": ["Baby Carrots", "Chipotle Pineapple Turkey Burger", "Garden Burger Available Upon Request", "Crispy Shoestring French Fries"]
-            },
-            {
-                "station": "Rotesserie",
-                "day": "monday",
-                "items": ["Green Beans & Almonds", "Pretzel-Crusted Striped Pangasius", "Roasted Dijon Red Potatoes"]
-            },
-            {
-                "station": "Rotesserie",
-                "day": "tuesday",
-                "items": ["Crispy Okra", "Shrimp Etouffee", "Cajun Rice"]
-            },
-            {
-                "station": "Rotesserie",
-                "day": "wednesday",
-                "items": ["Italian Roasted Vegetables", "Mediterranean Baked Fish", "Scalloped Potatoes"]
-            },
-            {
-                "station": "Rotesserie",
-                "day": "thursday",
-                "items": ["Grilled Rosemary Flatbread", "Spaghetti with Meatsauce", "Steamed Broccoli Florets"]
-            },
-            {
-                "station": "Rotesserie",
-                "day": "friday",
-                "items": ["Green Peas", "Roast Pork Adobo", "Black Beans & Rice with Bacon"]
-            },
-            {
-                "station": "Rotesserie",
-                "day": "saturday",
-                "items": ["Cauliflower", "Overstuffed Potato", "Turkey Chili Con Carne"]
-            },
-            {
-                "station": "Rotesserie",
-                "day": "sunday",
-                "items": ["Calabacitas", "Carne Asada", "Mexican Rice"]
-            },
-            {
-                "station": "Pizza",
-                "day": "monday",
-                "items": ["Cuban Stromboli"]
-            },
-            {
-                "station": "Pizza",
-                "day": "tuesday",
-                "items": ["Spinach", "Feta & Ham Pizza"]
-            },
-            {
-                "station": "Pizza",
-                "day": "wednesday",
-                "items": ["Meat Lover's Pizza"]
-            },
-            {
-                "station": "Pizza",
-                "day": "thursday",
-                "items": ["BBQ Chicken Stromboli"]
-            },
-            {
-                "station": "Pizza",
-                "day": "friday",
-                "items": ["Meatball Pizza"]
-            },
-            {
-                "station": "Pizza",
-                "day": "saturday",
-                "items": ["Philly Cheesesteak Stromboli"]
-            },
-            {
-                "station": "Pizza",
-                "day": "sunday",
-                "items": ["Chicken Bacon Ranch Flatbread"]
-            },
-            {
-                "station": "International",
-                "day": "monday",
-                "items": ["Asian Seared Chicken", "Vegetable Fried Rice"]
-            },
-            {
-                "station": "International",
-                "day": "tuesday",
-                "items": ["Beef Harissa Rice Bowl"]
-            },
-            {
-                "station": "International",
-                "day": "wednesday",
-                "items": ["Ropa Vieja", "Confetti Brown Rice"]
-            },
-            {
-                "station": "International",
-                "day": "thursday",
-                "items": ["Sweet & Sour Meatballs", "Seasoned Rice"]
-            },
-            {
-                "station": "International",
-                "day": "friday",
-                "items": ["Tagine Chicken Drumstick", "Cous Cous"]
-            },
-            {
-                "station": "Vegan",
-                "day": "monday",
-                "items": ["Vegan Chicken Paella with Brown Rice", "Vegan Oatmeal Cookie"]
-            },
-            {
-                "station": "Vegan",
-                "day": "tuesday",
-                "items": ["Vegan Jambalaya", "Bananas Foster"]
-            },
-            {
-                "station": "Vegan",
-                "day": "wednesday",
-                "items": ["Vegan Beefy Mac Casserole", "Vegan Peanut Butter Cookie"]
-            },
-            {
-                "station": "Vegan",
-                "day": "thursday",
-                "items": ["Rice Noodle & Vegetable Stir Fry", "Vegan Cranberry Oatmeal Cookie"]
-            },
-            {
-                "station": "Vegan",
-                "day": "friday",
-                "items": ["Black Bean Stuffed Pepper", "Vegan Brownie"]
-            },
-            {
-                "station": "Vegan",
-                "day": "saturday",
-                "items": ["Vegan Sweet & Sour Chicken"]
-            },
-            {
-                "station": "Vegan",
-                "day": "sunday",
-                "items": ["Curried Chickpeas with White Rice"]
-            },
-            {
-                "station": "Soup",
-                "day": "monday",
-                "items": ["Chicken & Roasted Corn Chowder", "Three Bean Chili"]
-            },
-            {
-                "station": "Soup",
-                "day": "tuesday",
-                "items": ["Chipotle Chicken Tortilla Soup", "Barley Vegetable Soup"]
-            },
-            {
-                "station": "Soup",
-                "day": "wednesday",
-                "items": ["Hearty Beef & Vegetable Soup", "Cheddar Cauliflower Soup"]
-            },
-            {
-                "station": "Soup",
-                "day": "thursday",
-                "items": ["Hungarian Goulash Soup", "Moroccan Chickpea Soup"]
-            },
-            {
-                "station": "Soup",
-                "day": "friday",
-                "items": ["New England Clam Chowder", "Curried Tomato Lentil Soup"]
-            },
-            {
-                "station": "Soup",
-                "day": "saturday",
-                "items": ["Beef & Rice Soup", "Chile Cheddar Potato Soup"]
-            },
-            {
-                "station": "Soup",
-                "day": "sunday",
-                "items": ["Chicken & Rice Soup Florentine", "Split Pea Soup"]
-            },
-            {
-                "station": "Bakery",
-                "day": "monday",
-                "items": ["Cherry Cheesecake Tart", "Chocolate Chip Cookie", "Oreo® Cookie Blondie", "Sugar Cookie"]
-            },
-            {
-                "station": "Bakery",
-                "day": "tuesday",
-                "items": ["Chocolate Chip Cookie", "Caramel Apple Bread Pudding", "Oatmeal Raisin Cookie"]
-            },
-            {
-                "station": "Bakery",
-                "day": "wednesday",
-                "items": ["Pumpkin Spice Crumb Cake", "Peanut Butter Cookie", "Chocolate Chip Cookie"]
-            },
-            {
-                "station": "Bakery",
-                "day": "thursday",
-                "items": ["Vanilla Cupcake", "Fruity Marshmellow Treat", "Oatmeal Raisin Cookie", "Chocolate Chip Cookie"]
-            },
-            {
-                "station": "Bakery",
-                "day": "friday",
-                "items": ["Peanut Butter Devil's Food Parfait", "Carrot Cake Whoopie Pie", "Oatmeal Raisin Cookie", "Chocolate Chip Cookie"]
-            },
-            {
-                "station": "Bakery",
-                "day": "saturday",
-                "items": ["Mini Salted Caramel Cake", "Banana Pudding Parfait", "Sugar Cookie", "Chocolate Chip Cookie"]
-            },
-            {
-                "station": "Bakery",
-                "day": "sunday",
-                "items": ["Banana Chip Cupcake", "Red Velvet Thimble Cake", "Oatmeal Raisin Cookie", "Chocolate Chip Cookie"]
-            }
-        ]
-
-        // EXTRACT VALUE FOR HTML HEADER.
-        // ('Book ID', 'Book Name', 'Category' and 'Price')
-        var col = [];
-        for (var i = 0; i < gcDinner.length; i++) {
-            for (var key in gcDinner[i]) {
-                if (col.indexOf(key) === -1) {
-                    col.push(key);
-                }
-            }
-        }
-
-        // CREATE DYNAMIC TABLE.
-        var table = document.createElement("table");
-
-        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
-
-        var tr = table.insertRow(-1);                   // TABLE ROW.
-
-        for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
-            th.innerHTML = col[i];
-            tr.appendChild(th);
-        }
-
-        // ADD JSON DATA TO THE TABLE AS ROWS.
-        for (var i = 0; i < gcDinner.length; i++) {
-
-            tr = table.insertRow(-1);
-
-            for (var j = 0; j < col.length; j++) {
-                var tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = gcDinner[i][col[j]];
-            }
-        }
-
-        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
-        var divContainer = document.getElementById("showData6");
-        divContainer.innerHTML = "";
-        divContainer.appendChild(table);
-    }
-</script>
-</html>
+<center>
+    <h2>This Week's Menu</h2>
+
+    <button class="btn" ng-class="{'btn-dark': freshFoodBreakfast, 'btn-light': !freshFoodBreakfast}" ng-click="showMenu('FF Breakfast')">Fresh Food Company Breakfast</button>
+    <button class="btn" ng-class="{'btn-dark': freshFoodLunch, 'btn-light': !freshFoodLunch}" ng-click="showMenu('FF Lunch')">Fresh Food Company Lunch</button>
+    <button class="btn" ng-class="{'btn-dark': freshFoodDinner, 'btn-light': !freshFoodDinner}" ng-click="showMenu('FF Dinner')">Fresh Food Company Dinner</button>
+    <button class="btn" ng-class="{'btn-dark': gatorCornerBreakfast, 'btn-light': !gatorCornerBreakfast}" ng-click="showMenu('GC Breakfast')">Gator Corner Breakfast</button>
+    <button class="btn" ng-class="{'btn-dark': gatorCornerLunch, 'btn-light': !gatorCornerLunch}" ng-click="showMenu('GC Lunch')">Gator Corner Lunch</button>
+    <button class="btn" ng-class="{'btn-dark': gatorCornerDinner, 'btn-light': !gatorCornerDinner}" ng-click="showMenu('GC Dinner')">Gator Corner Dinner</button>
+
+    <br> <br>
+
+    <div ng-show="freshFoodBreakfast">
+        <div class="weekMenu-days" ng-repeat="FFBreakfastFood in FFBreakfast">
+            <div>
+                <h1 class="weekMenu-text">{{FFBreakfastFood.station}}</h1>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Monday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.MondayItems">
+                    {{FFBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Tuesday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.TuesdayItems">
+                    {{FFBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Wednesday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.WednesdayItems">
+                    {{FFBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Thursday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.ThursdayItems">
+                    {{FFBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Friday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.FridayItems">
+                    {{FFBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Saturday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.SaturdayItems">
+                    {{FFBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Sunday</h1>
+                <div ng-repeat="FFBreakfastItem in FFBreakfastFood.SundayItems">
+                    {{FFBreakfastItem}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-show="freshFoodLunch">
+        <div class="weekMenu-days" ng-repeat="FFLunchFood in FFLunch">
+            <div>
+                <h1 class="weekMenu-text">{{FFLunchFood.station}}</h1>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Monday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.MondayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Tuesday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.TuesdayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Wednesday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.WednesdayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Thursday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.ThursdayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Friday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.FridayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Saturday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.SaturdayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Sunday</h1>
+                <div ng-repeat="FFLunchItem in FFLunchFood.SundayItems">
+                    {{FFLunchItem}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-show="freshFoodDinner">
+        <div class="weekMenu-days" ng-repeat="FFDinnerFood in FFDinner">
+            <div>
+                <h1 class="weekMenu-text">{{FFDinnerFood.station}}</h1>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Monday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.MondayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Tuesday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.TuesdayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Wednesday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.WednesdayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Thursday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.ThursdayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Friday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.FridayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Saturday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.SaturdayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Sunday</h1>
+                <div ng-repeat="FFDinnerItem in FFDinnerFood.SundayItems">
+                    {{FFDinnerItem}}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div ng-show="gatorCornerBreakfast">
+        <div class="weekMenu-days" ng-repeat="GCBreakfastFood in GCBreakfast">
+            <div>
+                <h1 class="weekMenu-text">{{GCBreakfastFood.station}}</h1>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Monday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.MondayItems">
+                    {{GCBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Tuesday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.TuesdayItems">
+                    {{GCBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Wednesday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.WednesdayItems">
+                    {{GCBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Thursday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.ThursdayItems">
+                    {{GCBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Friday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.FridayItems">
+                    {{GCBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Saturday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.SaturdayItems">
+                    {{GCBreakfastItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Sunday</h1>
+                <div ng-repeat="GCBreakfastItem in GCBreakfastFood.SundayItems">
+                    {{GCBreakfastItem}}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div ng-show="gatorCornerLunch">
+        <div class="weekMenu-days" ng-repeat="GCLunchFood in GCLunch">
+            <div>
+                <h1 class="weekMenu-text">{{GCLunchFood.station}}</h1>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Monday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.MondayItems">
+                    {{GCLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Tuesday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.TuesdayItems">
+                    {{GCLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Wednesday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.WednesdayItems">
+                    {{GCLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Thursday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.ThursdayItems">
+                    {{GCLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Friday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.FridayItems">
+                    {{GCLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Saturday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.SaturdayItems">
+                    {{GCLunchItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Sunday</h1>
+                <div ng-repeat="GCLunchItem in GCLunchFood.SundayItems">
+                    {{GCLunchItem}}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div ng-show="gatorCornerDinner">
+        <div class="weekMenu-days" ng-repeat="GCDinnerFood in GCDinner">
+            <div>
+                <h1 class="weekMenu-text">{{GCDinnerFood.station}}</h1>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Monday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.MondayItems">
+                    {{GCDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Tuesday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.TuesdayItems">
+                    {{GCDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Wednesday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.WednesdayItems">
+                    {{GCDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Thursday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.ThursdayItems">
+                    {{GCDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Friday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.FridayItems">
+                    {{GCDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Saturday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.SaturdayItems">
+                    {{GCDinnerItem}}
+                </div>
+            </div>
+            <div class="weekMenuItems">
+                <h1 class="weekMenu-text">Sunday</h1>
+                <div ng-repeat="GCDinnerItem in GCDinnerFood.SundayItems">
+                    {{GCDinnerItem}}
+                </div>
+            </div>
+        </div>
+    </div>
+</center>

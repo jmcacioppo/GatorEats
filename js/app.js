@@ -1,7 +1,7 @@
 'use strict';
 
 var gatorEats = angular.module('gatorEats', ['ngRoute'])
-    .config(function($routeProvider) {
+    .config(function($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'views/home.html',
@@ -28,4 +28,7 @@ var gatorEats = angular.module('gatorEats', ['ngRoute'])
                 controller: 'SettingsController'
             })
             .otherwise({redirectTo: '/'});
+
+        // Use the HTML5 History API
+        $locationProvider.html5Mode(true);
     });
