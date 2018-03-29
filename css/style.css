@@ -270,14 +270,10 @@
     margin-top: -3rem;
 }
 
-<<<<<<< HEAD
-
-=======
 .hold-avatar img:hover{
     background-color: #ddd;
     width: 100%;
 }
->>>>>>> 5bcce6d74bd6082a9cfec3daa9a134bf5aa0f2aa
 
 .header {
     overflow: hidden;
