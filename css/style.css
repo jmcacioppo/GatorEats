@@ -219,4 +219,67 @@
     width: 20%;
 }
 
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+    background-color: #80bfff;
+  }
+  
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+ }
+  
+.header a:hover {
+    background-color: #1F618D;
+    color: #ffffff;
+}
+.header-right {
+    float: none;
+    padding-left: 26%;
+    
+}
 
+.lets-eat{
+    font-size: 8rem;
+    font-family: 'Bitter', serif;
+    color: #ffffff;
+    text-align: center;
+}
+.head-butt{
+    background-color: #ddd;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-right: 1rem;
+}  
+@media screen and (max-width: 800px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    .header-right {
+      float: none;
+    }
+    .head-butt{
+        text-align: center;
+        background-color: #ddd;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        color: #ffffff;
+        margin-right: 1rem;
+        width: 20rem;
+        margin-top: 1rem;
+
+        font-size: 0.5rem;
+        
+    }
+}
+  
