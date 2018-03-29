@@ -7,6 +7,9 @@
 
 .available-now{
     position: relative;
+    background-color: #1F618D;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .extras-text{
@@ -14,6 +17,8 @@
     font-family: 'IBM Plex Serif', serif;
     font-weight: bold;
     font-size: 3rem;
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .extras-restaurants{
@@ -30,23 +35,23 @@
     position: relative;
     display: inline-block;
     margin-left: 1rem;
-    color:#000000;
+    color:#ffffff;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
-    background-color: #1F618D;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #6699cc;
     max-height: 100%;
     width: 30%;
 }
 
 
 .logo-pic{
-    max-height: 70%;
+    height: 6rem;
     max-width: 100%;
-    height: auto;
-    width: auto;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -55,6 +60,9 @@
 
 .available-later{
     position: relative;
+    background-color: #1F618D;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-top: 3rem;
 }
 
@@ -62,6 +70,7 @@
     color:#ffffff;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
+    white-space: normal;
 }
 
 /*for trending.html*/
@@ -177,11 +186,37 @@
 }
 
 /*Week Menu*/
-.foodItem {
-    background-color: #00FFFF;
-    padding: 5px;
-    height: 75%;
-    width: 75%;
+.weekMenu-text{
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.weekMenu-days{
+    align-content: center;
+    margin-right: 2rem;
+    padding-left: 2rem;
+    height: 20rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.weekMenuItems{
+    position: relative;
+    display: inline-block;
+    margin-left: 1rem;
+    color:#000000;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    background-color: #1F618D;
+    max-height: 100%;
+    width: 20%;
 }
 
 .avatar-pic{
@@ -230,3 +265,67 @@
 
 
 
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+    background-color: #80bfff;
+  }
+  
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+ }
+  
+.header a:hover {
+    background-color: #1F618D;
+    color: #ffffff;
+}
+.header-right {
+    float: none;
+    padding-left: 26%;
+    
+}
+
+.lets-eat{
+    font-size: 8rem;
+    font-family: 'Bitter', serif;
+    color: #ffffff;
+    text-align: center;
+}
+.head-butt{
+    background-color: #ddd;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-right: 1rem;
+}  
+@media screen and (max-width: 800px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    .header-right {
+      float: none;
+    }
+    .head-butt{
+        text-align: center;
+        background-color: #ddd;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        color: #ffffff;
+        margin-right: 1rem;
+        width: 20rem;
+        margin-top: 1rem;
+
+        font-size: 0.5rem;
+        
+    }
+}
+  
