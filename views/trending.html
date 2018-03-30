@@ -13,7 +13,11 @@
 		<tbody>
 			<tr ng-repeat="item in leaderboard track by $index | limitTo: 10">
 				<th scope="row">{{$index+1}}</th>
-				<td>{{item.itemName}}</td>
+				<td>
+					<a href="" ng-click="getFoodItem(item.itemName, item.station, item.location)">
+						{{item.itemName}}
+					</a>
+				</td>
 				<td>{{item.location}}</td>
 				<td>{{item.totalRating}}</td>
 			</tr>
