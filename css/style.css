@@ -227,13 +227,14 @@
     font-size: 1.5rem;
 }
 
-.todayMenu-days{
+.todayMenu-day{
     align-content: center;
     margin-right: 2rem;
     padding-left: 2rem;
     height: 20rem;
     overflow: auto;
     white-space: nowrap;
+    background-color: #6699cc;
 }
 
 .todayMenuItems{
@@ -248,7 +249,7 @@
     margin-top: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
-    background-color: #1F618D;
+    background-color: #6699cc;
     max-height: 100%;
     width: 20%;
 }
