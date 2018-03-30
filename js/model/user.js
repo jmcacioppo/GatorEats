@@ -14,7 +14,8 @@ var FoodItemSchema = new Schema({
 
 var UserSchema = new Schema({
     username: String,
-    password: String
+    password: String,
+    imgURL: String
 });
 
 var MenuSchema = new Schema({

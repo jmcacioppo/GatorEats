@@ -19,6 +19,10 @@ var gatorEats = angular.module('gatorEats', ['ngRoute'])
                 templateUrl: 'views/weekMenu.html',
                 controller: 'WeekMenuController'
             })
+            .when('/foodItem', {
+                templateUrl: 'views/foodItem.html',
+                controller: 'FoodItemController'
+            })
             .when('/trending', {
                 templateUrl: 'views/trending.html',
                 controller: 'TrendingController'

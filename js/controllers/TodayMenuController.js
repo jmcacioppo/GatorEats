@@ -1,8 +1,5 @@
-gatorEats.controller('TodayMenuController', ['$scope', '$http', 'TransferData',
-    function($scope, $http, TransferData){
-        var user = TransferData.getUser();
-        console.log(user);
-
+gatorEats.controller('TodayMenuController', ['$scope', '$http',
+    function($scope, $http){
         $http.get('menus/FFbreakfast.json')
             .then(function(res) {
             	let day = "wednesday";
