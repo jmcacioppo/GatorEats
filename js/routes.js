@@ -165,7 +165,7 @@ router.route('/api/leaderboard')
 			if (err) res.send(err);
 			else {
 				foodItems.sort(function(a, b) {
-					return b.review.rating - a.review.rating;
+					return b.totalRating - a.totalRating;
 				});
 
 			  	res.send({'trending': foodItems});
