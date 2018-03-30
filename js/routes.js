@@ -1,7 +1,6 @@
 var express = require('express'),
 	mongoose = require('mongoose'),
 	User = mongoose.model('User'),
-	Menu = mongoose.model('Menu'),
 	FoodItem = mongoose.model('FoodItem');
 
 // Get the router
@@ -88,70 +87,35 @@ router.route('/api/users/:user_id')
         });
     });
 
-// MENU ROUTES
-router.route('/api/menus')
-	// GET all menus
-    .get(function(req, res) {
-        Menu.find(function(err, menus) {
-            if (err) res.send(err);
-            res.json(menus);
-        });
-    })
-
-    // POST to create a menu
-    .post(function(req, res) {
-        var menu = new Menu();
-
-        // Set text and menu values from request
-        menu.menuName = req.body.menuName;
-        menu.foodItems = req.body.foodItems;
- 
-        // Save menu and check for errors
-        menu.save(function(err) {
-            if (err) res.send(err);
-            res.json({ message: 'Menu created successfully!' });
-        });
-    });
-
-router.route('/api/menus/:menu_id')
-    // GET menu with id   
-    .get(function(req, res) {
-        Menu.findById(req.params.menu_id, function(err, menu) {
-            if (err) res.send(err);
-            res.json(menu);
-        });
-    })
-
-    // PUT to update menu with id
-    .put(function(req, res) {
-        Menu.findById(req.params.menu_id, function(err, menu) {
-            if (err) res.send(err);
-            
-            // Update the menu text
-            menu.menuName = req.body.menuName;
-        	menu.foodItems = req.body.foodItems;
-            
-            menu.save(function(err) {
-                if (err) res.send(err);
-                res.json({ message: 'Menu successfully updated!' });
-            });
- 
-        });
-    })
-
-    // DELETE menu with id
-    .delete(function(req, res) {
-        Menu.remove({
-            _id: req.params.menu_id
-        }, function(err, menu) {
-            if (err) res.send(err);
-            res.json({ message: 'Successfully deleted menu!' });
-        });
-    });
-
 // FOOD ITEM ROUTES
-router.route('/api/foodItem/:foodItem_id')
-    // GET foodItem with id   
+router.route('/api/foodItems')
+	// GET all food items
+    .get(function(req, res) {
+        FoodItem.find(function(err, foodItems) {
+            if (err) res.send(err);
+            res.json(foodItems);
+        });
+    })
+
+    // POST to create a food item
+    .post(function(req, res) {
+        var foodItem = new FoodItem();
+
+        // Set text and food item values from request
+        foodItem.itemName = req.body.itemName;
+        foodItem.location = req.body.location;
+        foodItem.station = req.body.station;
+        foodItem.reviews = req.body.reviews;
+ 
+        // Save food item and check for errors
+        foodItem.save(function(err) {
+            if (err) res.send(err);
+            res.json(foodItem);
+        });
+    });
+
+router.route('/api/foodItems/:foodItem_id')
+    // GET food item with id   
     .get(function(req, res) {
         FoodItem.findById(req.params.foodItem_id, function(err, foodItem) {
             if (err) res.send(err);
@@ -159,27 +123,32 @@ router.route('/api/foodItem/:foodItem_id')
         });
     })
 
-    // PUT to update foodItem with id
+    // PUT to update food item with id
     .put(function(req, res) {
-        Menu.findById(req.params.foodItem_id, function(err, foodItem) {
+        FoodItem.findById(req.params.foodItem_id, function(err, foodItem) {
             if (err) res.send(err);
             
-            // Update the foodItem text
-            foodItem.name = req.body.name;
-        	foodItem.classification = req.body.classification;
-        	foodItem.review = req.body.review;
+            // Update the food item text
+            foodItem.reviews.push(req.body.review);
             
+            var total = 0;
+            for(var i = 0; i < foodItem.reviews.length; i++) {
+                total += foodItem.reviews[i].rating;
+            }
+    
+            foodItem.totalRating = total / starsArray.length;
+
             foodItem.save(function(err) {
                 if (err) res.send(err);
-                res.json({ message: 'Menu successfully updated!' });
+                res.json(foodItem);
             });
  
         });
     })
 
-    // DELETE foodItem with id
+    // DELETE food item with id
     .delete(function(req, res) {
-        Menu.remove({
+        FoodItem.remove({
             _id: req.params.foodItem_id
         }, function(err, foodItem) {
             if (err) res.send(err);

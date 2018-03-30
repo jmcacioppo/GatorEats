@@ -7,9 +7,11 @@ var ReviewSchema = new Schema({
 });
 
 var FoodItemSchema = new Schema({
-	name: String,
-	classification: String,
-	review: [ReviewSchema]
+	itemName: String,
+	location: String,
+	station: String,
+	totalRating: Number,
+	reviews: [ReviewSchema]
 });
 
 var UserSchema = new Schema({
@@ -18,11 +20,5 @@ var UserSchema = new Schema({
     imgURL: String
 });
 
-var MenuSchema = new Schema({
-	menuName: String,
-	foodItems: [FoodItemSchema]
-});
-
 mongoose.model('User', UserSchema);
-mongoose.model('Menu', MenuSchema);
 mongoose.model('FoodItem', FoodItemSchema);

@@ -1,88 +1,29 @@
 <div class="trending">
 	<div class="trending-item">
-		<h1 class="trending-dining-hall">Fresh Food Company</h1>
-		<ul class="trending-breadcrumbs">
-			<li class="crumb"><a href="">Fresh Food Co</a> > </li>
-			<li class="crumb"><a href="">Food Station</a> > </li>
-			<li class="crumb">Food Item</li>
-		</ul>
+		<h1 class="trending-dining-hall">{{foodData.location}} {{foodData.station}}</h1>
 		<div class="hold-reviews">
 			<div class="not-comments">
-				<h1 class="food-item">Baby Carrots</h1>
+				<h1 class="food-item">{{foodData.itemName}}</h1>
 				<div class="the-stars">
-					<span class="fa fa-star checked stars"></span>
-					<span class="fa fa-star checked stars"></span>
-					<span class="fa fa-star checked stars"></span>
-					<span class="fa fa-star stars"></span>
-					<span class="fa fa-star stars"></span>
+					<div id="stars">
+						<span ng-repeat="i in getNumber(5) track by $index" 
+							class="fa fa-star stars" ng-class="foodData.totalRating - ($index+1) >= 0 ? 'checked' : 'none'"></span>
+					</div>
 				</div>
 				<button type="button" class="btn btn-light review-button">Review this Item</button>
 			</div>
 			<div class="comments-here">
-				<div class="comment">
+				<div class="comment" ng-repeat="review in foodData.reviews">
 					<div class="avatar-area">
-					<img src="../css/avatars/cool-guy.png" class="avatar"/>
-					<p class="username">cool-guy</p>
-					<div class="the-stars-comment">
-						<span class="fa fa-star checked "></span>
-						<span class="fa fa-star checked "></span>
-						<span class="fa fa-star checked "></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star checked"></span>
-					</div>
-					</div>
-					<div class="split">
-						<p class="user-comment">THESE ARE BEST BABY CARROTS I'VE EVER HAD!!!</p>
-					</div>
-				</div>
-
-				<div class="comment">
-					<div class="avatar-area">
-					<img src="../css/avatars/el-professor.png" class="avatar"/>
-					<p class="username">el-professor</p>
-					<div class="the-stars-comment">
-						<span class="fa fa-star checked "></span>
-						<span class="fa fa-star checked "></span>
-						<span class="fa fa-star checked "></span>
-						<span class="fa fa-star "></span>
-						<span class="fa fa-star "></span>
-					</div>
-					</div>
-					<div class="split">
-						<p class="user-comment">Decent baby carrots, only wish they were organic!</p>
-					</div>
-				</div>
-
-				<div class="comment">
-					<div class="avatar-area">
-					<img src="../css/avatars/mean-nanny.png" class="avatar"/>
-					<p class="username">mean-nanny</p>
-					<div class="the-stars-comment">
-						<span class="fa fa-star checked "></span>
-						<span class="fa fa-star checked "></span>
-						<span class="fa fa-star checked "></span>
-						<span class="fa fa-star checked"></span>
-						<span class="fa fa-star "></span>
-					</div>
-					</div>
-					<div class="split">
-						<p class="user-comment"> okay </p>
-					</div>
-				</div>
-				<div class="comment">
-					<div class="avatar-area">
-						<img src="../css/avatars/mustache-dude.png" class="avatar"/>
-						<p class="username">mustachU</p>
-						<div class="the-stars-comment">
-							<span class="fa fa-star checked "></span>
-							<span class="fa fa-star checked "></span>
-							<span class="fa fa-star checked "></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star "></span>
+						<img src="../css/avatars/cool-guy.png" class="avatar"/>
+						<p class="username">cool-guy</p>
+						<div id="stars">
+							<span ng-repeat="i in getNumber(5) track by $index" 
+								class="fa fa-star stars" ng-class="review.rating - ($index+1) >= 0 ? 'checked' : 'none'"></span>
 						</div>
 					</div>
 					<div class="split">
-						<p class="user-comment"> My favorite vegan snack! </p>
+						<p class="user-comment">{{review.comment}}</p>
 					</div>
 				</div>
 			</div>
