@@ -1,13 +1,4 @@
 gatorEats.controller('TodayMenuController', ['$scope', '$http',
-        // $http.get('menus/FFbreakfast.json')
-        //     .then(function(res) {
-        //     	let day = "wednesday";
-        //
-        //     	res.data.forEach( function(menu, i) {
-        //     		if(menu.day == day) $scope.menus = menu;
-        //     		console.log(menu);
-        //     	});
-        //     });
     function($scope, $http) {
         $scope.freshFoodBreakfast = true;
         $scope.freshFoodLunch = false;

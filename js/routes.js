@@ -35,7 +35,7 @@ router.route('/api/users')
         User.find({ 'username' : req.body.username }, function(err, user) {
             if(err) res.send(err);
 
-            if(user.length > 0) res.json(user);
+            if(user.length > 0) res.json({'message' : 'User already exists'});
             else {
             	var newUser = new User();
 

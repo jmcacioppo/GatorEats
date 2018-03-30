@@ -1,5 +1,5 @@
-gatorEats.controller('HomeController', ['$scope', '$http', '$location', 'TransferData',
-    function($scope, $http, $location, TransferData) {
+gatorEats.controller('HomeController', ['$scope', '$http', '$location', 'TransferUserData',
+    function($scope, $http, $location, TransferUserData) {
     	$scope.login = function() {
     		$http.get('/api/users')
                  .then( (response) => {
@@ -13,7 +13,7 @@ gatorEats.controller('HomeController', ['$scope', '$http', '$location', 'Transfe
 
                     if(!userData) alert('Incorrect username or password');
                     else {
-                        TransferData.setUser(userData);
+                        TransferUserData.setUser(userData);
                         alert('You are logged in!');
                         $location.path('/today');
                     }
@@ -31,9 +31,12 @@ gatorEats.controller('HomeController', ['$scope', '$http', '$location', 'Transfe
             
             $http.post('/api/users', userData)
                 .then( (response) => {
-                    TransferData.setUser(repsonse.data);
-                    alert('You are logged in!');
-                    $location.path('/today');
+                    if(response.data.message) alert('User already exists');
+                    else {
+                        TransferUserData.setUser(repsonse.data);
+                        alert('You are logged in!');
+                        $location.path('/today');
+                    }
                 })
                 .catch( (err) => {
                     alert('An error occurred');

@@ -1,7 +1,7 @@
 angular.module('gatorEats')
-    .factory('TransferData', TransferData)
+    .factory('TransferUserData', TransferUserData)
 
-function TransferData() {
+function TransferUserData() {
     var savedUserData = {};
     
     function setUser(userData) {
