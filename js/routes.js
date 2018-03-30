@@ -46,7 +46,7 @@ router.route('/api/users')
 		        // Save user and check for errors
 		        newUser.save(function(err) {
 		            if (err) res.send(err);
-		            res.json({ message: 'User created successfully!' });
+		            res.json(newUser);
 		        });
             }
         });

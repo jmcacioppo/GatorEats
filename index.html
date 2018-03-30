@@ -5,14 +5,14 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Ubuntu" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Ubuntu|Bitter" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<base href="/">
 	</head>
 	<body>
-		<center>
+		<!-- <center>
 			<h1>GatorEats</h1>
 		</center>
 
@@ -30,9 +30,19 @@
 
 		<button class="btn">
 		    <a ng-href="settings">Settings</a>
-		</button>
-
+		</button> -->
+		<div class="header">
+			<div class="lets-eat">GatorEats</div>
+			<div class="header-right">
+				<a class="head-butt" ng-href="today">Today's Menu</a>
+				<a class="head-butt" ng-href="week">This Week's Menu</a>
+				<a class="head-butt" ng-href="extras">Extras</a>
+				<a class="head-butt" ng-href="trending">Trending</a>
+				<a class="head-butt" ng-href="settings">Settings</a>
+			</div>
+		</div>
 		<ng-view></ng-view>
+		<div></div>
 	</body>
 
 	<script src="/node_modules/angular/angular.min.js"></script>
@@ -41,6 +51,7 @@
 	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<script src="/js/app.js"></script>
+	<script src="/js/factory/TransferData.js"></script>
 	<script src="/js/controllers/HomeController.js"></script>
 	<script src="/js/controllers/ExtrasController.js"></script>
 	<script src="/js/controllers/SettingsController.js"></script>

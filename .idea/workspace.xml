@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9167c847-162e-493e-ac9d-6102abf4192b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/logos/same-size/camelia.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/logos/same-size/chomp-it.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/logos/same-size/jamba-juice.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/logos/same-size/moes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/logos/same-size/papa-johns.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/logos/same-size/pollo-tropical.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/logos/same-size/subway.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/logos/same-size/wendys.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/factory/TransferData.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/logos/papa-johns.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/logos/subway.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/todayMenu.html" afterPath="$PROJECT_DIR$/views/todayMenu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/ExtrasController.js" afterPath="$PROJECT_DIR$/js/controllers/ExtrasController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/HomeController.js" afterPath="$PROJECT_DIR$/js/controllers/HomeController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/TodayMenuController.js" afterPath="$PROJECT_DIR$/js/controllers/TodayMenuController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/routes.js" afterPath="$PROJECT_DIR$/js/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menus/extras.json" afterPath="$PROJECT_DIR$/menus/extras.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/extras.html" afterPath="$PROJECT_DIR$/views/extras.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/home.html" afterPath="$PROJECT_DIR$/views/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/settings.html" afterPath="$PROJECT_DIR$/views/settings.html" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -39,12 +57,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="229" column="6" lean-forward="false" selection-start-line="229" selection-start-column="6" selection-end-line="229" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="226">
+              <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+              <folding>
+                <marker date="1522419124078" expanded="true" signature="119:145" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TodayMenuController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/controllers/TodayMenuController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1271">
+              <caret line="133" column="9" lean-forward="false" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+              <folding>
+                <marker date="1522419119383" expanded="true" signature="44:4553" ph="[...]" />
+                <marker date="1522419119383" expanded="true" signature="413:4553" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,9 +113,9 @@
         <option value="$PROJECT_DIR$/menus/FFbreakfast.json" />
         <option value="$PROJECT_DIR$/menus/GCdinner.json" />
         <option value="$PROJECT_DIR$/menus/GCbreakfast.json" />
-        <option value="$PROJECT_DIR$/js/controllers/TodayMenuController.js" />
         <option value="$PROJECT_DIR$/views/todayMenu.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/js/controllers/TodayMenuController.js" />
       </list>
     </option>
   </component>
@@ -221,12 +254,12 @@
       <workItem from="1522077974820" duration="16000" />
       <workItem from="1522172238080" duration="15000" />
       <workItem from="1522342341326" duration="5056000" />
-      <workItem from="1522417508921" duration="1375000" />
+      <workItem from="1522417508921" duration="1421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28952000" />
+    <option name="totallyTimeSpent" value="28998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -584,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/TodayMenuController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/menus/GCdinner.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -616,9 +642,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="229" column="6" lean-forward="false" selection-start-line="229" selection-start-column="6" selection-end-line="229" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="226">
+          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+          <folding>
+            <marker date="1522419124078" expanded="true" signature="119:145" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/TodayMenuController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1271">
+          <caret line="133" column="9" lean-forward="false" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+          <folding>
+            <marker date="1522419119383" expanded="true" signature="44:4553" ph="[...]" />
+            <marker date="1522419119383" expanded="true" signature="413:4553" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
