@@ -3,7 +3,7 @@ gatorEats.controller('FoodItemController', ['$scope', '$http', 'TransferFoodData
         $scope.foodData = TransferFoodData.getFood();
         var user = TransferUserData.getUser();
 
-        if(user) $scope.loggedIn = true;
+        if(user.username) $scope.loggedIn = true;
         else $scope.loggedIn = false;
 
         getReviews();
@@ -28,7 +28,7 @@ gatorEats.controller('FoodItemController', ['$scope', '$http', 'TransferFoodData
                 rating: $scope.rating,
                 comment: $scope.comment,
                 reviewerUsername: user.username,
-                reviewerImgURL: '../css/avatars/cool-guy.png'
+                reviewerImgURL: user.imgURL
             }
 
             if(!$scope.foodData.reviews) {

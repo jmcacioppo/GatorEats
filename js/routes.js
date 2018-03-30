@@ -40,7 +40,8 @@ router.route('/api/users')
 
 		        // Set text and user values from request
 		        newUser.username = req.body.username;
-		        newUser.password = req.body.password;
+                newUser.password = req.body.password;
+                newUser.imgURL = '../css/avatars/cool-guy.png';
 		 
 		        // Save user and check for errors
 		        newUser.save(function(err) {
@@ -67,7 +68,9 @@ router.route('/api/users/:user_id')
             
             // Update the user text
             user.username = req.body.username;
-        	user.password = req.body.password;
+            user.password = req.body.password;
+            user.imgURL = req.body.imgURL;
+            user.dietaryRestrictions = req.body.dietaryRestrictions;
             
             user.save(function(err) {
                 if (err) res.send(err);

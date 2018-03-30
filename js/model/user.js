@@ -8,6 +8,15 @@ var ReviewSchema = new Schema({
 	reviewerImgURL: String
 });
 
+var DietaryRestrictionsSchema = new Schema({
+	vegetarian: Boolean,
+	vegan: Boolean,
+	nutFree: Boolean,
+	dairyFree: Boolean,
+	glutenFree: Boolean,
+	paleo: Boolean
+});
+
 var FoodItemSchema = new Schema({
 	itemName: String,
 	location: String,
@@ -19,7 +28,8 @@ var FoodItemSchema = new Schema({
 var UserSchema = new Schema({
     username: String,
     password: String,
-    imgURL: String
+	imgURL: String,
+	dietaryRestrictions: DietaryRestrictionsSchema
 });
 
 mongoose.model('User', UserSchema);
