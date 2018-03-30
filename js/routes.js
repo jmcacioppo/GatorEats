@@ -105,7 +105,8 @@ router.route('/api/foodItems')
         foodItem.itemName = req.body.itemName;
         foodItem.location = req.body.location;
         foodItem.station = req.body.station;
-        foodItem.reviews = req.body.reviews;
+        foodItem.reviews.push(req.body.review);
+        foodItem.totalRating = req.body.review.rating;
  
         // Save food item and check for errors
         foodItem.save(function(err) {

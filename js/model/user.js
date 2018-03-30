@@ -3,7 +3,9 @@ var Schema = mongoose.Schema;
  
 var ReviewSchema = new Schema({
 	comment: String,
-	rating: Number
+	rating: Number,
+	reviewerUsername: String,
+	reviewerImgURL: String
 });
 
 var FoodItemSchema = new Schema({

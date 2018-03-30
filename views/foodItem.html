@@ -7,19 +7,45 @@
 				<div class="the-stars">
 					<div id="stars">
 						<span ng-repeat="i in getNumber(5) track by $index" 
-							class="fa fa-star stars" ng-class="foodData.totalRating - ($index+1) >= 0 ? 'checked' : 'none'"></span>
+							class="fa fa-star stars" 
+							ng-class="foodData.totalRating - ($index+1) >= 0 ? 'checked' : 'none'">
+						</span>
 					</div>
 				</div>
-				<button type="button" class="btn btn-light review-button">Review this Item</button>
+				<button ng-show="loggedIn" class="btn btn-light" ng-click="reviewRequest()">
+					Review this Item
+				</button>
+
+				<br> <br>
+				<form ng-show="submittingReview">
+					<div class="acidjs-rating-stars">
+						<form id="rating">
+							<input ng-click="getStars(5)" type="radio" name="group-1" id="group-1-0" value="5"/><label for="group-1-0"></label>
+							<input ng-click="getStars(4)" type="radio" name="group-1" id="group-1-1" value="4" /><label for="group-1-1"></label>
+							<input ng-click="getStars(3)" type="radio" name="group-1" id="group-1-2" value="3" /><label for="group-1-2"></label>
+							<input ng-click="getStars(2)" type="radio" name="group-1" id="group-1-3" value="2" /><label for="group-1-3"></label>
+							<input ng-click="getStars(1)" type="radio" name="group-1" id="group-1-4" value="1" /><label for="group-1-4"></label>
+						</form>
+					</div>
+					<br>
+					<textarea ng-show="submittingReview" ng-model="comment" placeholder="Leave a comment on this item here"></textarea>
+					<br> <br>
+					<button ng-show="submittingReview" ng-click="submitReview()" class="btn btn-light">
+						Submit Review
+					</button>
+					<br> <br>
+				</form>
 			</div>
 			<div class="comments-here">
 				<div class="comment" ng-repeat="review in foodData.reviews">
 					<div class="avatar-area">
-						<img src="../css/avatars/cool-guy.png" class="avatar"/>
-						<p class="username">cool-guy</p>
-						<div id="stars">
+						<img ng-src="{{review.reviewerImgURL}}" class="avatar"/>
+						<p class="username">{{review.reviewerUsername}}</p>
+						<div class="the-stars-comment">
 							<span ng-repeat="i in getNumber(5) track by $index" 
-								class="fa fa-star stars" ng-class="review.rating - ($index+1) >= 0 ? 'checked' : 'none'"></span>
+								class="fa fa-star stars" 
+								ng-class="review.rating - ($index+1) >= 0 ? 'checked' : 'none'">
+							</span>
 						</div>
 					</div>
 					<div class="split">

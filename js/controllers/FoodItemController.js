@@ -3,6 +3,9 @@ gatorEats.controller('FoodItemController', ['$scope', '$http', 'TransferFoodData
         $scope.foodData = TransferFoodData.getFood();
         var user = TransferUserData.getUser();
 
+        if(user) $scope.loggedIn = true;
+        else $scope.loggedIn = false;
+
         $http.get('/api/foodItems')
             .then( (response) => {
                 response.data.forEach( (item, i) => {
@@ -17,12 +20,41 @@ gatorEats.controller('FoodItemController', ['$scope', '$http', 'TransferFoodData
                 console.log(err);
             });
 
-        $scope.foodData.totalRating = 4;
          // Get number in html
         $scope.getNumber = (num) => {
             return new Array(num); 
         }
 
+        $scope.submittingReview = false;
+        $scope.reviewRequest = function() {
+            $scope.submittingReview = true;
+        }
+
+        $scope.getStars = function(number) {
+            $scope.rating = number;
+        }
+
+        $scope.submitReview = function() {
+            $scope.foodData.review = {
+                rating: $scope.rating,
+                comment: $scope.comment,
+                reviewerUsername: user.username,
+                reviewerImgURL: '../css/avatars/cool-guy.png'
+            }
+
+            if(!$scope.foodData.reviews) {
+                $http.post('/api/foodItems', $scope.foodData)
+                    .then( (response) => {
+                        $scope.foodData = response.data;
+                    })
+                    .catch( (err) => {
+                        console.log(err);
+                    });
+            }
+            else {
+                console.log("there are reviews");
+            }
+        }
 
 
         // Get average rating to display
