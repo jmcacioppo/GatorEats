@@ -6,20 +6,8 @@ gatorEats.controller('FoodItemController', ['$scope', '$http', 'TransferFoodData
         if(user) $scope.loggedIn = true;
         else $scope.loggedIn = false;
 
-        $http.get('/api/foodItems')
-            .then( (response) => {
-                response.data.forEach( (item, i) => {
-                    if(item.itemName == $scope.foodData.itemName 
-                            && item.station == $scope.foodData.station 
-                            && item.location == $scope.foodData.location) {
-                        $scope.foodData = item;
-                    }
-                });
-            })
-            .catch( (err) => {
-                console.log(err);
-            });
-
+        getReviews();
+        
          // Get number in html
         $scope.getNumber = (num) => {
             return new Array(num); 
@@ -27,7 +15,8 @@ gatorEats.controller('FoodItemController', ['$scope', '$http', 'TransferFoodData
 
         $scope.submittingReview = false;
         $scope.reviewRequest = function() {
-            $scope.submittingReview = true;
+            if($scope.submittingReview == true) $scope.submittingReview = false;
+            else $scope.submittingReview = true;
         }
 
         $scope.getStars = function(number) {
@@ -46,27 +35,40 @@ gatorEats.controller('FoodItemController', ['$scope', '$http', 'TransferFoodData
                 $http.post('/api/foodItems', $scope.foodData)
                     .then( (response) => {
                         $scope.foodData = response.data;
+                        $scope.comment = '';
                     })
                     .catch( (err) => {
                         console.log(err);
                     });
             }
             else {
-                console.log("there are reviews");
+                let id = $scope.foodData._id;
+                
+                $http.put('/api/foodItems/' + id, $scope.foodData)
+                    .then( (response) => {
+                        $scope.foodData = response.data;
+                        $scope.comment = '';
+                    })
+                    .catch( (err) => {
+                        console.log(err);
+                    });
             }
         }
 
-
-        // Get average rating to display
-        // function averageStars(starsArray) {
-        //     var total = 0;
-    
-        //     for(var i = 0; i < starsArray.length; i++) {
-        //         total += starsArray[i].rating;
-        //     }
-    
-        //     var avg = total / starsArray.length;
-        //     return avg;
-        // }
+        function getReviews() {
+            $http.get('/api/foodItems')
+                .then( (response) => {
+                    response.data.forEach( (item, i) => {
+                        if(item.itemName == $scope.foodData.itemName 
+                                && item.station == $scope.foodData.station 
+                                && item.location == $scope.foodData.location) {
+                            $scope.foodData = item;
+                        }
+                    });
+                })
+                .catch( (err) => {
+                    console.log(err);
+                });
+        }
     }
 ]);

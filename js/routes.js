@@ -137,8 +137,8 @@ router.route('/api/foodItems/:foodItem_id')
                 total += foodItem.reviews[i].rating;
             }
     
-            foodItem.totalRating = total / starsArray.length;
-
+            foodItem.totalRating = total / foodItem.reviews.length;
+            
             foodItem.save(function(err) {
                 if (err) res.send(err);
                 res.json(foodItem);
