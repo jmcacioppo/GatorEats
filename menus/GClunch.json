@@ -1,6 +1,6 @@
 [{
   "station": "Grill",
-  "MondayItems": ["Baby Carrots", "Buffalo Blue Chicken Panini", "Crispy Shoestring French Fries", "Garden Burger Available Upon Request"],
+  "MondayItems": ["Baby Carrots", "Buffalo Blue Chicken Panini", "Crispy Shoestring French Fries", "Garden Burger"],
   "TuesdayItems": ["Baby Carrots", "Hot Dog with Sauerkraut", "Twister Fries", "Garden Burger Available Upon Request"],
   "WednesdayItems": ["Baby Carrots", "BBQ & Cheddar Turkey Burger", "Sweet Potato Fries", "Garden Burger Available Upon Request"],
   "ThursdayItems": ["Baby Carrots", "Chicken Cheesesteak Wrap", "Crispy French Fries", "Garden Burger Available Upon Request"],
