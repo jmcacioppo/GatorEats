@@ -266,6 +266,9 @@
 }
 
 /* =========== SETTINGS ========== */
+.settings{
+    text-align: center;
+}
 .avatar-pic{
     vertical-align: 10rem;
     display: inline-block;
@@ -279,36 +282,37 @@
 
 .img-av{
     margin-top: 1rem;
+    display: inline-block;
 }
 
 .hold-avatar{
     text-align: center;
+    display: inline-block;
+
 }
 
 
 #prof{
     width: 5rem;
-    
 }
 
 #nanny{
     width: 5rem;
-
 }
 
 #hair{
     width: 5rem;
-
 }
 
 #stache{
     width: 5rem;
-
 }
 
 #jane{
     width: 5rem;
-
+}
+.control-label{
+    float: left;
 }
 
 /* ========== HEADER =============  */

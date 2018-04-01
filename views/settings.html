@@ -8,7 +8,10 @@ margin-top: -14rem;"  data-toggle="modal" data-target="#Modal">
 	  </button>
 	  <div class="chng-avt-header">
 		  Click image to change avatar
-	  </div>
+		</div>
+		<button class="btn btn-secondary">
+			<a style="color: white" ng-href="/">Logout</a>
+		</button>
 	  
 	  <!-- Modal popup -->
 	  <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
@@ -63,7 +66,7 @@ margin-top: -14rem;"  data-toggle="modal" data-target="#Modal">
 					<label for="Username" class="col-md-3 control-label"> 
 					Username
 					</label>
-					<div class="col-md-9">
+					<div class="col-md-14">
 						<input type="text" class="form-control" name="Username" value="" ng-model="Username.chng" ng-change="changed-u">
 					</div>
 			</div>
@@ -71,7 +74,7 @@ margin-top: -14rem;"  data-toggle="modal" data-target="#Modal">
 					<label for="Password" class="col-md-3 control-label"> 
 					Password
 					</label>
-					<div class="col-md-9">
+					<div class="col-md-14">
 						<input type="text" class="form-control" name="Password" value="" ng-model="Password.chng" ng-change="changed-p">
 					</div>
 			</div>
@@ -88,12 +91,10 @@ margin-top: -14rem;"  data-toggle="modal" data-target="#Modal">
 				  <input type="checkbox" name="diet-req" value="Nut-free">Nut-free<br>
 				  <input type="checkbox" name="diet-req" value="Dairy-free" >Dairy-free<br>
 				  <input type="checkbox" name="diet-req" value="Gluten-free">Gluten-free<br>
-				  <input type="checkbox" name="diet-req" value="Paleo">Paleo<br>
+					<input type="checkbox" name="diet-req" value="Paleo">Paleo<br>
+					<br>
 				  <button class="btn btn-primary" type="submit">Save Changes</button>
 				</form>
-			<button class="btn btn-secondary">
-				<a style="color: white" ng-href="/">Logout</a>
-			</button>
 		</div>
 	</div>
 	<div class="save-changes">
