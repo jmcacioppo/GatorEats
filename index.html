@@ -31,18 +31,27 @@
 		<button class="btn">
 		    <a ng-href="settings">Settings</a>
 		</button> -->
-		<div class="header">
-			<div class="lets-eat">GatorEats</div>
-			<div class="header-right">
-				<a class="head-butt" ng-href="today">Today's Menu</a>
-				<a class="head-butt" ng-href="week">This Week's Menu</a>
-				<a class="head-butt" ng-href="extras">Extras</a>
-				<a class="head-butt" ng-href="trending">Trending</a>
-				<a class="head-butt" ng-href="settings">Settings</a>
+		<div class="app">
+				<div class="content">
+					<div class="header">
+						<div class="lets-eat">GatorEats</div>
+						<div class="header-right">
+							<a class="head-butt" ng-href="today">Today's Menu</a>
+							<a class="head-butt" ng-href="week">This Week's Menu</a>
+							<a class="head-butt" ng-href="extras">Extras</a>
+							<a class="head-butt" ng-href="trending">Trending</a>
+							<a class="head-butt" ng-href="settings">Settings</a>
+						</div>
+						
+					</div>
+					<ng-view></ng-view>
+				</div>
+			<div class="footer">
+				<div class="us">Cacioppo, Loyola, DiNaso, Girado</div>
+					<a ng-href="today">pic here <br/> <!-- <img class="favicon-foot"> --></a>
 			</div>
+
 		</div>
-		<ng-view></ng-view>
-		<div></div>
 	</body>
 
 	<script src="/node_modules/angular/angular.min.js"></script>

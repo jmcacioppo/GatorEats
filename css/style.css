@@ -453,3 +453,26 @@
 {
     color: #F9C078;
 }
+
+.footer{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: -1;
+    left: 0;
+    text-align: center;
+    background-color: #80bfff;
+}
+.app{
+    min-height: 100%;
+    position: relative;
+}
+.content{
+    margin-bottom: 100px;
+}
+
+.us{
+    color:#ffffff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
