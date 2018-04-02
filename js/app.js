@@ -1,6 +1,6 @@
 'use strict';
 
-var gatorEats = angular.module('gatorEats', ['ngRoute'])
+var gatorEats = angular.module('gatorEats', ['ngRoute', 'ngMaterial', 'ngMessages'])
     .config(function($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
