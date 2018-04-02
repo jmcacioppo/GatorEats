@@ -30,6 +30,7 @@
 		<h1 class="extras-text" > Available Later </h1>
 		<div class="extras-restaurants">
 			<div class="restaurant" ng-repeat="restLater in availableLater">
+				<div class="opens-in">Opens at {{ restLater.startTime}}</div>
 				<img class="logo-pic" src="{{restLater.img}}"/>
 				<p class="food-to-eat"> {{ restLater.availableDeal }}</p>
 			</div>

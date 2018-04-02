@@ -9,24 +9,32 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="/node_modules/angular-material/angular-material.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="img/favicon-tab.png"> 
 
 		<base href="/">
 	</head>
 	<body>
-		<div class="header" ng-controller="HeaderController">
-			<div class="lets-eat">GatorEats</div>
-			<div class="header-right" ng-show="showTabs">
-				<a class="head-butt" ng-href="today">Today's Menu</a>
-				<a class="head-butt" ng-href="week">This Week's Menu</a>
-				<a class="head-butt" ng-href="extras">Extras</a>
-				<a class="head-butt" ng-href="trending">Trending</a>
-				<a class="head-butt" ng-href="settings" ng-show="showSettings">Settings</a>
-				<a class="head-butt" ng-href="/" ng-hide="showSettings">Login</a>
+		<div class="app">
+				<div class="content">
+					<div class="header" ng-controller="HeaderController">
+            <div class="lets-eat">GatorEats</div>
+            <div class="header-right" ng-show="showTabs">
+              <a class="head-butt" ng-href="today">Today's Menu</a>
+              <a class="head-butt" ng-href="week">This Week's Menu</a>
+              <a class="head-butt" ng-href="extras">Extras</a>
+              <a class="head-butt" ng-href="trending">Trending</a>
+              <a class="head-butt" ng-href="settings" ng-show="showSettings">Settings</a>
+              <a class="head-butt" ng-href="/" ng-hide="showSettings">Login</a>
+						</div>
+						
+					</div>
+					<ng-view></ng-view>
+				</div>
+			<div class="footer">
+					<a ng-href="today" class="us"><img class="favicon-foot" src="img/favicon.png">GatorEats</a>
 			</div>
+
 		</div>
-		<br>
-		<ng-view></ng-view>
-		<div></div>
 	</body>
 
 	<script src="/node_modules/angular/angular.min.js"></script>
