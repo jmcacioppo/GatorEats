@@ -7,40 +7,24 @@
 		<link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Ubuntu|Bitter" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/node_modules/angular-material/angular-material.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<base href="/">
 	</head>
 	<body>
-		<!-- <center>
-			<h1>GatorEats</h1>
-		</center>
-
-		<button class="btn">
-		    <a ng-href="today">Today's Menu</a>
-		</button>
-
-		<button class="btn">
-		    <a ng-href="extras">Extras</a>
-		</button>
-
-		<button class="btn">
-		    <a ng-href="trending">Trending</a>
-		</button>
-
-		<button class="btn">
-		    <a ng-href="settings">Settings</a>
-		</button> -->
-		<div class="header">
+		<div class="header" ng-controller="HeaderController">
 			<div class="lets-eat">GatorEats</div>
-			<div class="header-right">
+			<div class="header-right" ng-show="showTabs">
 				<a class="head-butt" ng-href="today">Today's Menu</a>
 				<a class="head-butt" ng-href="week">This Week's Menu</a>
 				<a class="head-butt" ng-href="extras">Extras</a>
 				<a class="head-butt" ng-href="trending">Trending</a>
-				<a class="head-butt" ng-href="settings">Settings</a>
+				<a class="head-butt" ng-href="settings" ng-show="showSettings">Settings</a>
+				<a class="head-butt" ng-href="/" ng-hide="showSettings">Login</a>
 			</div>
 		</div>
+		<br>
 		<ng-view></ng-view>
 		<div></div>
 	</body>
@@ -49,6 +33,10 @@
 	<script src="/node_modules/angular-route/angular-route.min.js"></script>
 	<script src="/node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/node_modules/angular-animate/angular-animate.min.js"></script>
+	<script src="/node_modules/angular-aria/angular-aria.min.js"></script>
+	<script src="/node_modules/angular-messages/angular-messages.min.js"></script>
+	<script src="/node_modules/angular-material/angular-material.min.js"></script>
 
 	<script src="/js/app.js"></script>
 	<script src="/js/factory/TransferUserData.js"></script>
@@ -60,4 +48,5 @@
 	<script src="/js/controllers/TrendingController.js"></script>
 	<script src="/js/controllers/WeekMenuController.js"></script>
 	<script src="/js/controllers/FoodItemController.js"></script>
+	<script src="/js/controllers/HeaderController.js"></script>
 </html>
