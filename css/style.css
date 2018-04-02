@@ -304,26 +304,10 @@
 
 }
 
-
-#prof{
+#prof, #nanny, #hair, #stache, #jane, #cool {
     width: 5rem;
 }
 
-#nanny{
-    width: 5rem;
-}
-
-#hair{
-    width: 5rem;
-}
-
-#stache{
-    width: 5rem;
-}
-
-#jane{
-    width: 5rem;
-}
 .control-label{
     float: left;
 }
