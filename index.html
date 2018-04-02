@@ -12,33 +12,15 @@
 		<base href="/">
 	</head>
 	<body>
-		<!-- <center>
-			<h1>GatorEats</h1>
-		</center>
-
-		<button class="btn">
-		    <a ng-href="today">Today's Menu</a>
-		</button>
-
-		<button class="btn">
-		    <a ng-href="extras">Extras</a>
-		</button>
-
-		<button class="btn">
-		    <a ng-href="trending">Trending</a>
-		</button>
-
-		<button class="btn">
-		    <a ng-href="settings">Settings</a>
-		</button> -->
-		<div class="header">
+		<div class="header" ng-controller="HeaderController">
 			<div class="lets-eat">GatorEats</div>
-			<div class="header-right">
+			<div class="header-right" ng-show="showTabs">
 				<a class="head-butt" ng-href="today">Today's Menu</a>
 				<a class="head-butt" ng-href="week">This Week's Menu</a>
 				<a class="head-butt" ng-href="extras">Extras</a>
 				<a class="head-butt" ng-href="trending">Trending</a>
-				<a class="head-butt" ng-href="settings">Settings</a>
+				<a class="head-butt" ng-href="settings" ng-show="showSettings">Settings</a>
+				<a class="head-butt" ng-href="/" ng-hide="showSettings">Login</a>
 			</div>
 		</div>
 		<ng-view></ng-view>
@@ -60,4 +42,5 @@
 	<script src="/js/controllers/TrendingController.js"></script>
 	<script src="/js/controllers/WeekMenuController.js"></script>
 	<script src="/js/controllers/FoodItemController.js"></script>
+	<script src="/js/controllers/HeaderController.js"></script>
 </html>
