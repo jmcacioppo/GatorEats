@@ -1,11 +1,12 @@
 gatorEats.controller('HomeController', ['$scope', '$http', '$location', 'TransferUserData', '$mdToast',
     function($scope, $http, $location, TransferUserData, $mdToast) {
-    	var last = {
+    	// Used for angular-material toast alert
+        var last = {
             bottom: false,
             top: true,
             left: false,
             right: true
-            };
+        };
 
         $scope.toastPosition = angular.extend({},last);
 
@@ -39,7 +40,16 @@ gatorEats.controller('HomeController', ['$scope', '$http', '$location', 'Transfe
                         }
                     });
 
-                    if(!userData) alert('Incorrect username or password');
+                    if(!userData) {
+                        var pinTo = $scope.getToastPosition();
+
+                        $mdToast.show(
+                            $mdToast.simple()
+                                .textContent('Error: Incorrect username or password')
+                                .position(pinTo )
+                                .hideDelay(3000)
+                        );
+                    }
                     else {
                         TransferUserData.setUser(userData);
                         var pinTo = $scope.getToastPosition();
@@ -66,10 +76,26 @@ gatorEats.controller('HomeController', ['$scope', '$http', '$location', 'Transfe
             
             $http.post('/api/users', userData)
                 .then( (response) => {
-                    if(response.data.message) alert('User already exists');
+                    if(response.data.message) {
+                        var pinTo = $scope.getToastPosition();
+
+                        $mdToast.show(
+                            $mdToast.simple()
+                                .textContent('Error: User already exists')
+                                .position(pinTo )
+                                .hideDelay(3000)
+                        );
+                    }
                     else {
                         TransferUserData.setUser(repsonse.data);
-                        alert('You are logged in!');
+                        var pinTo = $scope.getToastPosition();
+
+                        $mdToast.show(
+                            $mdToast.simple()
+                                .textContent('You are logged in!')
+                                .position(pinTo )
+                                .hideDelay(3000)
+                        );
                         $location.path('/today');
                     }
                 })
@@ -78,7 +104,5 @@ gatorEats.controller('HomeController', ['$scope', '$http', '$location', 'Transfe
                     console.log(err);
                 });
     	}
-
-    	
     }
 ]);

@@ -1,5 +1,5 @@
-gatorEats.controller('WeekMenuController', ['$scope', '$http',
-    function($scope, $http) {
+gatorEats.controller('WeekMenuController', ['$scope', '$http', 'TransferFoodData', '$location',
+    function($scope, $http, TransferFoodData, $location) {
     	$scope.freshFoodBreakfast = true;
     	$scope.freshFoodLunch = false;
     	$scope.freshFoodDinner = false;
@@ -8,6 +8,23 @@ gatorEats.controller('WeekMenuController', ['$scope', '$http',
     	$scope.gatorCornerDinner = false;
 
     	getMenus();
+
+		$scope.getFoodItem = function(item, station) {
+            var currentLocation = '';
+
+            if($scope.freshFoodBreakfast == true || $scope.freshFoodLunch == true || $scope.freshFoodDinner == true)
+                currentLocation = 'Fresh Food Company';
+            else currentLocation = 'Gator Corner';
+            
+            var foodData = {
+                'itemName' : item,
+                'station' : station,
+                'location' : currentLocation
+            }
+            
+            TransferFoodData.setFood(foodData);
+            $location.path('/foodItem');
+        }
 
     	$scope.showMenu = function(menu) {
     		if(menu == 'FF Breakfast') showFFBreakfast();

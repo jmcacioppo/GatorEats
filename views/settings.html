@@ -1,8 +1,7 @@
 <div class="settings">
 	<div class="avatar-pic">
-			<!-- Button trigger modal popup -->
-
-<button type="button" class="btn btn-default" style="padding-right: 1.7rem; margin-top: -14rem;"  
+		<!-- Button trigger modal popup -->
+		<button type="button" class="btn btn-default" style="padding-right: 1.7rem; margin-top: -14rem;"  
 				data-toggle="modal" data-target="#Modal">
 		<img ng-attr-id="defaultPIC" class="avatar" ng-src="{{user.imgURL}}" alt=""/>
 	  </button>
@@ -100,7 +99,7 @@
 						Save Changes
 					</button>
 					<button class="btn btn-secondary">
-						<a style="color: white" ng-href="/">
+						<a style="color: white" ng-click="logout()">
 							Logout
 						</a>
 					</button>

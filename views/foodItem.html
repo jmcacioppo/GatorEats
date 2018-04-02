@@ -4,7 +4,7 @@
 		<div class="hold-reviews">
 			<div class="not-comments">
 				<h2 class="food-item">{{foodData.itemName}}</h2>
-				<div class="the-stars">
+				<div class="the-stars" ng-show="reviewsExist">
 					<div id="stars">
 						<span ng-repeat="i in getNumber(5) track by $index" 
 							class="fa fa-star stars" 
@@ -39,7 +39,7 @@
 				</form>
 			</div>
 			<div class="comments-here">
-				<div class="comment" ng-repeat="review in foodData.reviews">
+				<div class="comment" ng-repeat="review in foodData.reviews" ng-show="reviewsExist">
 					<div class="avatar-area">
 						<img ng-src="{{review.reviewerImgURL}}" class="avatar"/>
 						<p class="username">{{review.reviewerUsername}}</p>
@@ -54,6 +54,9 @@
 						<p class="user-comment">{{review.comment}}</p>
 					</div>
 				</div>
+				<center class="comment" ng-hide="reviewsExist">
+					<p class="username">No reviews exist.</p>
+				</center>
 			</div>
 		</div>
 	</div>	
