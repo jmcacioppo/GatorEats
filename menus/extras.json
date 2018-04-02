@@ -43,14 +43,14 @@
 	},
 	{
 		"name" : "Wendy's",
-		"startTime" : "1600",
+		"startTime" : "1030",
 		"endTime" : "2000",
 		"availableDeal" : "Hot and Juicy, Spicy Chicken Sandwich, Son of Baconator, Ultimate Chicken Grill",
 		"img" : "./css/logos/same-size/wendys.png"
 	},
 	{
 		"name" : "Moe's",
-		"startTime" : "1600",
+		"startTime" : "1030",
 		"endTime" : "2100",
 		"availableDeal" : "$6 Limit",
 		"img" : "./css/logos/same-size/Moes.png"
