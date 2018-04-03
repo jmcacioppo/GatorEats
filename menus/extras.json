@@ -18,7 +18,7 @@
 		"startTime" : "1030",
 		"endTime" : "1559",
 		"availableDeal" : "$6 Limit",
-		"img" : "./css/logos/same-size/Pollo-Tropical.png"
+		"img" : "./css/logos/same-size/pollo-tropical.png"
 	},
 	{
 		"name" : "Camellia Court Cafe",
@@ -53,7 +53,7 @@
 		"startTime" : "1030",
 		"endTime" : "2100",
 		"availableDeal" : "$6 Limit",
-		"img" : "./css/logos/same-size/Moes.png"
+		"img" : "./css/logos/same-size/moes.png"
 	}
 
 ]

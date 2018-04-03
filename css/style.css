@@ -327,7 +327,7 @@
 
 .header {
     overflow: hidden;
-    padding: 20px 10px;
+    padding: 10px 5px;
     background-color: #80bfff;
 }
   
@@ -353,7 +353,7 @@
 }
 
 .lets-eat{
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: 'Bitter', serif;
     color: #ffffff;
     text-align: center;
@@ -451,7 +451,7 @@
 }
 
 .app {
-    min-height: 110%;
+    /* min-height: 110%; */
     position: relative;
 }
 
@@ -459,17 +459,19 @@
     margin-bottom: 8rem;
 }
 
-.us{
+.us {
     color:#ffffff;
     font-family: 'Ubuntu', sans-serif;
 }
 
-html, body { 
-    height: 100%; 
-    margin: 0; 
-    padding: 0;
+html {
+  height: 100%;
 }
 
-.ng-scope {
-    height: 100%;
+body {
+  min-height: 100%;
 }
+
+/* .ng-scope {
+    height: 100%;
+} */
