@@ -15,51 +15,9 @@ gatorEats.controller('TodayMenuController', ['$scope', '$http', '$location', 'Tr
         var hour = time.getHours();
         var mins = time.getMinutes();
         var myTime = hour * 100 + mins;
-        // var myTime = Number(currentTime);
-
-        console.log('myTime', myTime);
 
         // 0 - Sunday, 1 - Monday, and so on until 6 - Saturday
         var currentDay = time.getDay();
-
-        function checkHours() {
-            var startTime = 0;
-            var endTime = 0;
-
-            if(currentDay == 0) {
-                startTime = 800;
-                endTime = 2300;
-            } 
-            else if(currentDay == 5) {
-                startTime = 700;
-                endTime = 2200;
-            }
-            else if(currentDay == 6) {
-                startTime = 830;
-                endTime = 2200;
-            }
-            else {
-                startTime = 700;
-                endTime = 2300;
-            }
-
-            if(myTime >= startTime && myTime < 1100) {
-                $scope.freshFoodBreakfast = true;
-                $scope.nowServing = "Now Serving Breakfast";
-            }
-            else if(myTime >= 1100 && myTime < 1600) {
-                $scope.freshFoodLunch = true;
-                $scope.nowServing = "Now Serving Lunch";
-            }
-            else if(myTime >= 1600 && myTime < endTime) {
-                $scope.freshFoodDinner = true;
-                $scope.nowServing = "Now Serving Dinner";
-            }
-            else {
-                $scope.freshFoodBreakfast = true;
-                $scope.nowServing = "Currently Closed";
-            }
-        }
 
         checkHours();
         getMenus();
@@ -194,6 +152,45 @@ gatorEats.controller('TodayMenuController', ['$scope', '$http', '$location', 'Tr
                 .catch( (err) =>{
                     console.log(err);
                 });
+        }
+
+        function checkHours() {
+            var startTime = 0;
+            var endTime = 0;
+
+            if(currentDay == 0) {
+                startTime = 800;
+                endTime = 2300;
+            } 
+            else if(currentDay == 5) {
+                startTime = 700;
+                endTime = 2200;
+            }
+            else if(currentDay == 6) {
+                startTime = 830;
+                endTime = 2200;
+            }
+            else {
+                startTime = 700;
+                endTime = 2300;
+            }
+
+            if(myTime >= startTime && myTime < 1100) {
+                $scope.freshFoodBreakfast = true;
+                $scope.nowServing = "Now Serving Breakfast";
+            }
+            else if(myTime >= 1100 && myTime < 1600) {
+                $scope.freshFoodLunch = true;
+                $scope.nowServing = "Now Serving Lunch";
+            }
+            else if(myTime >= 1600 && myTime < endTime) {
+                $scope.freshFoodDinner = true;
+                $scope.nowServing = "Now Serving Dinner";
+            }
+            else {
+                $scope.freshFoodBreakfast = true;
+                $scope.nowServing = "Currently Closed";
+            }
         }
     }
 ]);

@@ -20,13 +20,6 @@ gatorEats.controller('ExtrasController', ['$scope', '$http',
 						$scope.availableLater.push(value);
 					}
 				})
-				
-				
-				console.log(availableNow.name);
-
-    			// response.data.forEach()
-    			// check availability, if available put in $scope.availableNow
-    			// if not, in $scope.availableLater
     		})
     		.catch(function(error) {
     			console.log(error);
