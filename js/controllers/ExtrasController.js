@@ -7,10 +7,9 @@ gatorEats.controller('ExtrasController', ['$scope', '$http',
 				$scope.availableLater = [];
 
 				var time = new Date();
-				var hour = time.getHours().toString();
-				var mins = time.getMinutes().toString();
-				var currentTime = hour+mins;
-				var myTime = Number(currentTime);
+				var hour = time.getHours();
+				var mins = time.getMinutes();
+				var myTime = hour * 100 + mins;
 
 				angular.forEach($scope.menus, function(value, key){
 					var theirStartTime = Number (value.startTime);
@@ -21,13 +20,6 @@ gatorEats.controller('ExtrasController', ['$scope', '$http',
 						$scope.availableLater.push(value);
 					}
 				})
-				
-				
-				console.log(availableNow.name);
-
-    			// response.data.forEach()
-    			// check availability, if available put in $scope.availableNow
-    			// if not, in $scope.availableLater
     		})
     		.catch(function(error) {
     			console.log(error);
