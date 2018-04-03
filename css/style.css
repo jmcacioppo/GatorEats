@@ -439,7 +439,7 @@
 }
 
 /* ========== FOOTER ========== */
-.footer{
+/* .footer {
     width: 100%;
     height: 4.6rem;
     position: absolute;
@@ -451,11 +451,11 @@
 }
 
 .app {
-    /* min-height: 110%; */
+    min-height: 100%;
     position: relative;
 }
 
-.content{
+.content {
     margin-bottom: 8rem;
 }
 
@@ -464,14 +464,9 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-html {
+body, html {
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
-
-body {
-  min-height: 100%;
-}
-
-/* .ng-scope {
-    height: 100%;
-} */
+*/
