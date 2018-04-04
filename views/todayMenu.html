@@ -24,7 +24,7 @@
                         <h2 class="todayMenu-text">{{FFBreakfastFood.station}}</h2>
                     </div>
                     <div class="todayMenuItems">
-                        <div class="todayMenu-text" ng-repeat="FFBreakfastItem in FFBreakfastFood.MondayItems">
+                        <div class="todayMenu-text" ng-repeat="FFBreakfastItem in FFBreakfastFood[menuDay]">
                             <a href="" style="color: white; text-decoration: none" ng-click="getFoodItem(FFBreakfastItem, FFBreakfastFood.station)">
                                 {{FFBreakfastItem}}
                             </a>
@@ -44,7 +44,7 @@
                     <h2 class="todayMenu-text">{{FFLunchFood.station}}</h2>
                 </div>
                 <div class="todayMenuItems">
-                    <div class="todayMenu-text" ng-repeat="FFLunchItem in FFLunchFood.MondayItems">
+                    <div class="todayMenu-text" ng-repeat="FFLunchItem in FFLunchFood[menuDay]">
                         <a href="" style="color: white; text-decoration: none" ng-click="getFoodItem(FFLunchItem, FFLunchFood.station)">
                             {{FFLunchItem}}
                         </a>
@@ -64,7 +64,7 @@
                     <h2 class="todayMenu-text">{{FFDinnerFood.station}}</h2>
                 </div>
                 <div class="todayMenuItems">
-                    <div class="todayMenu-text" ng-repeat="FFDinnerItem in FFDinnerFood.MondayItems">
+                    <div class="todayMenu-text" ng-repeat="FFDinnerItem in FFDinnerFood[menuDay]">
                         <a href="" style="color: white; text-decoration: none" ng-click="getFoodItem(FFDinnerItem, FFDinnerFood.station)">
                             {{FFDinnerItem}}
                         </a>
@@ -84,7 +84,7 @@
                     <h2 class="todayMenu-text">{{GCBreakfastFood.station}}</h2>
                 </div>
                 <div class="todayMenuItems">
-                    <div class="todayMenu-text" ng-repeat="GCBreakfastItem in GCBreakfastFood.MondayItems">
+                    <div class="todayMenu-text" ng-repeat="GCBreakfastItem in GCBreakfastFood[menuDay]">
                         <a href="" style="color: white; text-decoration: none" ng-click="getFoodItem(GCBreakfastItem, GCBreakfastFood.station)">
                             {{GCBreakfastItem}}
                         </a>
@@ -104,7 +104,7 @@
                     <h1 class="todayMenu-text">{{GCLunchFood.station}}</h1>
                 </div>
                 <div class="todayMenuItems">
-                    <div class="todayMenu-text" ng-repeat="GCLunchItem in GCLunchFood.MondayItems">
+                    <div class="todayMenu-text" ng-repeat="GCLunchItem in GCLunchFood[menuDay]">
                         <a href="" style="color: white; text-decoration: none" ng-click="getFoodItem(GCLunchItem, GCLunchFood.station)">
                             {{GCLunchItem}}
                         </a>
@@ -124,7 +124,7 @@
                     <h2 class="todayMenu-text">{{GCDinnerFood.station}}</h2>
                 </div>
                 <div class="todayMenuItems">
-                    <div class="todayMenu-text"ng-repeat="GCDinnerItem in GCDinnerFood.MondayItems">
+                    <div class="todayMenu-text"ng-repeat="GCDinnerItem in GCDinnerFood[menuDay]">
                         <a href="" style="color: white; text-decoration: none" ng-click="getFoodItem(GCDinnerItem, GCDinnerFood.station)">
                             {{GCDinnerItem}}
                         </a>

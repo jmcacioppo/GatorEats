@@ -19,6 +19,7 @@ gatorEats.controller('TodayMenuController', ['$scope', '$http', '$location', 'Tr
         // 0 - Sunday, 1 - Monday, and so on until 6 - Saturday
         var currentDay = time.getDay();
 
+        getMenuDay();
         checkHours();
         getMenus();
 
@@ -100,6 +101,16 @@ gatorEats.controller('TodayMenuController', ['$scope', '$http', '$location', 'Tr
             $scope.gatorCornerBreakfast = false;
             $scope.gatorCornerLunch = false;
             $scope.gatorCornerDinner = true;
+        }
+
+        function getMenuDay() {
+            if(currentDay == 0) $scope.menuDay = 'SundayItems';
+            else if(currentDay == 1) $scope.menuDay = 'MondayItems';
+            else if(currentDay == 2) $scope.menuDay = 'TuesdayItems';
+            else if(currentDay == 3) $scope.menuDay = 'WednesdayItems';
+            else if(currentDay == 4) $scope.menuDay = 'ThursdayItems';
+            else if(currentDay == 5) $scope.menuDay = 'FridayItems';
+            else if(currentDay == 6) $scope.menuDay = 'SaturdayItems';
         }
 
         function getMenus() {
