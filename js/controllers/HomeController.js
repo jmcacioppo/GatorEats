@@ -87,7 +87,7 @@ gatorEats.controller('HomeController', ['$scope', '$http', '$location', 'Transfe
                         );
                     }
                     else {
-                        TransferUserData.setUser(repsonse.data);
+                        TransferUserData.setUser(response.data);
                         var pinTo = $scope.getToastPosition();
 
                         $mdToast.show(
@@ -100,7 +100,14 @@ gatorEats.controller('HomeController', ['$scope', '$http', '$location', 'Transfe
                     }
                 })
                 .catch( (err) => {
-                    alert('An error occurred');
+                    var pinTo = $scope.getToastPosition();
+
+                    $mdToast.show(
+                        $mdToast.simple()
+                            .textContent('An error occurred.')
+                            .position(pinTo )
+                            .hideDelay(3000)
+                    );
                     console.log(err);
                 });
     	}

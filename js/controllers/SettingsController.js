@@ -45,10 +45,24 @@ gatorEats.controller('SettingsController', ['$scope', '$http', 'TransferUserData
         $scope.saveChanges = function() {
             $http.put('/api/users/' + id, $scope.user)
                 .then( (response) => {
-                    console.log(response.data);
+                    var pinTo = $scope.getToastPosition();
+
+                    $mdToast.show(
+                        $mdToast.simple()
+                            .textContent('Settings saved!')
+                            .position(pinTo )
+                            .hideDelay(3000)
+                    );
                 })
                 .catch( (err) => {
-                    console.log(err);
+                    var pinTo = $scope.getToastPosition();
+
+                    $mdToast.show(
+                        $mdToast.simple()
+                            .textContent('An error occurred.')
+                            .position(pinTo )
+                            .hideDelay(3000)
+                    );
                 });
         }
 
@@ -129,10 +143,24 @@ gatorEats.controller('SettingsController', ['$scope', '$http', 'TransferUserData
 
             $http.put('/api/users/' + id, $scope.user)
                 .then( (response) => {
-                    console.log(response.data);
+                    var pinTo = $scope.getToastPosition();
+
+                    $mdToast.show(
+                        $mdToast.simple()
+                            .textContent('New image saved!')
+                            .position(pinTo )
+                            .hideDelay(3000)
+                    );
                 })
                 .catch( (err) => {
-                    console.log(err);
+                    var pinTo = $scope.getToastPosition();
+
+                    $mdToast.show(
+                        $mdToast.simple()
+                            .textContent('An error occurred.')
+                            .position(pinTo )
+                            .hideDelay(3000)
+                    );
                 });
         }
 
@@ -146,6 +174,8 @@ gatorEats.controller('SettingsController', ['$scope', '$http', 'TransferUserData
                     .hideDelay(3000)
             );
 
+            var user = '';
+            TransferUserData.setUser(user);
             $location.path('/');
         }
     }
