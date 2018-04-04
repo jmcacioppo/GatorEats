@@ -1,6 +1,7 @@
 gatorEats.controller('TrendingController', ['$scope', '$http', '$location', 'TransferFoodData',
     function($scope, $http, $location, TransferFoodData) {
-        getLearboard();
+        getLeaderboard();
+        $scope.limit = 10;
         
         $scope.getFoodItem = function(item, station, location) {
             var foodData = {
@@ -13,7 +14,7 @@ gatorEats.controller('TrendingController', ['$scope', '$http', '$location', 'Tra
             $location.path('/foodItem');
         }
 
-        function getLearboard() {
+        function getLeaderboard() {
             $http.get('/api/leaderboard')
                 .then( (response) => {
                     $scope.leaderboard = response.data.trending;
