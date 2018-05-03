@@ -6,7 +6,7 @@ Web app to improve the Gator Dining menu interface.
 ## How to run locally:
 - Clone the repository:
 ```bash
-git clone https://github.com/GatorEats.git
+git clone https://github.com/jmcacioppo/GatorEats.git
 ```
 - Run npm install:
 ```bash
