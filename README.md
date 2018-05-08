@@ -3,6 +3,9 @@ Web app to improve the Gator Dining menu interface.
 
 ## Website Link: https://gatoreats.herokuapp.com/
 
+![home-page](https://github.com/jmcacioppo/GatorEats/img/today-menu.png)
+
+
 ## How to run locally:
 - Clone the repository:
 ```bash
